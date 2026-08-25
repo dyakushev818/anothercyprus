@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="al1Sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#145d6e" />
+      <stop offset="60%" stop-color="#4a95a3" />
+      <stop offset="100%" stop-color="#93cdd5" />
+    </linearGradient>
+
+    <linearGradient id="al1Roof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <linearGradient id="al1Glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1320" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0b1320" />
+    </linearGradient>
+
+    <linearGradient id="al1Wall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="1600" height="1000" fill="url(#al1Sky)" />
+
+  <!-- Surrounding Potamos Germasogeias Urban Fabric from High Drone Angle -->
+  <!-- Left Neighboring Apartment Complex with Balconies & Terrace -->
+  <polygon points="0,0 420,0 420,380 0,380" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  <g fill="#475569">
+    <rect x="50" y="50" width="60" height="45" />
+    <rect x="150" y="50" width="60" height="45" />
+    <rect x="250" y="50" width="60" height="45" />
+    <rect x="50" y="140" width="60" height="45" />
+    <rect x="150" y="140" width="60" height="45" />
+    <rect x="250" y="140" width="60" height="45" />
+  </g>
+
+  <!-- Swimming Pool in Left Villa Courtyard -->
+  <polygon points="340,240 400,240 400,290 340,290" fill="#0284c7" stroke="#38bdf8" stroke-width="3" />
+
+  <!-- Left Midground Villa Roof with Solar Panels & AC Compressors -->
+  <polygon points="210,310 400,310 400,600 210,600" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="315" y="340" width="45" height="30" fill="#94a3b8" />
+  <rect x="330" y="390" width="50" height="35" fill="#64748b" />
+
+  <!-- Right Neighboring Ochre Building (Milonia Court) -->
+  <polygon points="1080,240 1600,350 1600,1000 1080,1000" fill="#fed7aa" opacity="0.9" />
+  <polygon points="1080,240 1200,200 1200,1000 1080,1000" fill="#fef08a" />
+  <!-- Windows & Balconies of Right Building -->
+  <g fill="#334155">
+    <rect x="1220" y="370" width="70" height="50" />
+    <rect x="1320" y="400" width="70" height="50" />
+    <rect x="1220" y="470" width="70" height="50" />
+    <rect x="1320" y="500" width="70" height="50" />
+    <rect x="1100" y="560" width="60" height="50" />
+    <rect x="1100" y="650" width="60" height="50" />
+    <rect x="1100" y="740" width="60" height="50" />
+  </g>
+  <!-- Solar Water Heaters on Right Roof -->
+  <ellipse cx="1480" cy="460" rx="35" ry="50" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+
+  <!-- Asphalt Roadway & Curbs on Left / Bottom -->
+  <polygon points="0,200 320,550 0,900" fill="#334155" />
+  <polygon points="0,480 390,950 1600,1000 0,1000" fill="#1e293b" />
+
+  <!-- Cars on the Road -->
+  <!-- Car 1: Dark SUV parked on street -->
+  <rect x="100" y="480" width="55" height="90" rx="10" fill="#090d16" transform="rotate(-25 100 480)" />
+  <!-- Car 2: Sedan parked -->
+  <rect x="140" y="560" width="50" height="85" rx="8" fill="#1e293b" transform="rotate(-25 140 560)" />
+  <!-- Car 3: White Sedan -->
+  <rect x="0" y="720" width="55" height="90" rx="10" fill="#f8fafc" stroke="#cbd5e1" transform="rotate(-25 0 720)" />
+  <!-- Car 4: Black SUV in foreground -->
+  <rect x="85" y="760" width="60" height="100" rx="12" fill="#0f172a" transform="rotate(-25 85 760)" />
+
+  <!-- ========================================================== -->
+  <!-- CENTERPIECE: GERMASOGEIA CORPORATE PRIME (HIGH ROOF ANGLE) -->
+  <!-- ========================================================== -->
+
+  <!-- Top Roof Deck (Slab, Parapet & Machine Room Core) -->
+  <!-- Machine Room Box -->
+  <polygon points="580,20 890,20 870,160 560,160" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  <polygon points="890,20 950,50 930,170 870,160" fill="#cbd5e1" />
+  <polygon points="560,160 870,160 860,180 550,180" fill="#94a3b8" />
+
+  <!-- Roof Terrace Surface (161 m² Sky Deck) -->
+  <polygon points="490,40 1020,160 880,360 340,160" fill="url(#al1Roof)" stroke="#cbd5e1" stroke-width="3" />
+  <!-- Parapet Border Fin -->
+  <polygon points="320,150 510,40 1030,160 1040,190 870,390 320,170" fill="none" stroke="#e2e8f0" stroke-width="14" />
+
+  <!-- RIGHT SOLID SHEAR WALL WITH WINDOW OPENINGS -->
+  <polygon points="870,390 1040,190 1060,200 890,830 830,950 820,830" fill="url(#al1Wall)" stroke="#64748b" stroke-width="2" />
+  <!-- Windows on Side Wall -->
+  <g fill="#0f172a">
+    <rect x="910" y="290" width="55" height="40" transform="skewY(14)" />
+    <rect x="900" y="410" width="55" height="40" transform="skewY(14)" />
+    <rect x="880" y="530" width="50" height="40" transform="skewY(14)" />
+    <rect x="860" y="650" width="45" height="35" transform="skewY(14)" />
+    <!-- Secondary narrow punch windows -->
+    <rect x="980" y="270" width="22" height="30" transform="skewY(14)" />
+    <rect x="970" y="390" width="22" height="30" transform="skewY(14)" />
+    <rect x="955" y="510" width="22" height="30" transform="skewY(14)" />
+    <rect x="940" y="620" width="20" height="28" transform="skewY(14)" />
+  </g>
+
+  <!-- FRONT BALCONIES & GLASS CURTAIN WALL (4TH FLOOR) -->
+  <polygon points="380,240 850,380 840,490 380,330" fill="url(#al1Glass)" stroke="#0f172a" stroke-width="2" />
+  <polygon points="350,320 860,470 850,510 340,350" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+
+  <!-- FRONT BALCONIES & GLASS CURTAIN WALL (3RD FLOOR) -->
+  <polygon points="375,370 845,510 835,620 375,460" fill="url(#al1Glass)" stroke="#0f172a" stroke-width="2" />
+  <polygon points="355,450 855,600 845,640 345,480" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+
+  <!-- FRONT BALCONIES & GLASS CURTAIN WALL (2ND FLOOR) -->
+  <polygon points="380,500 840,640 830,750 380,590" fill="url(#al1Glass)" stroke="#0f172a" stroke-width="2" />
+  <polygon points="360,580 850,730 840,770 350,610" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+
+  <!-- FRONT BALCONIES & GLASS CURTAIN WALL (1ST FLOOR) -->
+  <polygon points="385,630 835,770 825,870 385,720" fill="url(#al1Glass)" stroke="#0f172a" stroke-width="2" />
+  <polygon points="365,710 845,850 835,885 355,735" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+
+  <!-- GROUND FLOOR & ENTRANCE PILOTIS WITH MARBLE CLADDING -->
+  <polygon points="380,750 830,880 810,980 470,980" fill="#090d16" stroke="#334155" stroke-width="2" />
+  <polygon points="760,770 880,780 840,970 740,970" fill="#1e293b" />
+  <!-- Construction Materials at Base -->
+  <rect x="360" y="890" width="80" height="60" fill="#64748b" opacity="0.7" />
+
+  <!-- Palm Trees and Greenery -->
+  <ellipse cx="270" cy="590" rx="40" ry="70" fill="#15803d" />
+  <ellipse cx="250" cy="650" rx="55" ry="80" fill="#166534" />
+  <ellipse cx="645" cy="970" rx="35" ry="30" fill="#14532d" />
+
+  <!-- Overlay Watermark Tag -->
+  <rect x="36" y="36" width="360" height="42" fill="#090d16" opacity="0.85" rx="4" />
+  <text x="52" y="63" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#10b981" letter-spacing="1.5">
+    ROOFTOP &amp; ELEVATION DRONE SURVEY
+  </text>
+</svg>

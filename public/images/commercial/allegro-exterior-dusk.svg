@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradients for Dusk -->
+    <linearGradient id="duskSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#142850" />
+      <stop offset="40%" stop-color="#27496d" />
+      <stop offset="75%" stop-color="#56729c" />
+      <stop offset="90%" stop-color="#c68b59" />
+      <stop offset="100%" stop-color="#dfa878" />
+    </linearGradient>
+
+    <!-- Glass Reflection Gradient -->
+    <linearGradient id="glassReflect" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffe6aa" stop-opacity="0.85" />
+      <stop offset="30%" stop-color="#ffd166" stop-opacity="0.65" />
+      <stop offset="60%" stop-color="#2a475e" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#1b2a47" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Concrete Slab Gradient -->
+    <linearGradient id="concreteFin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cfd4dc" />
+      <stop offset="50%" stop-color="#b4bcc7" />
+      <stop offset="100%" stop-color="#8892a0" />
+    </linearGradient>
+
+    <!-- Corten Wall Base -->
+    <linearGradient id="cortenBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d2c29" />
+      <stop offset="30%" stop-color="#523934" />
+      <stop offset="70%" stop-color="#2a1f1d" />
+      <stop offset="100%" stop-color="#1a1413" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="warmGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="logoGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="1600" height="1000" fill="url(#duskSky)" />
+
+  <!-- Distant Background Clouds & Atmosphere -->
+  <path d="M 0,650 Q 400,600 800,630 T 1600,600 L 1600,1000 L 0,1000 Z" fill="#2d3748" opacity="0.25" />
+
+  <!-- Adjacent Neighboring Building (Right) -->
+  <polygon points="1240,240 1480,240 1480,820 1240,820" fill="#e2e8f0" />
+  <polygon points="1480,240 1600,280 1600,820 1480,820" fill="#cbd5e1" />
+  <rect x="1270" y="300" width="160" height="18" fill="#94a3b8" />
+  <rect x="1270" y="420" width="160" height="18" fill="#94a3b8" />
+  <rect x="1270" y="540" width="160" height="18" fill="#94a3b8" />
+
+  <!-- Adjacent Neighboring Building (Left) -->
+  <polygon points="0,520 160,540 160,820 0,820" fill="#f1f5f9" />
+  <rect x="20" y="580" width="100" height="60" fill="#64748b" opacity="0.7" />
+
+  <!-- Background Trees & Cypress -->
+  <path d="M 120,680 Q 150,560 180,680 Z" fill="#2d4a3e" />
+  <path d="M 160,700 Q 190,580 220,700 Z" fill="#1b382b" />
+  <path d="M 1210,680 Q 1240,540 1270,680 Z" fill="#1e3a2b" />
+  <path d="M 1240,700 Q 1265,580 1290,700 Z" fill="#152e22" />
+
+  <!-- MAIN BUILDING (@legro Commercial Headquarters) -->
+
+  <!-- Rooftop Pavilion / Mechanical Penthouse -->
+  <polygon points="450,110 750,110 800,200 480,200" fill="#ffffff" />
+  <polygon points="750,110 850,140 880,200 800,200" fill="#e2e8f0" />
+  <!-- Glass Railing Roof Garden -->
+  <polygon points="350,200 1150,200 1200,240 380,240" fill="#94a3b8" opacity="0.4" />
+
+  <!-- Roof Overhang / Crown Slab -->
+  <polygon points="280,48 1180,48 1260,165 340,165" fill="#a0aec0" />
+  <polygon points="280,48 340,165 340,195 280,78" fill="#718096" />
+  <polygon points="340,165 1260,165 1260,195 340,195" fill="url(#concreteFin)" />
+
+  <!-- Main Concrete Frame Outer Border (Right & Top shell) -->
+  <polygon points="1180,48 1260,165 1260,610 1180,590" fill="#9aa5b5" />
+
+  <!-- FLOOR 4 (Top Office Level) -->
+  <!-- Glass Facade Left Side -->
+  <polygon points="335,200 750,200 750,305 320,305" fill="url(#glassReflect)" />
+  <!-- Glass Facade Right Side -->
+  <polygon points="750,200 1195,200 1200,305 750,305" fill="url(#glassReflect)" />
+  <!-- Floor 4 Cantilever Fin/Balcony -->
+  <polygon points="250,285 1195,285 1235,325 300,325" fill="url(#concreteFin)" />
+  <polygon points="250,285 300,325 300,335 250,295" fill="#718096" />
+  <polygon points="300,325 1235,325 1235,338 300,338" fill="#cbd5e1" />
+
+  <!-- FLOOR 3 -->
+  <polygon points="295,338 750,338 750,430 280,430" fill="url(#glassReflect)" />
+  <polygon points="750,338 1205,338 1210,430 750,430" fill="url(#glassReflect)" />
+  <!-- Floor 3 Cantilever Fin/Balcony -->
+  <polygon points="220,410 1205,410 1245,448 265,448" fill="url(#concreteFin)" />
+  <polygon points="220,410 265,448 265,458 220,420" fill="#718096" />
+  <polygon points="265,448 1245,448 1245,460 265,460" fill="#cbd5e1" />
+
+  <!-- FLOOR 2 -->
+  <polygon points="260,460 750,460 750,545 245,545" fill="url(#glassReflect)" />
+  <polygon points="750,460 1215,460 1220,545 750,545" fill="url(#glassReflect)" />
+  <!-- Floor 2 Cantilever Fin/Balcony -->
+  <polygon points="190,528 1215,528 1255,565 230,565" fill="url(#concreteFin)" />
+  <polygon points="190,528 230,565 230,575 190,538" fill="#718096" />
+  <polygon points="230,565 1255,565 1255,578 230,578" fill="#cbd5e1" />
+
+  <!-- FLOOR 1 (Above Mezzanine) -->
+  <polygon points="225,578 750,578 750,655 205,655" fill="url(#glassReflect)" />
+  <polygon points="750,578 1225,578 1230,655 750,655" fill="url(#glassReflect)" />
+  <!-- Floor 1 Lower Main Cantilever Fin -->
+  <polygon points="160,638 1225,638 1265,675 195,675" fill="url(#concreteFin)" />
+  <polygon points="160,638 195,675 195,688 160,650" fill="#4a5568" />
+  <polygon points="195,675 1265,675 1265,690 195,690" fill="#94a3b8" />
+
+  <!-- Vertical Glass Mullions & Interior Columns -->
+  <!-- Left Wing Vertical Bars -->
+  <g stroke="#1a202c" stroke-width="4" opacity="0.8">
+    <line x1="390" y1="200" x2="360" y2="655" />
+    <line x1="460" y1="200" x2="430" y2="655" />
+    <line x1="530" y1="200" x2="500" y2="655" />
+    <line x1="600" y1="200" x2="570" y2="655" />
+    <line x1="670" y1="200" x2="640" y2="655" />
+    <line x1="750" y1="200" x2="750" y2="655" stroke-width="8" stroke="#cbd5e1" />
+  </g>
+  <!-- Right Wing Vertical Bars -->
+  <g stroke="#1a202c" stroke-width="4" opacity="0.8">
+    <line x1="830" y1="200" x2="840" y2="655" />
+    <line x1="910" y1="200" x2="920" y2="655" />
+    <line x1="990" y1="200" x2="1005" y2="655" />
+    <line x1="1070" y1="200" x2="1090" y2="655" />
+    <line x1="1150" y1="200" x2="1175" y2="655" />
+  </g>
+
+  <!-- MEZZANINE LEVEL (Dark Horizontal Louvers) -->
+  <rect x="230" y="690" width="530" height="110" fill="#1a202c" />
+  <g stroke="#2d3748" stroke-width="3">
+    <line x1="230" y1="700" x2="760" y2="700" />
+    <line x1="230" y1="712" x2="760" y2="712" />
+    <line x1="230" y1="724" x2="760" y2="724" />
+    <line x1="230" y1="736" x2="760" y2="736" />
+    <line x1="230" y1="748" x2="760" y2="748" />
+    <line x1="230" y1="760" x2="760" y2="760" />
+    <line x1="230" y1="772" x2="760" y2="772" />
+    <line x1="230" y1="784" x2="760" y2="784" />
+    <line x1="230" y1="796" x2="760" y2="796" />
+  </g>
+
+  <rect x="760" y="690" width="370" height="110" fill="#171923" />
+  <g stroke="#2d3748" stroke-width="3">
+    <line x1="760" y1="700" x2="1130" y2="700" />
+    <line x1="760" y1="712" x2="1130" y2="712" />
+    <line x1="760" y1="724" x2="1130" y2="724" />
+    <line x1="760" y1="736" x2="1130" y2="736" />
+    <line x1="760" y1="748" x2="1130" y2="748" />
+    <line x1="760" y1="760" x2="1130" y2="760" />
+    <line x1="760" y1="772" x2="1130" y2="772" />
+    <line x1="760" y1="784" x2="1130" y2="784" />
+    <line x1="760" y1="796" x2="1130" y2="796" />
+  </g>
+
+  <!-- GROUND FLOOR: Covered Parking + Entrance + Corten Signage Wall -->
+  <!-- Covered Parking Void -->
+  <rect x="230" y="800" width="500" height="70" fill="#0f172a" />
+  <polygon points="230,800 730,800 730,865 230,865" fill="#1e293b" opacity="0.6" />
+  
+  <!-- Parked Luxury Cars in Bay -->
+  <!-- Car 1 (White Sedan) -->
+  <path d="M 540,845 Q 560,825 600,825 Q 640,825 650,845 L 660,860 L 530,860 Z" fill="#e2e8f0" />
+  <circle cx="560" cy="860" r="8" fill="#1a202c" />
+  <circle cx="635" cy="860" r="8" fill="#1a202c" />
+  <!-- Car 2 (Grey Metallic) -->
+  <path d="M 400,848 Q 420,830 450,830 Q 480,830 495,848 L 500,860 L 390,860 Z" fill="#94a3b8" />
+
+  <!-- Ground Floor Entrance Corten Stone Wall -->
+  <rect x="730" y="795" width="410" height="75" fill="url(#cortenBase)" stroke="#4a3728" stroke-width="2" />
+  <!-- Glass Entrance Doorway -->
+  <rect x="1030" y="800" width="85" height="70" fill="#0284c7" opacity="0.3" stroke="#e2e8f0" stroke-width="2" />
+  <line x1="1072" y1="800" x2="1072" y2="870" stroke="#cbd5e1" stroke-width="2" />
+
+  <!-- Illuminated @legro Brand Logo on Feature Wall -->
+  <g filter="url(#logoGlow)">
+    <text x="820" y="845" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="34" fill="#e2e8f0" letter-spacing="-1">
+      @legro
+    </text>
+  </g>
+
+  <!-- Green Wall & Topiary beside Entrance -->
+  <rect x="1140" y="690" width="30" height="180" fill="#166534" />
+  <circle cx="1155" cy="710" r="14" fill="#15803d" />
+  <circle cx="1155" cy="750" r="15" fill="#14532d" />
+  <circle cx="1155" cy="790" r="16" fill="#166534" />
+  <circle cx="1155" cy="830" r="15" fill="#15803d" />
+
+  <!-- Front Planters & Landscaping -->
+  <polygon points="360,845 610,845 610,875 360,875" fill="#334155" />
+  <!-- Lush Green Foliage -->
+  <ellipse cx="400" cy="800" rx="35" ry="50" fill="#1e3a2b" />
+  <ellipse cx="480" cy="780" rx="50" ry="70" fill="#2d5a40" />
+  <ellipse cx="540" cy="800" rx="40" ry="55" fill="#1b4332" />
+  <ellipse cx="440" cy="750" rx="45" ry="60" fill="#386641" />
+
+  <!-- Street, Curb & Foreground -->
+  <polygon points="0,875 1600,875 1600,1000 0,1000" fill="#334155" />
+  <polygon points="0,870 1600,870 1600,880 0,880" fill="#94a3b8" />
+  
+  <!-- Coastal Wildflowers & Lawn in Foreground -->
+  <path d="M 0,920 Q 300,900 600,915 T 1200,910 T 1600,900 L 1600,1000 L 0,1000 Z" fill="#2e3b2e" />
+  <g fill="#4d6a4d">
+    <circle cx="150" cy="950" r="35" />
+    <circle cx="320" cy="940" r="45" />
+    <circle cx="500" cy="960" r="50" />
+    <circle cx="750" cy="945" r="40" />
+    <circle cx="950" cy="955" r="45" />
+    <circle cx="1180" cy="940" r="55" />
+    <circle cx="1420" cy="950" r="50" />
+  </g>
+  <g fill="#d97706" opacity="0.6">
+    <circle cx="160" cy="930" r="4" />
+    <circle cx="340" cy="920" r="5" />
+    <circle cx="730" cy="925" r="4" />
+    <circle cx="980" cy="935" r="5" />
+    <circle cx="1200" cy="915" r="4" />
+    <circle cx="1450" cy="925" r="4" />
+  </g>
+
+  <!-- Overlay Watermark Tag -->
+  <rect x="36" y="36" width="360" height="42" fill="#090d16" opacity="0.85" rx="4" />
+  <text x="52" y="63" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#10b981" letter-spacing="1.5">
+    GERMASOGEIA CORPORATE PRIME
+  </text>
+</svg>

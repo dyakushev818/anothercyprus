@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <!-- Interior Light Gradients -->
+    <linearGradient id="lobbyWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+
+    <!-- Bronze Feature Wall -->
+    <linearGradient id="bronzeWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#603813" />
+      <stop offset="50%" stop-color="#8b5a2b" />
+      <stop offset="100%" stop-color="#3d2314" />
+    </linearGradient>
+
+    <!-- Polished Floor Reflection -->
+    <linearGradient id="porcelainFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d1d5db" />
+      <stop offset="30%" stop-color="#e5e7eb" />
+      <stop offset="100%" stop-color="#f3f4f6" />
+    </linearGradient>
+
+    <!-- Garden Background -->
+    <linearGradient id="gardenSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="50%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+
+    <!-- Gold Sculpture Gradient -->
+    <linearGradient id="goldLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="80%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+
+    <!-- Designer Chair Taupe Fabric -->
+    <linearGradient id="taupeChair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d6c7b2" />
+      <stop offset="50%" stop-color="#b8a892" />
+      <stop offset="100%" stop-color="#9a8a76" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Interior Room -->
+  <rect width="1600" height="1000" fill="url(#lobbyWall)" />
+
+  <!-- LEFT: Huge Floor-to-Ceiling Windows with Outdoor Mediterranean Garden -->
+  <!-- Garden View Outside Window -->
+  <rect x="0" y="0" width="580" height="800" fill="url(#gardenSky)" />
+  <!-- Distant Cypress & Greenery -->
+  <g fill="#2d6a4f">
+    <ellipse cx="60" cy="550" rx="40" ry="120" />
+    <ellipse cx="140" cy="580" rx="35" ry="100" />
+    <ellipse cx="220" cy="600" rx="50" ry="90" />
+    <ellipse cx="380" cy="620" rx="60" ry="80" />
+  </g>
+  <!-- Lavender & Flowering Shrubs -->
+  <g fill="#9333ea" opacity="0.4">
+    <ellipse cx="80" cy="620" rx="30" ry="40" />
+    <ellipse cx="180" cy="640" rx="35" ry="45" />
+    <ellipse cx="300" cy="650" rx="40" ry="35" />
+  </g>
+  <rect x="0" y="680" width="580" height="120" fill="#40916c" opacity="0.8" />
+
+  <!-- Massive Black Aluminium Window Mullions -->
+  <rect x="0" y="0" width="580" height="800" fill="none" stroke="#18181b" stroke-width="12" />
+  <line x1="190" y1="0" x2="190" y2="800" stroke="#18181b" stroke-width="16" />
+  <line x1="380" y1="0" x2="380" y2="800" stroke="#18181b" stroke-width="16" />
+  <line x1="570" y1="0" x2="570" y2="800" stroke="#18181b" stroke-width="20" />
+
+  <!-- BACK WALL (Double-Height Clean White with Contemporary Art) -->
+  <rect x="580" y="0" width="760" height="720" fill="#ffffff" />
+  <line x1="580" y1="0" x2="1340" y2="0" stroke="#e2e8f0" stroke-width="6" />
+
+  <!-- Upper Clerestory Louver Window -->
+  <rect x="940" y="10" width="400" height="125" fill="#f8fafc" stroke="#18181b" stroke-width="8" />
+  <line x1="940" y1="40" x2="1340" y2="40" stroke="#71717a" stroke-width="3" />
+  <line x1="940" y1="70" x2="1340" y2="70" stroke="#71717a" stroke-width="3" />
+  <line x1="940" y1="100" x2="1340" y2="100" stroke="#71717a" stroke-width="3" />
+
+  <!-- Two Organic Gold Leaf Wall Art Sculptures -->
+  <!-- Top Gold Sculpture -->
+  <path d="M 780,85 Q 860,70 910,120 Q 940,180 870,210 Q 790,225 760,165 Q 740,110 780,85 Z" fill="url(#goldLeaf)" stroke="#a16207" stroke-width="2" />
+  <circle cx="810" cy="130" r="8" fill="#713f12" opacity="0.4" />
+  <circle cx="860" cy="160" r="12" fill="#713f12" opacity="0.3" />
+
+  <!-- Bottom Gold Sculpture -->
+  <path d="M 750,310 Q 820,300 860,340 Q 880,390 830,425 Q 770,440 735,395 Q 720,350 750,310 Z" fill="url(#goldLeaf)" stroke="#a16207" stroke-width="2" />
+  <circle cx="780" cy="350" r="7" fill="#713f12" opacity="0.4" />
+  <circle cx="815" cy="385" r="10" fill="#713f12" opacity="0.3" />
+
+  <!-- Bronze Humanoid Statuette on Plinth -->
+  <rect x="590" y="440" width="30" height="150" fill="#18181b" />
+  <circle cx="605" cy="455" r="8" fill="#27272a" />
+  <path d="M 598,465 L 612,465 L 610,540 L 600,540 Z" fill="#27272a" />
+
+  <!-- Back Glass Portals / Doors with Black Frames -->
+  <rect x="930" y="225" width="140" height="480" fill="#f8fafc" stroke="#18181b" stroke-width="8" />
+  <rect x="1140" y="225" width="200" height="480" fill="#f8fafc" stroke="#18181b" stroke-width="8" />
+  <line x1="1240" y1="225" x2="1240" y2="705" stroke="#18181b" stroke-width="6" />
+
+  <!-- RIGHT WALL: Rich Corten Bronze Feature Wall with Living Vertical Green Wall -->
+  <polygon points="1340,0 1600,0 1600,1000 1340,710" fill="url(#bronzeWall)" />
+  
+  <!-- Living Ivy / Green Wall Running Down Right Wall -->
+  <g fill="#15803d">
+    <ellipse cx="1520" cy="60" rx="30" ry="25" fill="#166534" />
+    <ellipse cx="1540" cy="110" rx="35" ry="30" fill="#15803d" />
+    <ellipse cx="1510" cy="160" rx="32" ry="28" fill="#166534" />
+    <ellipse cx="1535" cy="220" rx="38" ry="32" fill="#14532d" />
+    <ellipse cx="1515" cy="280" rx="34" ry="29" fill="#15803d" />
+    <ellipse cx="1545" cy="340" rx="36" ry="30" fill="#166534" />
+    <ellipse cx="1520" cy="400" rx="33" ry="28" fill="#14532d" />
+    <ellipse cx="1540" cy="460" rx="35" ry="30" fill="#15803d" />
+    <ellipse cx="1525" cy="520" rx="32" ry="28" fill="#166534" />
+    <ellipse cx="1545" cy="580" rx="36" ry="30" fill="#14532d" />
+    <ellipse cx="1530" cy="640" rx="34" ry="28" fill="#15803d" />
+  </g>
+
+  <!-- @legro Silver Logo on Bronze Wall -->
+  <text x="1440" y="300" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="28" fill="#e2e8f0" opacity="0.9">
+    @legro
+  </text>
+
+  <!-- FLOOR: Italian Polished Porcelain with Geometric Inlay & Soft Reflection -->
+  <polygon points="0,710 1600,710 1600,1000 0,1000" fill="url(#porcelainFloor)" />
+  
+  <!-- Soft Floor Inlay / Rug Matrix -->
+  <polygon points="450,710 1150,710 1080,840 380,840" fill="#d6d3d1" opacity="0.45" />
+  <g stroke="#a8a29e" stroke-width="1" opacity="0.3">
+    <line x1="500" y1="710" x2="430" y2="840" />
+    <line x1="600" y1="710" x2="530" y2="840" />
+    <line x1="700" y1="710" x2="630" y2="840" />
+    <line x1="800" y1="710" x2="730" y2="840" />
+    <line x1="900" y1="710" x2="830" y2="840" />
+    <line x1="1000" y1="710" x2="930" y2="840" />
+  </g>
+
+  <!-- DESIGNER LOUNGE SEATING & COFFEE TABLES -->
+
+  <!-- Background Lounge Armchair (Far Center) -->
+  <g id="chairFar">
+    <rect x="720" y="555" width="160" height="150" rx="20" fill="url(#taupeChair)" stroke="#78716c" stroke-width="2" />
+    <rect x="745" y="575" width="110" height="90" rx="10" fill="#c7b9a5" />
+    <rect x="735" y="685" width="15" height="40" fill="#1c1917" />
+    <rect x="850" y="685" width="15" height="40" fill="#1c1917" />
+  </g>
+
+  <!-- Coffee Table with Decorative Accessories -->
+  <ellipse cx="950" cy="710" rx="90" ry="25" fill="#18181b" />
+  <rect x="910" y="700" width="80" height="60" rx="5" fill="#27272a" />
+  <!-- Small Gold Bowl & Vase on Table -->
+  <ellipse cx="930" cy="695" rx="12" ry="6" fill="#eab308" />
+  <ellipse cx="975" cy="690" rx="16" ry="8" fill="#f8fafc" />
+  <rect x="970" y="670" width="10" height="20" fill="#52525b" />
+
+  <!-- Middle Left Lounge Armchair -->
+  <g id="chairMid">
+    <rect x="520" y="580" width="210" height="180" rx="25" fill="url(#taupeChair)" stroke="#78716c" stroke-width="3" />
+    <rect x="550" y="610" width="150" height="110" rx="12" fill="#c7b9a5" />
+    <rect x="540" y="730" width="18" height="45" fill="#1c1917" />
+    <rect x="690" y="730" width="18" height="45" fill="#1c1917" />
+  </g>
+
+  <!-- Gold Brass Accent Side Table -->
+  <ellipse cx="400" cy="650" rx="60" ry="12" fill="url(#goldLeaf)" stroke="#a16207" stroke-width="2" />
+  <line x1="400" y1="650" x2="400" y2="780" stroke="url(#goldLeaf)" stroke-width="6" />
+  <ellipse cx="400" cy="780" rx="50" ry="10" fill="url(#goldLeaf)" stroke="#a16207" stroke-width="2" />
+
+  <!-- Foreground Armchair 1 (Left) -->
+  <g id="chairFore1">
+    <path d="M 330,580 Q 520,580 520,720 L 520,830 L 330,830 Z" fill="url(#taupeChair)" stroke="#78716c" stroke-width="3" />
+    <rect x="350" y="610" width="140" height="130" rx="15" fill="#d1c4b0" />
+    <!-- Back Cushion -->
+    <rect x="360" y="600" width="120" height="80" rx="10" fill="#b0a08b" />
+    <rect x="350" y="810" width="22" height="50" fill="#1c1917" />
+    <rect x="470" y="810" width="22" height="50" fill="#1c1917" />
+  </g>
+
+  <!-- Foreground Curved Armchair (Closest to camera) -->
+  <g id="chairClosest">
+    <ellipse cx="270" cy="880" rx="230" ry="110" fill="url(#taupeChair)" stroke="#78716c" stroke-width="4" />
+    <!-- Curved Backrest Structure -->
+    <path d="M 50,780 Q 270,720 480,780 L 480,880 Q 270,820 50,880 Z" fill="#b8a892" stroke="#78716c" stroke-width="3" />
+    <ellipse cx="270" cy="860" rx="170" ry="70" fill="#dcd1bf" />
+  </g>
+
+  <!-- Overlay Watermark Tag -->
+  <rect x="36" y="36" width="340" height="42" fill="#090d16" opacity="0.85" rx="4" />
+  <text x="52" y="63" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#10b981" letter-spacing="1.5">
+    GRAND RECEPTION LOBBY
+  </text>
+</svg>

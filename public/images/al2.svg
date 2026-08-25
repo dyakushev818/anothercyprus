@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradient matching Drone Photo 0389 -->
+    <linearGradient id="sky0389" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a4658" />
+      <stop offset="35%" stop-color="#145d6e" />
+      <stop offset="70%" stop-color="#3b8895" />
+      <stop offset="100%" stop-color="#73b2bd" />
+    </linearGradient>
+
+    <!-- Glass facade gradient -->
+    <linearGradient id="glass0389" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1726" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="concrete0389" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Dark Marble Ground Cladding -->
+    <linearGradient id="marble0389" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#1a202c" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="1000" fill="url(#sky0389)" />
+
+  <!-- Soft Mid-day Cyprus Clouds -->
+  <path d="M 0,280 Q 300,240 600,270 T 1200,250 T 1600,280 L 1600,500 L 0,500 Z" fill="#bce0e6" opacity="0.4" />
+
+  <!-- Distant Limassol Urban Skyline & Troodos Horizon -->
+  <polygon points="0,380 300,360 650,370 1050,355 1400,370 1600,360 1600,480 0,480" fill="#2d6470" opacity="0.5" />
+  <!-- Distant High-Rise Oval Tower in Background -->
+  <rect x="480" y="320" width="30" height="70" rx="6" fill="#e2e8f0" opacity="0.7" />
+
+  <!-- LEFT NEIGHBORING BUILDINGS -->
+  <!-- Low White Residential Block with Solar Tanks -->
+  <polygon points="0,480 320,480 320,850 0,850" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  <g fill="#64748b">
+    <rect x="30" y="550" width="50" height="40" />
+    <rect x="110" y="550" width="50" height="40" />
+    <rect x="190" y="550" width="50" height="40" />
+    <rect x="30" y="630" width="50" height="40" />
+    <rect x="110" y="630" width="50" height="40" />
+    <rect x="190" y="630" width="50" height="40" />
+  </g>
+  <!-- Solar Cylinders on Rooftops -->
+  <rect x="60" y="460" width="35" height="20" fill="#94a3b8" />
+  <circle cx="77" cy="455" r="7" fill="#cbd5e1" />
+  <rect x="120" y="460" width="35" height="20" fill="#94a3b8" />
+  <circle cx="137" cy="455" r="7" fill="#cbd5e1" />
+  <rect x="230" y="460" width="35" height="20" fill="#94a3b8" />
+  <circle cx="247" cy="455" r="7" fill="#cbd5e1" />
+
+  <!-- Left Foreground House with 'Golden Shell' Wall -->
+  <polygon points="120,680 430,680 430,950 120,950" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="140" y="850" width="100" height="60" fill="#64748b" opacity="0.3" />
+  <text x="145" y="930" font-family="sans-serif" font-size="12" font-weight="bold" fill="#78716c">Golden Shell</text>
+
+  <!-- Mature Mediterranean Palm Trees on Left -->
+  <g fill="#166534">
+    <ellipse cx="460" cy="580" rx="35" ry="60" />
+    <ellipse cx="490" cy="740" rx="55" ry="70" fill="#15803d" />
+    <ellipse cx="320" cy="840" rx="60" ry="75" fill="#14532d" />
+  </g>
+
+  <!-- RIGHT NEIGHBORING BUILDINGS -->
+  <!-- Milonia Court Warm Ochre Building with Balconies -->
+  <polygon points="980,440 1420,440 1420,920 980,920" fill="#fef08a" opacity="0.85" />
+  <polygon points="980,440 1100,410 1100,850 980,850" fill="#fed7aa" />
+  <!-- Balcony Rows & Red Awning -->
+  <g fill="#475569">
+    <rect x="1120" y="490" width="100" height="40" />
+    <rect x="1250" y="490" width="100" height="40" />
+    <rect x="1120" y="580" width="100" height="40" />
+    <rect x="1250" y="580" width="100" height="40" />
+    <rect x="1120" y="670" width="100" height="40" />
+    <rect x="1250" y="670" width="100" height="40" />
+    <rect x="1120" y="760" width="100" height="40" />
+    <rect x="1250" y="760" width="100" height="40" />
+  </g>
+  <!-- Red Terracotta Ground Awning on Right -->
+  <polygon points="1100,860 1420,860 1420,875 1100,875" fill="#dc2626" opacity="0.8" />
+  <!-- Solar Water Heaters on Right Roof -->
+  <rect x="1080" y="380" width="40" height="30" fill="#cbd5e1" />
+  <rect x="1160" y="380" width="40" height="30" fill="#cbd5e1" />
+  <rect x="1240" y="380" width="40" height="30" fill="#cbd5e1" />
+
+  <!-- Far Right Modern Minimalist White Residences -->
+  <polygon points="1400,430 1600,430 1600,850 1400,850" fill="#ffffff" />
+  <g fill="#334155">
+    <rect x="1440" y="480" width="80" height="50" />
+    <rect x="1440" y="570" width="80" height="50" />
+    <rect x="1440" y="660" width="80" height="50" />
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- CENTERPIECE: GERMASOGEIA CORPORATE PRIME (FRONT SHOT) -->
+  <!-- ==================================================== -->
+
+  <!-- Rooftop Lift Shaft Core Structure -->
+  <rect x="650" y="250" width="280" height="75" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="680" y="265" width="220" height="40" fill="#cbd5e1" opacity="0.5" />
+
+  <!-- Top Crown Cantilevered Slab Overhang -->
+  <polygon points="570,325 1010,325 1010,345 570,345" fill="url(#concrete0389)" />
+  <rect x="580" y="345" width="420" height="10" fill="#94a3b8" />
+
+  <!-- 4TH FLOOR (Top Level) -->
+  <rect x="600" y="355" width="380" height="105" fill="url(#glass0389)" stroke="#0f172a" stroke-width="2" />
+  <!-- Symmetrical Vertical Mullions -->
+  <g stroke="#0f172a" stroke-width="3">
+    <line x1="645" y1="355" x2="645" y2="460" />
+    <line x1="695" y1="355" x2="695" y2="460" />
+    <line x1="745" y1="355" x2="745" y2="460" />
+    <line x1="790" y1="355" x2="790" y2="460" stroke-width="6" stroke="#94a3b8" />
+    <line x1="835" y1="355" x2="835" y2="460" />
+    <line x1="885" y1="355" x2="885" y2="460" />
+    <line x1="935" y1="355" x2="935" y2="460" />
+  </g>
+  <!-- Floor 4 Cantilever Fin Slab -->
+  <polygon points="570,460 1010,460 1010,475 570,475" fill="url(#concrete0389)" />
+
+  <!-- 3RD FLOOR -->
+  <rect x="600" y="475" width="380" height="105" fill="url(#glass0389)" stroke="#0f172a" stroke-width="2" />
+  <g stroke="#0f172a" stroke-width="3">
+    <line x1="645" y1="475" x2="645" y2="580" />
+    <line x1="695" y1="475" x2="695" y2="580" />
+    <line x1="745" y1="475" x2="745" y2="580" />
+    <line x1="790" y1="475" x2="790" y2="580" stroke-width="6" stroke="#94a3b8" />
+    <line x1="835" y1="475" x2="835" y2="580" />
+    <line x1="885" y1="475" x2="885" y2="580" />
+    <line x1="935" y1="475" x2="935" y2="580" />
+  </g>
+  <!-- Floor 3 Cantilever Fin Slab -->
+  <polygon points="570,580 1010,580 1010,595 570,595" fill="url(#concrete0389)" />
+
+  <!-- 2ND FLOOR -->
+  <rect x="600" y="595" width="380" height="105" fill="url(#glass0389)" stroke="#0f172a" stroke-width="2" />
+  <g stroke="#0f172a" stroke-width="3">
+    <line x1="645" y1="595" x2="645" y2="700" />
+    <line x1="695" y1="595" x2="695" y2="700" />
+    <line x1="745" y1="595" x2="745" y2="700" />
+    <line x1="790" y1="595" x2="790" y2="700" stroke-width="6" stroke="#94a3b8" />
+    <line x1="835" y1="595" x2="835" y2="700" />
+    <line x1="885" y1="595" x2="885" y2="700" />
+    <line x1="935" y1="595" x2="935" y2="700" />
+  </g>
+  <!-- Floor 2 Cantilever Fin Slab -->
+  <polygon points="570,700 1010,700 1010,715 570,715" fill="url(#concrete0389)" />
+
+  <!-- 1ST FLOOR (Mezzanine Glazing) -->
+  <rect x="600" y="715" width="380" height="100" fill="url(#glass0389)" stroke="#0f172a" stroke-width="2" />
+  <g stroke="#0f172a" stroke-width="3">
+    <line x1="645" y1="715" x2="645" y2="815" />
+    <line x1="695" y1="715" x2="695" y2="815" />
+    <line x1="745" y1="715" x2="745" y2="815" />
+    <line x1="790" y1="715" x2="790" y2="815" stroke-width="6" stroke="#94a3b8" />
+    <line x1="835" y1="715" x2="835" y2="815" />
+    <line x1="885" y1="715" x2="885" y2="815" />
+    <line x1="935" y1="715" x2="935" y2="815" />
+  </g>
+  <!-- Floor 1 Lower Main Slab -->
+  <polygon points="550,815 1030,815 1030,830 550,830" fill="url(#concrete0389)" />
+
+  <!-- GROUND FLOOR: Concrete Support Columns & Marble Cladding Entrance Base -->
+  <rect x="580" y="830" width="420" height="145" fill="url(#marble0389)" />
+  <!-- Concrete Columns in Pilotis Void -->
+  <rect x="605" y="830" width="25" height="145" fill="#94a3b8" />
+  <rect x="740" y="830" width="25" height="145" fill="#94a3b8" />
+  <rect x="880" y="830" width="25" height="145" fill="#94a3b8" />
+  <!-- Polished Marble Entrance Block on Right -->
+  <polygon points="780,875 990,875 990,975 780,975" fill="#0f172a" stroke="#334155" stroke-width="2" />
+  <!-- White Marble Veins -->
+  <path d="M 800,890 L 860,940 L 920,930 L 980,970" fill="none" stroke="#64748b" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Construction Scaffolding / Hoist Platform on Left -->
+  <rect x="575" y="875" width="28" height="90" fill="#475569" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- Street, Curb & Pavement (Bottom) -->
+  <polygon points="0,960 1600,960 1600,1000 0,1000" fill="#334155" />
+  
+  <!-- Overlay Watermark Tag -->
+  <rect x="36" y="36" width="370" height="42" fill="#090d16" opacity="0.85" rx="4" />
+  <text x="52" y="63" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#10b981" letter-spacing="1.5">
+    FRONT ARCHITECTURAL ELEVATION
+  </text>
+</svg>
