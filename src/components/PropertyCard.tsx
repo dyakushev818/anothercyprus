@@ -17,11 +17,14 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onInquire,
 }) => {
   const isCommercial = property.type === 'Commercial';
+  const landingSlug = property.id === 'dasoudi-coastal-penthouses'
+    ? 'dasoudi-coastal-residences'
+    : property.id;
 
   return (
     <div
       className="group bg-white border border-[#E5E5DC] hover:border-[#C29B61] shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden"
-      id={`property-card-${property.id}`}
+      id={property.id}
     >
       {/* Image Container */}
       <div className="relative aspect-[16/10] overflow-hidden bg-[#F3F3EE] cursor-pointer" onClick={() => onSelect(property)}>
@@ -71,9 +74,11 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
       {/* Content Body */}
       <div className="p-6 flex flex-col flex-grow">
         {/* Title and Tagline */}
-        <div className="cursor-pointer" onClick={() => onSelect(property)}>
+        <div>
           <h3 className="font-serif text-xl font-bold text-[#1A365D] italic group-hover:text-[#132A4B] transition-colors line-clamp-1">
-            {property.title}
+            <a href={`/properties/${landingSlug}/`} className="hover:underline underline-offset-4">
+              {property.title}
+            </a>
           </h3>
           <p className="mt-1.5 text-xs text-[#666666] font-light line-clamp-2 leading-relaxed">
             {property.tagline}

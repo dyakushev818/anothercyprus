@@ -13,17 +13,20 @@
     <meta property="og:url" content="https://anothercyprus.com/" />
     <meta property="og:title" content="Limassol Property Direct from Developer | Another Cyprus" />
     <meta property="og:description" content="Selected commercial property, apartments and villas in Limassol with direct developer enquiries." />
-    <meta property="og:image" content="https://anothercyprus.com/images/commercial/all1.jpg" />
+    <meta property="og:image" content="https://anothercyprus.com/images/commercial/al1.jpg" />
+    <meta property="og:image:width" content="2048" />
+    <meta property="og:image:height" content="1152" />
     <meta property="og:image:alt" content="Modern commercial property development in Limassol, Cyprus" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="ru_RU" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Limassol Property Direct from Developer | Another Cyprus" />
     <meta name="twitter:description" content="Selected commercial property, apartments and villas in Limassol with direct developer enquiries." />
-    <meta name="twitter:image" content="https://anothercyprus.com/images/commercial/all1.jpg" />
+    <meta name="twitter:image" content="https://anothercyprus.com/images/commercial/al1.jpg" />
     <meta name="twitter:image:alt" content="Modern commercial property development in Limassol, Cyprus" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="/images/commercial/al1.jpg" fetchpriority="high" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <script type="application/ld+json">
     {
@@ -52,11 +55,43 @@
           "name": "Selected Limassol developments",
           "numberOfItems": 4,
           "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Germasogeia Corporate Prime", "url": "https://anothercyprus.com/#flagship-projects"},
-            {"@type": "ListItem", "position": 2, "name": "Athanasios Skyline Suites", "url": "https://anothercyprus.com/#flagship-projects"},
-            {"@type": "ListItem", "position": 3, "name": "The Tychonas Sanctuary Villas", "url": "https://anothercyprus.com/#flagship-projects"},
-            {"@type": "ListItem", "position": 4, "name": "OLiO Residences — Dasoudi Coastal Suites", "url": "https://anothercyprus.com/#flagship-projects"}
+            {"@type": "ListItem", "position": 1, "name": "Germasogeia Corporate Prime", "url": "https://anothercyprus.com/#germasogeia-corporate-prime"},
+            {"@type": "ListItem", "position": 2, "name": "Athanasios Skyline Suites", "url": "https://anothercyprus.com/#athanasios-skyline-suites"},
+            {"@type": "ListItem", "position": 3, "name": "The Tychonas Sanctuary Villas", "url": "https://anothercyprus.com/#tychonas-sanctuary-villas"},
+            {"@type": "ListItem", "position": 4, "name": "OLiO Residences — Dasoudi Coastal Suites", "url": "https://anothercyprus.com/#dasoudi-coastal-penthouses"}
           ]
+        },
+        {
+          "@type": "CommercialRealEstate",
+          "@id": "https://anothercyprus.com/#germasogeia-corporate-prime",
+          "name": "Germasogeia Corporate Prime",
+          "image": "https://anothercyprus.com/images/commercial/al1.jpg",
+          "address": {"@type": "PostalAddress", "addressLocality": "Potamos Germasogeias", "addressRegion": "Limassol", "addressCountry": "CY"},
+          "offers": {"@type": "Offer", "price": "8700000", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://anothercyprus.com/#germasogeia-corporate-prime"}
+        },
+        {
+          "@type": "ApartmentComplex",
+          "@id": "https://anothercyprus.com/#athanasios-skyline-suites",
+          "name": "Athanasios Skyline Suites",
+          "image": "https://anothercyprus.com/images/athanasios/athanasios-1.jpg",
+          "address": {"@type": "PostalAddress", "addressLocality": "Agios Athanasios", "addressRegion": "Limassol", "addressCountry": "CY"},
+          "offers": {"@type": "AggregateOffer", "lowPrice": "480000", "priceCurrency": "EUR", "offerCount": "1", "url": "https://anothercyprus.com/#athanasios-skyline-suites"}
+        },
+        {
+          "@type": "SingleFamilyResidence",
+          "@id": "https://anothercyprus.com/#tychonas-sanctuary-villas",
+          "name": "The Tychonas Sanctuary Villas",
+          "image": "https://anothercyprus.com/images/villas/tychonass-villa-1.jpg",
+          "address": {"@type": "PostalAddress", "addressLocality": "Agios Tychonas", "addressRegion": "Limassol", "addressCountry": "CY"},
+          "offers": {"@type": "AggregateOffer", "lowPrice": "1430000", "highPrice": "1880000", "priceCurrency": "EUR", "url": "https://anothercyprus.com/#tychonas-sanctuary-villas"}
+        },
+        {
+          "@type": "ApartmentComplex",
+          "@id": "https://anothercyprus.com/#dasoudi-coastal-penthouses",
+          "name": "OLiO Residences — Dasoudi Coastal Suites",
+          "image": "https://anothercyprus.com/images/dasoudi/dasoudi-1.jpg",
+          "address": {"@type": "PostalAddress", "addressLocality": "Potamos Germasogeias", "addressRegion": "Limassol", "addressCountry": "CY"},
+          "offers": {"@type": "AggregateOffer", "lowPrice": "475000", "priceCurrency": "EUR", "url": "https://anothercyprus.com/#dasoudi-coastal-penthouses"}
         }
       ]
     }

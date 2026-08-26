@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Currency } from '../types';
 import { Phone, MessageCircle, Menu, X, Globe, Building2, Mail, ShieldCheck } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface NavbarProps {
   currency: Currency;
@@ -14,6 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenInquiry,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   return (
     <header className="sticky top-0 z-40 bg-[#F9F9F6]/95 backdrop-blur-md border-b border-[#E5E5DC] text-[#2C2C2C] transition-all duration-300">
@@ -32,6 +34,21 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="flex items-center gap-4">
+            <div className="inline-flex border border-[#D4D4C8] bg-white p-0.5" aria-label="Language selector">
+              {(['en', 'ru'] as const).map((option) => (
+                <button
+                  key={option}
+                  type="button"
+                  onClick={() => setLanguage(option)}
+                  className={`px-2 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors ${
+                    language === option ? 'bg-[#1A365D] text-white' : 'text-[#1A365D] hover:bg-[#F3F3EE]'
+                  }`}
+                  aria-pressed={language === option}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
             <button
               onClick={() => onOpenInquiry('Direct Developer Desk')}
               className="inline-flex items-center gap-1.5 text-[#1A365D] hover:text-[#C29B61] transition-colors uppercase tracking-[0.15em] text-[10px] font-mono cursor-pointer font-semibold"
