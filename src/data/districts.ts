@@ -46,7 +46,7 @@ export const DISTRICTS: DistrictInfo[] = [
       'Panoramic hillside valley & sea horizon vistas in low-density enclave',
       'Moments from 5-star Four Seasons Hotel, Amathus coastline & yacht marinas',
       'Detached villas with private swimming pools, photovoltaic solar & turnkey furnishing',
-      'Guaranteed clean freehold title deeds with 0% buyer commission',
+      'Stated 0% buyer commission; title and contract terms require independent verification',
     ],
   },
 ];
@@ -55,19 +55,19 @@ export const CYPRUS_BENEFITS = [
   {
     title: '0% Buyer Commission (Direct Developer Terms)',
     description:
-      'Acquire directly from the master developer with zero intermediary commissions, transparent contract terms, guaranteed delivery schedules, and direct developer pricing.',
+      'Enquire directly about developer terms and stated buyer-commission arrangements. Pricing, delivery dates, and contract protections should be verified for the specific property.',
     badge: 'Direct Savings',
   },
   {
     title: 'Permanent Residency (Fast-Track Category 6.2)',
     description:
-      'Secure lifetime EU permanent residency status for the primary investor, spouse, and dependent children under Regulation 6.2 with property acquisition of €300,000+ (+ VAT). Expedited processing in 60-90 days.',
+      'Certain investments may support an application under Regulation 6.2, subject to current eligibility criteria, supporting documents, and official approval. Processing times vary.',
     badge: 'EU Residency',
   },
   {
     title: 'Cyprus Non-Dom Tax Regime (0% Dividend Tax)',
     description:
-      'Cyprus tax residents with Non-Domicile status benefit from 0% tax on worldwide dividends and passive interest for 17 consecutive years, plus 0% inheritance tax and 12.5% corporate tax rate.',
+      'Non-domicile treatment may provide relief from certain taxes for qualifying Cyprus tax residents. Eligibility, scope, and current rates require professional advice.',
     badge: 'Tax Optimization',
   },
   {

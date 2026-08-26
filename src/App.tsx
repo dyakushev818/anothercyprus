@@ -147,7 +147,7 @@ export default function App() {
               Curated Limassol Developments
             </h2>
             <p className="text-[#666666] text-xs sm:text-sm mt-1 font-light max-w-xl">
-              Direct developer terms with guaranteed clean freehold title deeds, prime strategic coordinates, and fast-track EU Permanent Residency (Category 6.2).
+              Direct developer terms in prime Limassol locations. Title, eligibility, and residency matters remain subject to independent legal verification and official approval.
             </p>
           </div>
 

@@ -438,7 +438,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                     Live Unit Inventory & Availability Matrix
                   </h3>
                   <p className="text-xs text-[#666666] font-light">
-                    Direct developer allocation with fast-track Cyprus PR (Category 6.2) eligibility.
+                    Direct developer enquiry. Any Cyprus PR (Category 6.2) eligibility is subject to current criteria and official approval.
                   </p>
                 </div>
                 <span className="text-xs font-mono text-[#1A365D] font-bold bg-[#FBF8F2] border border-[#C29B61] px-3 py-1">

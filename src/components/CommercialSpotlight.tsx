@@ -145,7 +145,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
                   <span className="text-2xl sm:text-3xl font-serif text-white font-bold">
                     {formatPrice(allegroProperty.priceEUR, currency)}
                   </span>
-                  <span className="text-xs text-[#E5E5DC] block">+ VAT • Guaranteed Clean Title Deeds</span>
+                  <span className="text-xs text-[#E5E5DC] block">+ VAT • Independent Title Verification Required</span>
                 </div>
 
                 <span className="text-xs text-[#1A365D] bg-white/95 px-3 py-1.5 border border-[#E5E5DC] flex items-center gap-1.5 group-hover:bg-white transition-colors font-bold shadow-xs">

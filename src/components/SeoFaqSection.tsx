@@ -24,19 +24,19 @@ const FAQS: FaqItem[] = [
     category: 'Residency',
     question: 'How do the developments qualify for Fast-Track Cyprus Permanent Residency (Category 6.2)?',
     answer:
-      'Under Cyprus Immigration Regulation 6(2), non-EU nationals purchasing new residential or commercial real estate in Cyprus with a contract value of at least €300,000 (+ VAT) directly from an approved master developer qualify for lifetime EU Permanent Residency for the investor, their spouse, and dependent children up to 25 years old. All flagship developments in this portfolio meet and exceed these criteria.',
+      'Certain qualifying investments may support an application under Cyprus Immigration Regulation 6(2). Eligibility depends on the current rules, the property and source-of-funds documentation, and approval by the competent authorities. Obtain independent immigration and legal advice before relying on a property for residency purposes.',
   },
   {
     category: 'Tax',
     question: 'What are the main tax benefits of owning real estate and operating a business in Cyprus?',
     answer:
-      'Cyprus provides one of Europe’s most competitive fiscal regimes: 12.5% corporate tax rate, 0% inheritance tax, 0% immovable property tax, 0% withholding tax on dividend distributions to non-domiciled tax residents, and an IP Box regime offering effective tax rates as low as 2.5% on qualifying intellectual property revenues.',
+      'Cyprus tax treatment depends on current law, residence and domicile status, income type, qualifying activity, and individual or company circumstances. Confirm applicable corporate, dividend, property, and IP Box treatment with a qualified Cyprus tax adviser.',
   },
   {
     category: 'Acquisition',
     question: 'How are purchases structured and is there any broker commission?',
     answer:
-      'Purchases are structured directly with the master building team with 0% buyer commission and no intermediary markups. Every acquisition includes guaranteed clean freehold title deeds, escrow milestone safeguards, and comprehensive EU building code warranties. Inquiries and viewing requests are handled directly via the official inquiry portal and WhatsApp hotline.',
+      'Purchases can be discussed directly with the development team with no buyer commission stated by this portal. Title, contract protections, warranties, pricing, and any escrow arrangements must be independently verified for the specific transaction. Inquiries and viewing requests are handled through the inquiry portal and WhatsApp contact.',
   },
 ];
 

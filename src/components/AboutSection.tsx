@@ -19,7 +19,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenInquiry }) => 
     },
     {
       title: 'Fast-Track PR & Tax Optimization',
-      desc: 'Seamless qualification for Cyprus Permanent Residency (Regulation 6.2) for the entire family, coupled with 0% Non-Dom dividend tax advantages.',
+      desc: 'Residency and tax planning may be available to qualifying applicants, subject to current rules, official approval, and professional advice.',
       icon: ShieldCheck,
     },
     {
@@ -46,7 +46,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenInquiry }) => 
 
             <p className="text-[#555555] text-sm sm:text-base leading-relaxed font-light">
               <strong className="text-[#1A365D] font-bold uppercase tracking-wider text-xs block mb-1">ANOTHER CYPRUS (anothercyprus.com)</strong>
-              A dedicated digital portal presenting flagship developments in Limassol with zero buyer commissions, direct developer pricing, and guaranteed clean freehold title deeds.
+              A dedicated portal presenting selected Limassol developments with direct-developer enquiries. Buyers should independently verify pricing, title, and contract terms.
             </p>
 
             <p className="text-[#666666] text-xs sm:text-sm leading-relaxed font-light">

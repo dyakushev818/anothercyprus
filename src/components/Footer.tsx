@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
               Ready to acquire directly in Limassol?
             </h3>
             <p className="text-xs sm:text-sm text-[#E5E5DC]/80 mt-2 max-w-xl font-light">
-              Schedule a private on-site inspection or request full architectural CAD blueprints, financial dossiers, and legal guarantees.
+              Schedule a private on-site inspection or request available architectural drawings, financial information, and legal documentation.
             </p>
           </div>
 

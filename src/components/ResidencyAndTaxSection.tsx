@@ -29,7 +29,7 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
     {
       num: '04',
       title: 'PR Application & Biometrics',
-      desc: 'Direct submission of fast-track PR dossier to Civil Registry and Migration Department. Biometrics collected; permanent biometric residency cards issued.',
+      desc: 'An independent adviser may prepare and submit an application dossier. Biometrics and any permit are handled by the competent authorities, subject to approval.',
       icon: UserCheck,
     },
   ];
@@ -83,13 +83,13 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
                 Cyprus Permanent Residency Requirements
               </h3>
               <p className="text-[#666666] text-sm sm:text-base font-light leading-relaxed">
-                By investing €300,000 (+ VAT) in a brand-new residential property in Limassol, investors and their families gain unconditional permanent residency in an EU member state.
+                Certain investments may support an application under Cyprus Regulation 6(2), subject to current eligibility criteria, documentation, and approval by the competent authorities.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
-                  <span>Valid for life (no renewal tests)</span>
+                  <span>Long-term status subject to current rules and ongoing conditions</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
@@ -97,11 +97,11 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
-                  <span>No minimum stay (1 visit every 2 yrs)</span>
+                  <span>Physical-presence requirements depend on current rules</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
-                  <span>Fast processing time (approx. 2-3 months)</span>
+                  <span>Processing times are determined by the authorities</span>
                 </div>
               </div>
             </div>

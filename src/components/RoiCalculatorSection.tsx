@@ -23,6 +23,11 @@ export const RoiCalculatorSection: React.FC<RoiCalculatorSectionProps> = ({
   const growthInputId = useId();
   const mgmtInputId = useId();
 
+  const priceMinEUR = 300000;
+  const priceStepEUR = 25000;
+  const priceMaxEUR = Math.max(5000000, Math.ceil(initialPriceEUR / 250000) * 250000);
+  const priceMidEUR = Math.round(((priceMinEUR + priceMaxEUR) / 2) / priceStepEUR) * priceStepEUR;
+
   // Calculations based on Limassol market benchmarks
   // Long-term average gross: 7.8% | Short-term average gross: 9.5%
   const grossYieldPct = strategy === 'longterm' ? 7.6 : 9.8;
@@ -82,17 +87,17 @@ export const RoiCalculatorSection: React.FC<RoiCalculatorSectionProps> = ({
               <input
                 id={priceInputId}
                 type="range"
-                min="300000"
-                max="5000000"
-                step="25000"
+                min={priceMinEUR}
+                max={priceMaxEUR}
+                step={priceStepEUR}
                 value={propertyPrice}
                 onChange={(e) => setPropertyPrice(Number(e.target.value))}
                 className="w-full h-1.5 bg-[#E5E5DC] rounded-none appearance-none cursor-pointer accent-[#1A365D]"
               />
               <div className="flex justify-between text-[10px] text-[#8A8A8A] font-light">
-                <span>€300k (PR Min)</span>
-                <span>€2.5M</span>
-                <span>€5M+ Trophy</span>
+                <span>{formatPrice(priceMinEUR, currency)}</span>
+                <span>{formatPrice(priceMidEUR, currency)}</span>
+                <span>{formatPrice(priceMaxEUR, currency)}</span>
               </div>
             </div>
 
@@ -244,7 +249,7 @@ export const RoiCalculatorSection: React.FC<RoiCalculatorSectionProps> = ({
             <div className="p-3.5 bg-[#FBF8F2] border border-[#C29B61]/40 text-xs text-[#2C2C2C] flex items-start gap-2.5 font-light">
               <ShieldCheck className="w-4 h-4 text-[#C29B61] flex-shrink-0 mt-0.5" />
               <span>
-                <strong className="text-[#1A365D] font-bold">Cyprus Non-Dom Advantage:</strong> Foreign investors qualifying for Cyprus Non-Domicile tax residency pay <strong className="text-[#1A365D] font-bold">0% tax on worldwide rental dividends</strong>.
+                <strong className="text-[#1A365D] font-bold">Cyprus tax note:</strong> Tax treatment depends on residence, domicile, income type, and personal circumstances. Obtain current advice from a qualified Cyprus tax professional.
               </span>
             </div>
 

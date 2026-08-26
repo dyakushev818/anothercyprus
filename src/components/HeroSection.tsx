@@ -148,7 +148,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="p-4 bg-white border border-[#E5E5DC] shadow-xs">
             <span className="text-[10px] text-[#8A8A8A] uppercase tracking-widest block font-mono">Immigration Fast-Track</span>
             <span className="text-lg font-serif text-[#1A365D] font-bold block mt-0.5">EU PR Cat 6.2</span>
-            <span className="text-[11px] text-[#666666] font-light">Lifetime Residency for Family</span>
+            <span className="text-[11px] text-[#666666] font-light">Subject to Current Rules & Approval</span>
           </div>
 
           <div className="p-4 bg-white border border-[#E5E5DC] shadow-xs">

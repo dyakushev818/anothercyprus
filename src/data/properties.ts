@@ -43,12 +43,12 @@ export const PROPERTIES: Property[] = [
       'High-Speed 750kg 10-Passenger Elevator with Italian Porcelain Lobby Finishes',
     ],
     description:
-      'Germasogeia Corporate Prime is a landmark, institutional-grade commercial office development situated in the high-demand Potamos Germasogeias business district of Limassol, just 400 meters from the Mediterranean coastline. Designed for blue-chip multinational headquarters, fintech enterprises, and private equity funds, this 1,934 m² architectural gem features four full-floor open-plan office levels, an executive intermediate level, grand double-height reception lobby, 18 parking bays, and a private rooftop garden retreat. Offered directly with 0% broker commission and clear freehold title guarantees.',
+      'Germasogeia Corporate Prime is a landmark commercial office development in Potamos Germasogeias, Limassol, approximately 400 meters from the coastline. The 1,934 m² scheme includes four full-floor open-plan office levels, an executive intermediate level, a double-height reception lobby, 18 parking bays, and a rooftop garden. Offered through a direct enquiry with a stated 0% broker commission; title and contract terms require independent verification.',
     highlights: [
       'Prime coastal business location 400m from Dasoudi beach, walking distance to banks, gourmet restaurants and amenities',
       'Institutional whole-building asset with €588,000 projected annual gross rental revenue',
       'Includes 23 kW solar array, 31mm encapsulated raised flooring, IP surveillance, smart access control and complimentary space planning',
-      'Guaranteed delivery in June 2026 with full EU construction compliance and Class A+ energy rating',
+      'Target delivery June 2026; construction compliance and energy rating should be confirmed in the final project documentation',
     ],
     specifications: {
       pool: 'Panoramic 161 m² Rooftop Garden with Outdoor Lounge & Fitness Zone',
@@ -210,8 +210,8 @@ export const PROPERTIES: Property[] = [
     features: [
       'Unobstructed Panoramic Sea & Limassol Skyline Views',
       '0% Buyer Commission • Direct Developer Purchase Terms',
-      '100% Eligible for Fast-Track Cyprus Permanent Residency (Category 6.2)',
-      'Delivery January 2027 with Guaranteed Clean Freehold Title Deeds',
+      'May support a Regulation 6(2) application, subject to current criteria and official approval',
+      'Target delivery January 2027; title status requires independent legal verification',
       '3 Minutes to Highway (Rapid connection to Nicosia, Larnaca & Paphos)',
       '10 Minutes to Limassol Seafront Beaches, Promenade & Marina',
       '3 Minutes to Supermarkets, Banks, Pharmacies & Foley’s International School',
@@ -223,7 +223,7 @@ export const PROPERTIES: Property[] = [
       'Perched in the prestigious elevated hills of Agios Athanasios, Limassol, Athanasios Skyline Suites offers a boutique collection of luxury two-bedroom residences commanding breathtaking, completely unobstructed views across the Mediterranean Sea and Limassol skyline. Featuring low-density architecture, deep sun-sheltered verandas, European porcelain tiles, and rapid connectivity to Foley’s School and the city center, this development represents an ideal balance of tranquil family living, fast-track EU residency qualification, and high passive rental returns.',
     highlights: [
       'Available 2-bedroom units on the elevated floor (Flat 201 & Flat 203) priced at €480,000 + VAT',
-      'Directly qualifies foreign investors for Fast-Track Cyprus Permanent Residency (Regulation 6.2)',
+      'May be considered for a Regulation 6(2) application, subject to current criteria and official approval',
       'Projected 8.6% net rental yield driven by corporate expatriate and tech relocations in Limassol',
       'Includes private covered parking bay and ground-floor secure lock-up storage room for each residence',
     ],
@@ -366,13 +366,13 @@ export const PROPERTIES: Property[] = [
       'MUSKITA MU114 Lift & Slide Thermal Aluminium Window Systems',
     ],
     description:
-      'The Tychonas Sanctuary Villas is a private boutique enclave of luxury detached residences situated in the prestigious hillside enclave of Agios Tychonas, Limassol. Located just moments from the 5-star Four Seasons Hotel, Amathus coastline, and pristine sandy beaches, each villa is delivered complete with a comprehensive All-Inclusive Turnkey Package — including curated designer furniture, European appliances, rooftop photovoltaic solar panels, underfloor heating, private pool, and mature landscaping. Eligible for fast-track EU Permanent Residency with 0% buyer commission.',
+      'The Tychonas Sanctuary Villas is a private boutique enclave of luxury detached residences in Agios Tychonas, Limassol. Located near the Four Seasons Hotel and Amathus coastline, each villa is offered with a turnkey package including furniture, appliances, photovoltaic panels, underfloor heating, a private pool, and landscaping. A residency application may be possible subject to current criteria and official approval; the portal states 0% buyer commission.',
     highlights: [
       'Prime Agios Tychonas location near Four Seasons Hotel and Amathus seafront',
       'All-Inclusive Package: Designer furniture, European appliances, VRV A/C, and underfloor heating included in base price',
       'Private swimming pools (32 m² to 36 m²) with sun pergolas, landscaped gardens and BBQ entertaining zones',
       'Villas Available: Villa with private Gym & Maid Room at €1.88M, Villa at €1.43M, and Villa at €1.54M',
-      'Delivery July 2027 with guaranteed clean freehold title deeds and 0% buyer commission',
+      'Target delivery July 2027; title status, contract terms, and the stated 0% buyer commission require transaction-specific verification',
     ],
     specifications: {
       pool: 'Private 32 m² to 36 m² Skimmer Swimming Pool with Tiled Deck & Sun Loungers',
@@ -555,9 +555,9 @@ export const PROPERTIES: Property[] = [
     ],
     features: [
       '250 Meters Walk to Dasoudi Beach, Eucalyptus Coastal Park & Seaside Promenade',
-      '0% Buyer Commission • Direct Master Developer Sales & Guaranteed Clear Title Deeds',
+      'Stated 0% Buyer Commission • Direct Developer Enquiry • Independent Title Verification Required',
       '2+1 Flexible Floor Plans with Architect-Designed Option for 3rd Bedroom',
-      '100% Eligible for Fast-Track Cyprus Permanent Residency (Regulation 6.2)',
+      'Potential Regulation 6(2) application route, subject to current criteria and official approval',
       'Generous Front & Back Covered Verandas (up to 39 m² Total Veranda Area)',
       'Large Private Storage Rooms (up to 13 m²) & Private Allocated Covered Parking',
       'Photovoltaic Solar Net-Billing System & Class A+ Energy Efficiency',
@@ -566,13 +566,13 @@ export const PROPERTIES: Property[] = [
       'Prime Potamos Germasogeias Address — Walking Distance to Papas Supermarket, Banks & Cafes',
     ],
     description:
-      'Situated in the coveted Dasoudi coastal quarter of Potamos Germasogeias, Limassol, OLiO Residences is an exclusive boutique residential development located just 250 meters from the Mediterranean shoreline and the famous Dasoudi eucalyptus park. Comprising thoughtfully designed 2- and 3-bedroom residences, each home features expansive open-plan living spaces, floor-to-ceiling thermal double glazing, and generous dual front and back covered verandas. The upper floors (2nd & 3rd Floor) offer unique flexible 2+1 layouts with an integrated architectural provision to easily configure a full 3rd bedroom. Eligible for fast-track EU Permanent Residency with 0% buyer commission.',
+      'Situated in the Dasoudi coastal quarter of Potamos Germasogeias, Limassol, OLiO Residences is a boutique development approximately 250 meters from the shoreline and Dasoudi park. Its 2- and 3-bedroom residences include open-plan living spaces, thermal double glazing, and covered verandas. Upper floors offer flexible 2+1 layouts with provision for a third bedroom. A residency application may be possible subject to current criteria and official approval; the portal states 0% buyer commission.',
     highlights: [
       'Prime Potamos Germasogeias beachside address just 250m from Dasoudi waterfront & eucalyptus grove',
       'Available units on 2nd and 3rd floors starting from €475,000 + VAT (Direct Developer Price List)',
       'Dual veranda configuration: Front entertaining veranda (14–15 m²) + Back covered veranda (14–25 m²)',
       'High projected 8.2% annual net rental return in Limassol’s most sought-after expat & coastal quarter',
-      'Guaranteed clean freehold title deeds, 0% buyer commission, and direct developer purchase terms',
+      'Stated 0% buyer commission and direct developer terms; title and contract terms require independent verification',
     ],
     specifications: {
       pool: 'Landscaped communal garden perimeter with automated irrigation & security lighting',
