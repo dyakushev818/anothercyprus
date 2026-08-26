@@ -1,6 +1,6 @@
 import React, { useState, useId } from 'react';
 import { InquiryFormData } from '../types';
-import { X, Send, CheckCircle2, MessageCircle, Phone, Mail, Building2, Calendar, ShieldCheck, Copy, Check } from 'lucide-react';
+import { X, Send, CheckCircle2, MessageCircle, Mail, Building2, Calendar, ShieldCheck } from 'lucide-react';
 
 interface InquiryModalProps {
   isOpen: boolean;
@@ -323,7 +323,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   className="w-full py-4 bg-[#1A365D] hover:bg-[#132A4B] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-xs transition-all cursor-pointer"
                 >
                   <Send className="w-4 h-4 text-[#C29B61]" />
-                  <span>Send Direct Request to Master Developer</span>
+                  <span>Prepare Direct Request</span>
                 </button>
               </div>
 
@@ -333,7 +333,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   <span>0% Buyer Commission • Direct from Developer</span>
                 </div>
                 <div className="text-[#8A8A8A] font-mono text-[10px]">
-                  Confidential Transmission
+                  Opens your email app for final sending
                 </div>
               </div>
             </form>

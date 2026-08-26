@@ -15,6 +15,7 @@ type Copy = {
 
 type Page = {
   slug: string;
+  schemaPrice: number;
   image: string;
   gallery: string[];
   en: Copy;
@@ -24,6 +25,7 @@ type Page = {
 const pages: Page[] = [
   {
     slug: 'germasogeia-corporate-prime',
+    schemaPrice: 8700000,
     image: '/images/commercial/al1.jpg',
     gallery: ['/images/commercial/al1.jpg', '/images/commercial/al2.jpg', '/images/commercial/al3.jpg'],
     en: {
@@ -51,6 +53,7 @@ const pages: Page[] = [
   },
   {
     slug: 'athanasios-skyline-suites',
+    schemaPrice: 480000,
     image: '/images/athanasios/athanasios-1.jpg',
     gallery: ['/images/athanasios/athanasios-1.jpg', '/images/athanasios/athanasios-2.jpg', '/images/athanasios/athanasios-5.jpg'],
     en: {
@@ -78,6 +81,7 @@ const pages: Page[] = [
   },
   {
     slug: 'tychonas-sanctuary-villas',
+    schemaPrice: 1430000,
     image: '/images/villas/tychonass-villa-1.jpg',
     gallery: ['/images/villas/tychonass-villa-1.jpg', '/images/villas/tychonass-villa-2.jpg', '/images/villas/tychonass-villa-3.jpg'],
     en: {
@@ -105,6 +109,7 @@ const pages: Page[] = [
   },
   {
     slug: 'dasoudi-coastal-residences',
+    schemaPrice: 475000,
     image: '/images/dasoudi/dasoudi-1.jpg',
     gallery: ['/images/dasoudi/dasoudi-1.jpg', '/images/dasoudi/dasoudi-2.jpg', '/images/dasoudi/dasoudi-3.jpg'],
     en: {
@@ -132,7 +137,7 @@ const pages: Page[] = [
   },
 ];
 
-const css = `:root{font-family:Arial,sans-serif;color:#24334a;background:#f7f6f1}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1160px;margin:auto;padding:28px}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0}.brand{font-family:Georgia,serif;letter-spacing:.22em;font-weight:700}.langs a,.cta{display:inline-block;padding:12px 18px;border:1px solid #c8a36b;text-decoration:none;color:#17365d;font-weight:700}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:52px 0}.hero img{width:100%;height:520px;object-fit:cover}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:#9b7440;font-size:12px;font-weight:700}h1{font-family:Georgia,serif;font-size:52px;line-height:1.05;margin:18px 0}.summary{font-size:18px;line-height:1.65;color:#536070}.price{font-family:Georgia,serif;font-size:30px;margin:25px 0}.cta{background:#17365d;color:white;border-color:#17365d}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:36px 0}.fact,.audience{background:white;border:1px solid #dedbd1;padding:18px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:30px 0 60px}.gallery img{width:100%;height:260px;object-fit:cover}footer{border-top:1px solid #dedbd1;padding:25px 0;color:#6e747d}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:25px}.hero img{height:360px}h1{font-size:38px}.gallery{grid-template-columns:1fr}.facts{grid-template-columns:1fr}}`;
+const css = `:root{font-family:Arial,sans-serif;color:#24334a;background:#f7f6f1}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1160px;margin:auto;padding:28px}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0}.brand{font-family:Georgia,serif;letter-spacing:.22em;font-weight:700}.brand,.crumb{color:#17365d;text-decoration:none}.langs a,.cta{display:inline-block;padding:12px 18px;border:1px solid #c8a36b;text-decoration:none;color:#17365d;font-weight:700}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:32px 0 52px}.hero img{width:100%;height:520px;object-fit:cover}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:#9b7440;font-size:12px;font-weight:700}h1{font-family:Georgia,serif;font-size:52px;line-height:1.05;margin:18px 0}.summary{font-size:18px;line-height:1.65;color:#536070}.price{font-family:Georgia,serif;font-size:30px;margin:25px 0}.actions{display:flex;flex-wrap:wrap;gap:10px}.cta{background:#17365d;color:white;border-color:#17365d}.cta.secondary{background:transparent;color:#17365d;border-color:#c8a36b}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:36px 0}.fact,.audience{background:white;border:1px solid #dedbd1;padding:18px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:30px 0 60px}.gallery img{width:100%;height:260px;object-fit:cover}footer{border-top:1px solid #dedbd1;padding:25px 0;color:#6e747d}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:25px}.hero img{height:360px}h1{font-size:38px}.gallery{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.actions .cta{width:100%;text-align:center}}`;
 
 function render(page: Page, lang: 'en' | 'ru') {
   const copy = page[lang];
@@ -140,15 +145,21 @@ function render(page: Page, lang: 'en' | 'ru') {
   const base = lang === 'en' ? `/properties/${page.slug}/` : `/ru/properties/${page.slug}/`;
   const otherBase = other === 'en' ? `/properties/${page.slug}/` : `/ru/properties/${page.slug}/`;
   const canonical = `https://anothercyprus.com${base}`;
+  const labels = lang === 'ru'
+    ? { all: 'Все объекты', plans: 'Запросить планы и наличие', email: 'Написать email', call: 'Позвонить', footer: 'Прямой запрос по объектам · Покупателю следует независимо проверить цены, право собственности, спецификации и соответствие требованиям.' }
+    : { all: 'All developments', plans: 'Request plans and availability', email: 'Email enquiry', call: 'Call developer desk', footer: 'Direct developer enquiries · Buyers should independently verify pricing, title, specifications and eligibility.' };
+  const propertyType = page.slug.includes('corporate') ? 'CommercialRealEstate' : page.slug.includes('villas') ? 'SingleFamilyResidence' : 'ApartmentComplex';
   const schema = JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': page.slug.includes('corporate') ? 'CommercialRealEstate' : page.slug.includes('villas') ? 'SingleFamilyResidence' : 'ApartmentComplex',
+    '@type': propertyType,
     name: copy.title.split('|')[0].trim(),
     url: canonical,
     image: page.gallery.map((image) => `https://anothercyprus.com${image}`),
-    offers: { '@type': 'Offer', priceCurrency: 'EUR', url: canonical },
+    address: { '@type': 'PostalAddress', addressLocality: 'Limassol', addressCountry: 'CY' },
+    offers: { '@type': 'Offer', price: page.schemaPrice, priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: canonical },
   });
-  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${copy.title}</title><meta name="description" content="${copy.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="en" href="https://anothercyprus.com/properties/${page.slug}/"><link rel="alternate" hreflang="ru" href="https://anothercyprus.com/ru/properties/${page.slug}/"><link rel="alternate" hreflang="x-default" href="https://anothercyprus.com/properties/${page.slug}/"><meta property="og:type" content="website"><meta property="og:title" content="${copy.title}"><meta property="og:description" content="${copy.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${page.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}</style><script type="application/ld+json">${schema}</script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><div class="langs"><a href="${otherBase}">${other.toUpperCase()}</a></div></nav><section class="hero"><div><div class="eyebrow">${copy.eyebrow}</div><h1>${copy.headline}</h1><p class="summary">${copy.summary}</p><div class="price">${copy.price}</div><a class="cta" href="https://wa.me/35796373089?text=${encodeURIComponent(`${copy.title} — request plans and availability`)}">WhatsApp · +357 96 373089</a><div class="facts">${copy.facts.map((fact) => `<div class="fact">${fact}</div>`).join('')}</div><div class="audience"><strong>${copy.audience}</strong><p>${copy.audienceCopy}</p></div></div><img src="${page.image}" alt="${copy.headline}" width="1600" height="1000"></section><section class="gallery">${page.gallery.map((image) => `<img src="${image}" alt="${copy.headline}" loading="lazy">`).join('')}</section></main><footer><div class="wrap">Another Cyprus · Direct developer enquiries · Buyers should independently verify pricing, title, specifications and eligibility.</div></footer></body></html>`;
+  const breadcrumb = JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: labels.all, item: 'https://anothercyprus.com/' }, { '@type': 'ListItem', position: 2, name: copy.headline, item: canonical }] });
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${copy.title}</title><meta name="description" content="${copy.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="en" href="https://anothercyprus.com/properties/${page.slug}/"><link rel="alternate" hreflang="ru" href="https://anothercyprus.com/ru/properties/${page.slug}/"><link rel="alternate" hreflang="x-default" href="https://anothercyprus.com/properties/${page.slug}/"><meta property="og:type" content="website"><meta property="og:locale" content="${lang === 'ru' ? 'ru_RU' : 'en_GB'}"><meta property="og:title" content="${copy.title}"><meta property="og:description" content="${copy.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${page.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}</style><script type="application/ld+json">${schema}</script><script type="application/ld+json">${breadcrumb}</script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><div class="langs"><a href="${otherBase}">${other.toUpperCase()}</a></div></nav><a class="crumb" href="/${lang === 'ru' ? '?lang=ru#flagship-projects' : '#flagship-projects'}">← ${labels.all}</a><section class="hero"><div><div class="eyebrow">${copy.eyebrow}</div><h1>${copy.headline}</h1><p class="summary">${copy.summary}</p><div class="price">${copy.price}</div><div class="actions"><a class="cta" href="https://wa.me/35796373089?text=${encodeURIComponent(`${copy.title} — ${labels.plans}`)}">WhatsApp · +357 96 373089</a><a class="cta secondary" href="mailto:547469@gmail.com?subject=${encodeURIComponent(copy.title)}">${labels.email}</a><a class="cta secondary" href="tel:+35796373089">${labels.call}</a></div><div class="facts">${copy.facts.map((fact) => `<div class="fact">${fact}</div>`).join('')}</div><div class="audience"><strong>${copy.audience}</strong><p>${copy.audienceCopy}</p></div></div><img src="${page.image}" alt="${copy.headline}" width="1600" height="1000"></section><section class="gallery">${page.gallery.map((image) => `<img src="${image}" alt="${copy.headline}" loading="lazy" width="1600" height="1000">`).join('')}</section></main><footer><div class="wrap">Another Cyprus · ${labels.footer}</div></footer></body></html>`;
 }
 
 for (const page of pages) {
