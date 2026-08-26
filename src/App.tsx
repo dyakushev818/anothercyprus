@@ -9,7 +9,6 @@ import { PropertyDetailModal } from './components/PropertyDetailModal';
 import { PortfolioSearchFilter } from './components/PortfolioSearchFilter';
 import { DistrictExplorer } from './components/DistrictExplorer';
 import { ResidencyAndTaxSection } from './components/ResidencyAndTaxSection';
-import { RoiCalculatorSection } from './components/RoiCalculatorSection';
 import { SeoFaqSection } from './components/SeoFaqSection';
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
@@ -29,7 +28,6 @@ export default function App() {
   const [activePropertyModal, setActivePropertyModal] = useState<Property | null>(null);
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
   const [inquiryTopic, setInquiryTopic] = useState<string>('');
-  const [calculatorPriceEUR, setCalculatorPriceEUR] = useState<number>(8700000);
 
   const commercialPrimeProperty = PROPERTIES.find((p) => p.id === 'germasogeia-corporate-prime') || PROPERTIES[0];
 
@@ -212,12 +210,6 @@ export default function App() {
       {/* Cyprus Permanent Residency (Category 6.2) & Tax Guide */}
       <ResidencyAndTaxSection onOpenInquiry={handleOpenInquiry} />
 
-      {/* Interactive ROI & Rental Yield Calculator */}
-      <RoiCalculatorSection
-        initialPriceEUR={calculatorPriceEUR}
-        currency={currency}
-        onOpenInquiry={handleOpenInquiry}
-      />
 
       {/* Limassol Strategic Locations & Infrastructure */}
       <DistrictExplorer onSelectDistrict={(d) => {
@@ -263,12 +255,6 @@ export default function App() {
           currency={currency}
           onClose={() => setActivePropertyModal(null)}
           onInquire={(topic) => handleOpenInquiry(topic)}
-          onCalculateRoi={(price) => {
-            setCalculatorPriceEUR(price);
-            setActivePropertyModal(null);
-            const el = document.getElementById('calculator');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-          }}
         />
       )}
 
