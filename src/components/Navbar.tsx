@@ -91,9 +91,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <a href="#residency" className="hover:text-[#1A365D] transition-colors">
               PR & Taxes
             </a>
-            <a href="#calculator" className="hover:text-[#1A365D] transition-colors">
-              ROI Model
-            </a>
             <a href="#about" className="hover:text-[#1A365D] transition-colors">
               Direct Terms
             </a>
