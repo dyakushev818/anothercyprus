@@ -16,7 +16,7 @@ import { InquiryModal } from './components/InquiryModal';
 import { MessageCircle, Sparkles, Building2, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react';
 
 export default function App() {
-  const [currency, setCurrency] = useState<Currency>('EUR');
+  const currency: Currency = 'EUR';
 
   // Search & Filter states
   const [searchQuery, setSearchQuery] = useState('');
@@ -109,8 +109,6 @@ export default function App() {
     <div className="min-h-screen bg-[#F9F9F6] text-[#2C2C2C] flex flex-col selection:bg-[#1A365D] selection:text-white">
       {/* Top Navbar */}
       <Navbar
-        currency={currency}
-        onCurrencyChange={setCurrency}
         onOpenInquiry={handleOpenInquiry}
       />
 

@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
-import { Currency } from '../types';
-import { Phone, MessageCircle, Menu, X, Globe, Building2, Mail, ShieldCheck } from 'lucide-react';
+import { MessageCircle, Menu, X, Building2, Mail } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 interface NavbarProps {
-  currency: Currency;
-  onCurrencyChange: (c: Currency) => void;
   onOpenInquiry: (propertyTitle?: string) => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
-  currency,
-  onCurrencyChange,
   onOpenInquiry,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -66,20 +61,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
               <span>WhatsApp (+357 96 373089)</span>
             </a>
-            <span className="hidden sm:inline text-[#D4D4C8]">|</span>
-            <div className="flex items-center gap-1 text-[#2C2C2C]">
-              <Globe className="w-3.5 h-3.5 text-[#8A8A8A]" />
-              <select
-                aria-label="Select Currency"
-                value={currency}
-                onChange={(e) => onCurrencyChange(e.target.value as Currency)}
-                className="bg-transparent text-[#2C2C2C] border-none text-[11px] font-semibold tracking-wider focus:outline-none cursor-pointer uppercase font-mono"
-              >
-                <option value="EUR" className="bg-white text-[#2C2C2C]">EUR (€)</option>
-                <option value="USD" className="bg-white text-[#2C2C2C]">USD ($)</option>
-                <option value="GBP" className="bg-white text-[#2C2C2C]">GBP (£)</option>
-              </select>
-            </div>
           </div>
         </div>
       </div>
