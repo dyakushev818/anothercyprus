@@ -37,7 +37,6 @@ interface PropertyDetailModalProps {
   currency: Currency;
   onClose: () => void;
   onInquire: (propertyTitle: string) => void;
-  onCalculateRoi: (priceEUR: number) => void;
 }
 
 export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
@@ -45,7 +44,6 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
   currency,
   onClose,
   onInquire,
-  onCalculateRoi,
 }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [selectedUnit, setSelectedUnit] = useState<PropertyUnit | null>(
