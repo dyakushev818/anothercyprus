@@ -29,13 +29,14 @@ const RU: Record<string, string> = {
   'Prime Commercial &': 'Премиальная коммерческая',
   'Luxury Residential': 'и жилая недвижимость',
   'Developments in Limassol.': 'в Лимассоле.',
-  "An exclusive portfolio of institutional-grade commercial headquarters and luxury residential developments in Cyprus's fastest-growing Mediterranean economic hub. From a landmark": 'Эксклюзивная коллекция коммерческой и жилой недвижимости в одном из самых динамичных деловых центров Средиземноморья. От знакового',
+  'An exclusive portfolio of institutional-grade commercial headquarters and luxury residential developments in Limassol. From a landmark': 'Эксклюзивная коллекция коммерческой и жилой недвижимости в Лимассоле. От знакового',
   'Class-A Headquarters in Potamos Germasogeias (400m to sea)': 'офисного здания класса A в Потамос Гермасойя (400 м до моря)',
   'to panoramic': 'до панорамных',
   'Agios Athanasios sea-view residences': 'резиденций с видом на море в Агиос Атанасиос',
   'Agios Tychonas turnkey private pool villas': 'готовых вилл с бассейнами в Агиос Тихонас',
   'OLiO two-bedroom residences in Mesa Geitonia': 'двухспальных резиденций OLiO в Меса Гитония',
   and: 'и',
+  ', and': ', и',
   'Explore Flagship Developments': 'Смотреть ключевые проекты',
   'WhatsApp Direct (+357 96 373089)': 'Написать в WhatsApp (+357 96 373089)',
   'Direct Email Request': 'Запрос по email',
@@ -117,18 +118,26 @@ const TranslationLayer: React.FC<{ language: Language }> = ({ language }) => {
 
 export const LanguageProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() =>
-    new URLSearchParams(window.location.search).get('lang') === 'ru' ||
-    localStorage.getItem('anothercyprus-language') === 'ru' ? 'ru' : 'en',
+    window.location.pathname === '/ru' || window.location.pathname.startsWith('/ru/') ||
+    new URLSearchParams(window.location.search).get('lang') === 'ru' ? 'ru' : 'en',
   );
   const setLanguage = (next: Language) => {
-    localStorage.setItem('anothercyprus-language', next);
-    document.documentElement.lang = next;
-    const url = new URL(window.location.href);
-    if (next === 'ru') url.searchParams.set('lang', 'ru');
-    else url.searchParams.delete('lang');
-    window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`);
-    setLanguageState(next);
+    const target = next === 'ru' ? `/ru/${window.location.hash}` : `/${window.location.hash}`;
+    window.location.assign(target);
   };
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('lang') === 'ru' && !window.location.pathname.startsWith('/ru')) {
+      window.location.replace(`/ru/${window.location.hash}`);
+      return;
+    }
+    document.documentElement.lang = language;
+    const isRussian = language === 'ru';
+    const title = isRussian ? 'Недвижимость Лимассола напрямую от застройщика | Another Cyprus' : 'Limassol Property Direct from Developer | Another Cyprus';
+    const description = isRussian ? 'Коммерческая и жилая недвижимость в Лимассоле напрямую от застройщика. Цены, проекты и запрос актуального наличия.' : 'Explore selected commercial property, apartments and villas in Limassol. View project details and contact the developer directly about pricing and availability.';
+    document.title = title;
+    document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', isRussian ? 'https://anothercyprus.com/ru/' : 'https://anothercyprus.com/');
+  }, [language]);
   const value = useMemo(() => ({ language, setLanguage }), [language]);
   return (
     <LanguageContext.Provider value={value}>

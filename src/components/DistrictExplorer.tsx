@@ -13,7 +13,7 @@ export const DistrictExplorer: React.FC<DistrictExplorerProps> = ({ onSelectDist
   const currentDistrict = DISTRICTS.find((d) => d.name === selectedDistrictName) || DISTRICTS[0];
 
   return (
-    <section id="districts" className="py-20 sm:py-28 bg-[#F9F9F6] text-[#2C2C2C] border-t border-[#E5E5DC]">
+    <section id="districts" className="scroll-mt-32 py-20 sm:py-28 bg-[#F9F9F6] text-[#2C2C2C] border-t border-[#E5E5DC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
