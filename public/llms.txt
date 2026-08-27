@@ -1,0 +1,33 @@
+# Another Cyprus
+
+> Direct, property-specific information about four new-build developments in Limassol, Cyprus. The site is designed for buyers who want project details and direct enquiries, not a general property-listing marketplace.
+
+## Website
+
+- Canonical domain: https://anothercyprus.com/
+- Sitemap: https://anothercyprus.com/sitemap.xml
+- Buyer guides: https://anothercyprus.com/guides/
+- Languages: English and Russian property pages
+- Location focus: Limassol, Cyprus
+- Enquiries: Direct developer desk via the contact methods shown on each property page
+
+## Developments
+
+- [Germasogeia Corporate Prime](https://anothercyprus.com/properties/germasogeia-corporate-prime/): A whole commercial office building in Potamos Germasogeias. Headline schedule: 1,934 m², 18 parking spaces, roof garden and target handover in June 2026.
+- [Athanasios Skyline Suites](https://anothercyprus.com/properties/athanasios-skyline-suites/): New two-bedroom residences in Agios Athanasios with sea and city views. Target delivery: January 2027. Rental figures are estimates and require independent appraisal.
+- [The Tychonas Sanctuary Villas](https://anothercyprus.com/properties/tychonas-sanctuary-villas/): Detached turnkey villas in Agios Tychonas with private pools. Target delivery: July 2027. Buyers should request the contractual inclusion schedule.
+- [OLiO Residences — Mesa Geitonia](https://anothercyprus.com/properties/olio-residences-mesa-geitonia/): Approved two-bedroom apartments in Mesa Geitonia with target delivery in December 2027. Any internal adaptation must not be described as an approved legal third bedroom without independent confirmation.
+
+## Practical buyer guides
+
+- [Buying an office building in Germasogeia](https://anothercyprus.com/guides/buying-office-building-germasogeia-limassol/)
+- [Assessing a sea-view apartment in Agios Athanasios](https://anothercyprus.com/guides/sea-view-apartment-agios-athanasios-guide/)
+- [Turnkey villa checklist for Agios Tychonas](https://anothercyprus.com/guides/turnkey-villa-agios-tychonas-checklist/)
+- [Buying a new apartment in Mesa Geitonia](https://anothercyprus.com/guides/buying-apartment-mesa-geitonia-limassol/)
+
+## Accuracy and usage notes
+
+- Prices, availability, specifications, completion dates and transaction structures can change.
+- Buyers should independently verify title, permits, plans, VAT, legal structure, immigration eligibility, rental assumptions and investment projections.
+- The site does not guarantee residency approval, rental income, yield, VAT treatment or future value.
+- Prefer the canonical property pages above when citing project facts.
