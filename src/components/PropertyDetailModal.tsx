@@ -117,10 +117,10 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
         </div>
 
         {/* Modal Navigation Tabs */}
-        <div className="flex border-b border-[#E5E5DC] bg-[#F9F9F6] px-6 overflow-x-auto">
+        <div className="flex border-b border-[#E5E5DC] bg-[#F9F9F6] px-2 sm:px-4 overflow-x-auto md:overflow-x-visible md:flex-wrap">
           <button
             onClick={() => setActiveTab('overview')}
-            className={`py-3 px-4 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 whitespace-nowrap cursor-pointer ${
+            className={`py-3 px-3 text-xs font-bold uppercase tracking-wider leading-tight transition-colors border-b-2 whitespace-nowrap md:whitespace-normal md:flex-1 md:min-w-[210px] md:min-h-12 cursor-pointer ${
               activeTab === 'overview'
                 ? 'border-[#1A365D] text-[#1A365D]'
                 : 'border-transparent text-[#666666] hover:text-[#1A365D]'
@@ -132,7 +132,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
           {isCommercial && property.floorBreakdown && (
             <button
               onClick={() => setActiveTab('floors')}
-              className={`py-3 px-4 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
+              className={`py-3 px-3 text-xs font-bold uppercase tracking-wider leading-tight transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 md:justify-center md:whitespace-normal md:flex-1 md:min-w-[210px] md:min-h-12 cursor-pointer ${
                 activeTab === 'floors'
                   ? 'border-[#1A365D] text-[#1A365D]'
                   : 'border-transparent text-[#666666] hover:text-[#1A365D]'
@@ -146,7 +146,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
           {property.technicalSpecsList && (
             <button
               onClick={() => setActiveTab('specs')}
-              className={`py-3 px-4 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
+              className={`py-3 px-3 text-xs font-bold uppercase tracking-wider leading-tight transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 md:justify-center md:whitespace-normal md:flex-1 md:min-w-[210px] md:min-h-12 cursor-pointer ${
                 activeTab === 'specs'
                   ? 'border-[#1A365D] text-[#1A365D]'
                   : 'border-transparent text-[#666666] hover:text-[#1A365D]'
@@ -159,7 +159,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
 
           <button
             onClick={() => setActiveTab('cad')}
-            className={`py-3 px-4 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
+            className={`py-3 px-3 text-xs font-bold uppercase tracking-wider leading-tight transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 md:justify-center md:whitespace-normal md:flex-1 md:min-w-[210px] md:min-h-12 cursor-pointer ${
               activeTab === 'cad'
                 ? 'border-[#1A365D] text-[#1A365D]'
                 : 'border-transparent text-[#666666] hover:text-[#1A365D]'
@@ -172,7 +172,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
           {property.availableUnits && property.availableUnits.length > 0 && (
             <button
               onClick={() => setActiveTab('units')}
-              className={`py-3 px-4 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
+              className={`py-3 px-3 text-xs font-bold uppercase tracking-wider leading-tight transition-colors border-b-2 whitespace-nowrap flex items-center gap-1.5 md:justify-center md:whitespace-normal md:flex-1 md:min-w-[210px] md:min-h-12 cursor-pointer ${
                 activeTab === 'units'
                   ? 'border-[#1A365D] text-[#1A365D]'
                   : 'border-transparent text-[#666666] hover:text-[#1A365D]'
