@@ -193,6 +193,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
           </div>
 
           <div className="flex items-center gap-6">
+            <a href="/privacy/" className="hover:text-white transition-colors">Privacy & Analytics</a>
             <button
               onClick={() => onOpenInquiry()}
               className="text-[#C29B61] hover:text-white transition-colors cursor-pointer text-xs flex items-center gap-1.5"

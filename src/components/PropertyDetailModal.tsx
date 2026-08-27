@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Property, Currency, PropertyUnit } from '../types';
 import { formatPrice } from '../utils/formatters';
 import {
@@ -59,6 +59,15 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
   const activePrice = selectedUnit ? selectedUnit.priceEUR : property.priceEUR;
   const monthlyRentalEstEUR = property.projectedMonthlyIncomeEUR || (property.rentalYieldEstimated ? Math.round((activePrice * (property.rentalYieldEstimated / 100)) / 12) : 0);
   const annualRentalEstEUR = property.projectedAnnualIncomeEUR || monthlyRentalEstEUR * 12;
+
+  useEffect(() => {
+    if (images.length < 2) return;
+    const neighbours = [
+      images[(activeImageIndex + 1) % images.length],
+      images[(activeImageIndex - 1 + images.length) % images.length],
+    ];
+    neighbours.forEach((src) => { const image = new Image(); image.src = src; });
+  }, [activeImageIndex, images]);
 
   const nextImage = () => {
     setActiveImageIndex((prev) => (prev + 1) % images.length);
@@ -185,6 +194,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                 <img
                   src={images[activeImageIndex]}
                   alt={property.title}
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

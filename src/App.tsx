@@ -13,6 +13,7 @@ import { SeoFaqSection } from './components/SeoFaqSection';
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
 import { InquiryModal } from './components/InquiryModal';
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 import { MessageCircle, Sparkles, Building2, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react';
 
 export default function App() {
@@ -262,6 +263,7 @@ export default function App() {
         onClose={() => setInquiryModalOpen(false)}
         propertyTitle={inquiryTopic}
       />
+      <AnalyticsConsent />
     </div>
   );
 }
