@@ -181,6 +181,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
                   Investor FAQ & Title Deeds
                 </a>
               </li>
+              <li>
+                <a href="/guides/" className="hover:text-[#C29B61] transition-colors">
+                  Practical Buyer Guides
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -193,6 +198,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
           </div>
 
           <div className="flex items-center gap-6">
+            <a href="/guides/" className="hover:text-white transition-colors">Buyer Guides</a>
             <a href="/privacy/" className="hover:text-white transition-colors">Privacy & Analytics</a>
             <button
               onClick={() => onOpenInquiry()}
