@@ -18,7 +18,7 @@ const FAQS: FaqItem[] = [
     category: 'Commercial',
     question: 'What infrastructure is included in the €8,700,000 turnkey commercial building purchase price?',
     answer:
-      'The €8,700,000 turnkey price includes the entire 1,934 m² building freehold: 4 open-plan office levels with 31mm CBI encapsulated raised flooring, a 23 kW connected photovoltaic solar system, 18 parking bays with 4 EV charging stations, an 84 m² grand designer lobby, a 161 m² rooftop garden and wellness gym retreat, full IP security video surveillance, video door access control, light automation, and 0% buyer commission on direct developer terms.',
+      'The stated €8,700,000 price covers the 1,934 m² building with four office levels, raised flooring, photovoltaic provision, 18 parking bays with four EV charging points, the lobby and a roof garden. Exact inclusions, areas, technical systems, title and contract terms must be confirmed from the official developer documentation.',
   },
   {
     category: 'Residency',

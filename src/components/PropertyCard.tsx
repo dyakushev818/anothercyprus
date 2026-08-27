@@ -18,7 +18,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
 }) => {
   const isCommercial = property.type === 'Commercial';
   const landingSlug = property.id === 'dasoudi-coastal-penthouses'
-    ? 'dasoudi-coastal-residences'
+    ? 'olio-residences-mesa-geitonia'
     : property.id;
 
   return (
@@ -64,10 +64,12 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="tracking-wider text-[11px] uppercase">{property.district}</span>
           </div>
 
-          <div className="flex items-center gap-1 text-xs text-[#1A365D] font-bold bg-white/95 backdrop-blur-md px-2.5 py-1 border border-[#E5E5DC] shadow-xs">
-            <TrendingUp className="w-3.5 h-3.5 text-[#C29B61]" />
-            <span>{property.rentalYieldEstimated}% Yield</span>
-          </div>
+          {property.rentalYieldEstimated ? (
+            <div className="flex items-center gap-1 text-xs text-[#1A365D] font-bold bg-white/95 backdrop-blur-md px-2.5 py-1 border border-[#E5E5DC] shadow-xs">
+              <TrendingUp className="w-3.5 h-3.5 text-[#C29B61]" />
+              <span>{property.rentalYieldEstimated}% Gross Yield</span>
+            </div>
+          ) : null}
         </div>
       </div>
 
@@ -102,7 +104,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Layers className="w-3.5 h-3.5 text-[#C29B61]" />
                   <span>4 Floors</span>
                 </div>
-                <span className="text-[9px] uppercase tracking-wider text-[#8A8A8A] mt-0.5">+ Roof Gym</span>
+                <span className="text-[9px] uppercase tracking-wider text-[#8A8A8A] mt-0.5">+ Roof Garden</span>
               </div>
 
               <div className="flex flex-col items-center justify-center p-2 bg-[#F9F9F6] border border-[#E5E5DC]">
@@ -150,7 +152,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               <div className="flex flex-col items-center justify-center p-2 bg-[#F9F9F6] border border-[#E5E5DC]">
                 <div className="flex items-center gap-1 font-bold text-[#1A365D]">
                   <Waves className="w-3.5 h-3.5 text-[#8A8A8A]" />
-                  <span>{property.distanceToBeachM === 0 ? 'Direct' : `${property.distanceToBeachM}m`}</span>
+                  <span>{property.distanceToBeachM ? `${property.distanceToBeachM}m` : 'On request'}</span>
                 </div>
                 <span className="text-[9px] uppercase tracking-wider text-[#8A8A8A] mt-0.5">To Sea</span>
               </div>

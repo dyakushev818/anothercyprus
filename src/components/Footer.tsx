@@ -149,7 +149,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
               </li>
               <li>
                 <a href="#properties" className="hover:text-[#C29B61] transition-colors">
-                  Dasoudi Coastal Residences
+                  OLiO Residences — Mesa Geitonia
                 </a>
               </li>
             </ul>

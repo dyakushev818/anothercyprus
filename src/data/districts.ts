@@ -22,7 +22,7 @@ export const DISTRICTS: DistrictInfo[] = [
     tagline: 'Elevated hillside sanctuary — Unobstructed sea views & top school connectivity',
     description:
       'Perched on the scenic foothills of Limassol, Agios Athanasios offers an exclusive residential lifestyle with commanding 180° amphitheater views of the Mediterranean coastline and city skyline. Featuring rapid 3-minute access to the highway and elite international private academies (such as Foley’s School and The Grammar School), it represents Limassol’s premier family and executive living address.',
-    avgYield: '8.0% - 8.8%',
+    avgYield: 'Verify per unit',
     lifestyleType: 'Elevated Coastal Panorama & Prestigious Family Enclave',
     popularFor: 'Relocating families, executives, EU Permanent Residency applicants',
     image: '/images/athanasios/athanasios-1.jpg',
@@ -30,7 +30,7 @@ export const DISTRICTS: DistrictInfo[] = [
       'Unobstructed 180° Mediterranean sea & city skyline panorama',
       '3-minute drive to highway connecting all Cyprus cities & international airports',
       'Minutes from Foley’s International School & German Oncology / Medical Centers',
-      'High rental yield potential driven by strong expat tech & executive demand',
+      'Current two-bedroom asking rent should be checked per unit; owner guidance is up to €2,500/month',
     ],
   },
   {
@@ -73,7 +73,7 @@ export const CYPRUS_BENEFITS = [
   {
     title: 'High Rental Yields & Sustained Capital Growth',
     description:
-      'Limassol’s status as the Mediterranean tech and maritime hub drives exceptional year-round occupancy, generating robust yields of 6.8% to 8.8% in prime commercial and residential sectors.',
+      'Limassol has year-round corporate and residential demand, but achievable rent, occupancy and net yield vary materially by property and should be independently appraised.',
     badge: 'High Yield',
   },
 ];

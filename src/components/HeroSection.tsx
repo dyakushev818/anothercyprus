@@ -49,7 +49,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <span className="not-italic text-[#2C2C2C]">Developments in Limassol.</span>
           </h1>
           <p className="text-[#555555] text-base sm:text-lg leading-relaxed max-w-3xl font-light mb-8">
-            An exclusive portfolio of institutional-grade commercial headquarters and luxury residential developments in Cyprus&apos;s fastest-growing Mediterranean economic hub. From a landmark <strong className="text-[#1A365D] font-semibold">Class-A Headquarters in Potamos Germasogeias (400m to sea)</strong> to panoramic <strong className="text-[#1A365D] font-semibold">Agios Athanasios sea-view residences</strong>, <strong className="text-[#1A365D] font-semibold">Agios Tychonas turnkey private pool villas</strong>, and <strong className="text-[#1A365D] font-semibold">Dasoudi coastal sky penthouses</strong>.
+            An exclusive portfolio of institutional-grade commercial headquarters and luxury residential developments in Limassol. From a landmark <strong className="text-[#1A365D] font-semibold">Class-A Headquarters in Potamos Germasogeias (400m to sea)</strong> to panoramic <strong className="text-[#1A365D] font-semibold">Agios Athanasios sea-view residences</strong>, <strong className="text-[#1A365D] font-semibold">Agios Tychonas turnkey private pool villas</strong>, and <strong className="text-[#1A365D] font-semibold">OLiO two-bedroom residences in Mesa Geitonia</strong>.
           </p>
 
           <div className="flex flex-wrap gap-4 items-center mb-12">
@@ -105,7 +105,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <div>
                   <div className="flex items-center justify-between text-[10px] text-[#666666] uppercase tracking-widest font-mono mb-2">
                     <span className="px-2 py-0.5 bg-[#F3F3EE] border border-[#E5E5DC] text-[#1A365D] font-semibold">{project.type}</span>
-                    <span className="text-[#C29B61] font-bold">{project.rentalYieldEstimated}% ROI</span>
+                    <span className="text-[#C29B61] font-bold">{project.rentalYieldEstimated ? `${project.rentalYieldEstimated}% gross yield` : 'Yield on request'}</span>
                   </div>
                   <h3 className="text-base font-serif italic text-[#1A365D] group-hover:text-[#132A4B] transition-colors line-clamp-1 font-bold">
                     {project.title}

@@ -34,12 +34,12 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
     { label: 'Commercial Office (€8.7M)', value: 'Commercial' },
     { label: 'Luxury Villas (€1.43M+)', value: 'Villa' },
     { label: 'Sea-View Apartments (€480k)', value: 'Apartment' },
-    { label: 'Sky Penthouses (€890k)', value: 'Penthouse' },
   ];
 
   const districtOptions = [
     { label: 'All Locations', value: 'ALL' },
     { label: 'Potamos Germasogeias', value: 'Germasogeia' },
+    { label: 'Mesa Geitonia', value: 'Mesa Geitonia' },
     { label: 'Agios Athanasios', value: 'Agios Athanasios' },
     { label: 'Agios Tychonas', value: 'Agios Tychonas' },
   ];

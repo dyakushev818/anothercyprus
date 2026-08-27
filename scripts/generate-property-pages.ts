@@ -16,6 +16,7 @@ type Copy = {
 type Page = {
   slug: string;
   schemaPrice: number;
+  schemaLocality: string;
   image: string;
   gallery: string[];
   en: Copy;
@@ -26,6 +27,7 @@ const pages: Page[] = [
   {
     slug: 'germasogeia-corporate-prime',
     schemaPrice: 8700000,
+    schemaLocality: 'Potamos Germasogeias',
     image: '/images/commercial/al1.jpg',
     gallery: ['/images/commercial/al1.jpg', '/images/commercial/al2.jpg', '/images/commercial/al3.jpg'],
     en: {
@@ -54,6 +56,7 @@ const pages: Page[] = [
   {
     slug: 'athanasios-skyline-suites',
     schemaPrice: 480000,
+    schemaLocality: 'Agios Athanasios',
     image: '/images/athanasios/athanasios-1.jpg',
     gallery: ['/images/athanasios/athanasios-1.jpg', '/images/athanasios/athanasios-2.jpg', '/images/athanasios/athanasios-5.jpg'],
     en: {
@@ -82,6 +85,7 @@ const pages: Page[] = [
   {
     slug: 'tychonas-sanctuary-villas',
     schemaPrice: 1430000,
+    schemaLocality: 'Agios Tychonas',
     image: '/images/villas/tychonass-villa-1.jpg',
     gallery: ['/images/villas/tychonass-villa-1.jpg', '/images/villas/tychonass-villa-2.jpg', '/images/villas/tychonass-villa-3.jpg'],
     en: {
@@ -108,31 +112,32 @@ const pages: Page[] = [
     },
   },
   {
-    slug: 'dasoudi-coastal-residences',
+    slug: 'olio-residences-mesa-geitonia',
     schemaPrice: 475000,
+    schemaLocality: 'Mesa Geitonia',
     image: '/images/dasoudi/dasoudi-1.jpg',
     gallery: ['/images/dasoudi/dasoudi-1.jpg', '/images/dasoudi/dasoudi-2.jpg', '/images/dasoudi/dasoudi-3.jpg'],
     en: {
-      title: 'New Apartments near Dasoudi Beach, Limassol | From €475K',
-      description: 'New two- and three-bedroom apartments 250 metres from Dasoudi Beach in Potamos Germasogeias, Limassol. Direct developer availability.',
-      eyebrow: 'Coastal apartments · 250 m to Dasoudi Beach',
-      headline: 'New Limassol residences within walking distance of the sea.',
-      summary: 'A boutique residential building near Dasoudi park with two- and three-bedroom layouts, covered verandas and flexible upper-floor plans. Request the price list, floor plans and current availability.',
+      title: 'OLiO 2-Bedroom Apartments in Mesa Geitonia | From €475K',
+      description: 'New two-bedroom OLiO apartments in Mesa Geitonia, Limassol, from €475,000. Direct developer plans, availability and December 2027 delivery target.',
+      eyebrow: 'Two-bedroom residences · Mesa Geitonia, Limassol',
+      headline: 'OLiO two-bedroom residences in Mesa Geitonia.',
+      summary: 'A boutique residential building with approved two-bedroom layouts and covered verandas. An optional internal adaptation may be discussed but is not marketed as an approved legal third bedroom. Request the official plans and current availability.',
       price: 'From €475,000 + VAT',
-      facts: ['250 m to Dasoudi Beach', 'Two- and three-bedroom layouts', 'Large covered verandas', 'Flexible upper-floor configurations'],
+      facts: ['Approved two-bedroom layouts', 'Target delivery: December 2027', 'Large covered verandas', 'Possible company-share acquisition structure, subject to independent legal and tax advice'],
       audience: 'Best suited to',
-      audienceCopy: 'Coastal lifestyle buyers, relocating professionals and investors seeking a walkable Germasogeia location with year-round residential demand.',
+      audienceCopy: 'Owner-occupiers, relocating professionals and investors seeking a new two-bedroom residence in Mesa Geitonia. Availability, rental assumptions and transaction structure require independent verification.',
     },
     ru: {
-      title: 'Новые квартиры рядом с пляжем Дасуди | от €475 тыс.',
-      description: 'Новые квартиры с двумя и тремя спальнями в 250 метрах от пляжа Дасуди, Потамос Гермасойя. Актуальное наличие напрямую от застройщика.',
-      eyebrow: 'Прибрежные квартиры · 250 м до пляжа Дасуди',
-      headline: 'Новые резиденции Лимассола в пешей доступности от моря.',
-      summary: 'Бутик-комплекс рядом с парком Дасуди: планировки с двумя и тремя спальнями, крытые веранды и гибкие решения верхних этажей. Запросите прайс-лист, планы и актуальное наличие.',
+      title: 'OLiO: квартиры с 2 спальнями в Меса Гитония | от €475 тыс.',
+      description: 'Новые квартиры OLiO с двумя спальнями в Меса Гитония, Лимассол, от €475 000. Планы, наличие и плановая сдача в декабре 2027 года.',
+      eyebrow: 'Квартиры с двумя спальнями · Меса Гитония, Лимассол',
+      headline: 'Резиденции OLiO с двумя спальнями в Меса Гитония.',
+      summary: 'Бутик-комплекс с утверждёнными планировками на две спальни и крытыми верандами. Возможную внутреннюю адаптацию можно обсудить, но она не рекламируется как официально согласованная третья спальня. Запросите официальные планы и актуальное наличие.',
       price: 'От €475 000 + НДС',
-      facts: ['250 м до пляжа Дасуди', 'Планировки с 2 и 3 спальнями', 'Большие крытые веранды', 'Гибкие планировки верхних этажей'],
+      facts: ['Утверждённые планировки на 2 спальни', 'Плановая сдача: декабрь 2027', 'Большие крытые веранды', 'Возможна покупка акций компании-владельца после независимой юридической и налоговой проверки'],
       audience: 'Для кого объект',
-      audienceCopy: 'Покупатели жилья у моря, специалисты, переезжающие на Кипр, и инвесторы, которым нужна пешеходная локация Гермасойи с круглогодичным спросом.',
+      audienceCopy: 'Покупатели для собственного проживания, специалисты, переезжающие на Кипр, и инвесторы, которым нужна новая двухспальная квартира в Меса Гитония. Наличие, аренду и структуру сделки необходимо проверять независимо.',
     },
   },
 ];
@@ -155,7 +160,7 @@ function render(page: Page, lang: 'en' | 'ru') {
     name: copy.title.split('|')[0].trim(),
     url: canonical,
     image: page.gallery.map((image) => `https://anothercyprus.com${image}`),
-    address: { '@type': 'PostalAddress', addressLocality: 'Limassol', addressCountry: 'CY' },
+    address: { '@type': 'PostalAddress', addressLocality: page.schemaLocality, addressRegion: 'Limassol', addressCountry: 'CY' },
     offers: { '@type': 'Offer', price: page.schemaPrice, priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: canonical },
   });
   const breadcrumb = JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: labels.all, item: 'https://anothercyprus.com/' }, { '@type': 'ListItem', position: 2, name: copy.headline, item: canonical }] });
@@ -168,4 +173,18 @@ for (const page of pages) {
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, 'index.html'), render(page, lang));
   }
+}
+
+const legacyRedirects = [
+  { from: ['properties', 'dasoudi-coastal-residences'], to: '/properties/olio-residences-mesa-geitonia/' },
+  { from: ['ru', 'properties', 'dasoudi-coastal-residences'], to: '/ru/properties/olio-residences-mesa-geitonia/' },
+];
+
+for (const redirect of legacyRedirects) {
+  const dir = join(process.cwd(), 'public', ...redirect.from);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(
+    join(dir, 'index.html'),
+    `<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><link rel="canonical" href="https://anothercyprus.com${redirect.to}"><meta http-equiv="refresh" content="0;url=${redirect.to}"><title>OLiO Residences — Mesa Geitonia</title></head><body><a href="${redirect.to}">Continue to the corrected OLiO Residences page</a></body></html>`,
+  );
 }

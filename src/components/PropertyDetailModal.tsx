@@ -50,14 +50,14 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
     property?.availableUnits && property.availableUnits.length > 0 ? property.availableUnits[0] : null
   );
   const [activeTab, setActiveTab] = useState<'overview' | 'floors' | 'specs' | 'cad' | 'units'>('overview');
-  const [selectedCadFloor, setSelectedCadFloor] = useState<'typical' | 'ground' | 'intermediate' | 'roof'>('typical');
+  const [selectedCadFloor, setSelectedCadFloor] = useState<'typical' | 'ground'>('typical');
 
   if (!property) return null;
 
   const isCommercial = property.type === 'Commercial';
   const images = property.galleryImages?.length > 0 ? property.galleryImages : [property.heroImage];
   const activePrice = selectedUnit ? selectedUnit.priceEUR : property.priceEUR;
-  const monthlyRentalEstEUR = property.projectedMonthlyIncomeEUR || Math.round((activePrice * (property.rentalYieldEstimated / 100)) / 12);
+  const monthlyRentalEstEUR = property.projectedMonthlyIncomeEUR || (property.rentalYieldEstimated ? Math.round((activePrice * (property.rentalYieldEstimated / 100)) / 12) : 0);
   const annualRentalEstEUR = property.projectedAnnualIncomeEUR || monthlyRentalEstEUR * 12;
 
   const nextImage = () => {
@@ -86,7 +86,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               </span>
               <span className="text-white/40">•</span>
               <span className="text-[#C29B61] text-xs font-medium flex items-center gap-1 font-mono">
-                <TrendingUp className="w-3.5 h-3.5" /> {property.rentalYieldEstimated}% Expected ROI
+                <TrendingUp className="w-3.5 h-3.5" /> {property.rentalYieldEstimated ? `${property.rentalYieldEstimated}% Gross Yield` : 'Rental estimate on request'}
               </span>
               <span className="text-white/40">•</span>
               <span className="text-white/80 text-xs font-medium flex items-center gap-1 font-mono">
@@ -250,10 +250,10 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                     Projected Cash Flow
                   </span>
                   <span className="text-xl sm:text-2xl font-serif text-[#1A365D] font-bold mt-0.5 block">
-                    €{monthlyRentalEstEUR.toLocaleString()} <span className="text-xs font-sans text-[#666666]">/ mo</span>
+                    {monthlyRentalEstEUR ? `€${monthlyRentalEstEUR.toLocaleString()} / mo` : 'On request'}
                   </span>
                   <span className="text-[11px] text-[#C29B61] block font-mono font-semibold">
-                    €{annualRentalEstEUR.toLocaleString()} / year ({property.rentalYieldEstimated}% ROI)
+                    {annualRentalEstEUR ? `€${annualRentalEstEUR.toLocaleString()} / year (${property.rentalYieldEstimated}% gross)` : 'Independent rental appraisal recommended'}
                   </span>
                 </div>
 
@@ -533,7 +533,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                     Architectural Layouts & CAD Schematics
                   </h3>
                   <p className="text-xs text-[#666666] font-light">
-                    Official architectural drawings with 0% commission direct developer terms.
+                    Illustrative layout summary only. Request the official developer-stamped architectural drawings before relying on dimensions or room configuration.
                   </p>
                 </div>
 
@@ -555,22 +555,6 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                     >
                       Ground & Parking
                     </button>
-                    <button
-                      onClick={() => setSelectedCadFloor('intermediate')}
-                      className={`px-3 py-1 text-xs font-mono transition-colors cursor-pointer ${
-                        selectedCadFloor === 'intermediate' ? 'bg-[#1A365D] text-white font-bold' : 'text-[#666666] hover:text-[#1A365D]'
-                      }`}
-                    >
-                      Intermediate
-                    </button>
-                    <button
-                      onClick={() => setSelectedCadFloor('roof')}
-                      className={`px-3 py-1 text-xs font-mono transition-colors cursor-pointer ${
-                        selectedCadFloor === 'roof' ? 'bg-[#1A365D] text-white font-bold' : 'text-[#666666] hover:text-[#1A365D]'
-                      }`}
-                    >
-                      Roof Garden
-                    </button>
                   </div>
                 )}
               </div>
@@ -584,19 +568,15 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                       {isCommercial
                         ? selectedCadFloor === 'typical'
                           ? '1st, 2nd, 3rd, 4th Typical Floor Plan (255 m² covered + 78 m² veranda)'
-                          : selectedCadFloor === 'ground'
-                          ? 'Ground Floor Layout (84 m² lobby + 18 parking bays + 4 storages)'
-                          : selectedCadFloor === 'intermediate'
-                          ? 'Intermediate Mezzanine Floor (213 m² total)'
-                          : 'Rooftop Garden & Wellness Escape (Gym + Rest Area 161 m²)'
+                          : 'Ground Floor Layout (84 m² lobby + 18 parking bays + 4 storages)'
                         : property.id === 'tychonas-sanctuary-villas'
                         ? 'Agios Tychonas Villa Floor Plan & Pool Layout (232m² – 334m² Total Covered + 36m² Pool)'
                         : property.id === 'dasoudi-coastal-penthouses'
-                        ? 'OLiO Residences Flat 201/301 Architectural Plan (93m² Internal + 30m² Verandas + 12m² Storage)'
+                        ? 'OLiO Residences — illustrative two-bedroom layout summary'
                         : 'Flat 201 Architectural CAD Plan (Agios Athanasios - 117m² Covered + 32m² Veranda)'}
                     </span>
                   </div>
-                  <span className="text-[10px] text-[#8A8A8A] font-mono">Scale 1:100 • North Oriented</span>
+                  <span className="text-[10px] text-[#8A8A8A] font-mono">Not to scale • Official plans on request</span>
                 </div>
 
                 {/* SVG Blueprint Canvas */}
@@ -641,16 +621,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                           <rect x="100" y="90" width="80" height="260" stroke="#34d399" strokeWidth="1.5" fill="#064e3b" fillOpacity="0.3" />
                           <text x="140" y="225" fill="#34d399" fontSize="11" textAnchor="middle" transform="rotate(-90 140 225)">18 PARKING SPACES + 4 EV</text>
                         </>
-                      ) : (
-                        <>
-                          <rect x="140" y="70" width="520" height="300" stroke="#C29B61" strokeWidth="3" fill="#132A4B" fillOpacity="0.6" />
-                          <circle cx="300" cy="220" r="70" stroke="#ec4899" strokeWidth="2" fill="#831843" fillOpacity="0.3" />
-                          <text x="300" y="225" fill="#f472b6" fontSize="12" textAnchor="middle" fontWeight="bold">FITNESS GYM</text>
-                          <rect x="440" y="130" width="180" height="180" stroke="#38bdf8" strokeWidth="2" fill="#0c4a6e" fillOpacity="0.3" />
-                          <text x="530" y="220" fill="#38bdf8" fontSize="12" textAnchor="middle" fontWeight="bold">ROOFTOP REST LOUNGE</text>
-                          <text x="530" y="240" fill="#cbd5e1" fontSize="10" textAnchor="middle">80 m² Uncovered Sky Deck</text>
-                        </>
-                      )
+                      ) : null
                     ) : property.id === 'tychonas-sanctuary-villas' ? (
                       <>
                         {/* Villa Plot Boundary */}
@@ -691,7 +662,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                         {/* Front Covered Veranda (South) */}
                         <rect x="90" y="70" width="300" height="70" stroke="#34d399" strokeWidth="1.5" strokeDasharray="4 4" fill="#064e3b" fillOpacity="0.25" />
                         <text x="240" y="110" fill="#34d399" fontSize="11" textAnchor="middle" fontWeight="bold">FRONT COVERED VERANDA (15 m²)</text>
-                        <text x="240" y="125" fill="#a7f3d0" fontSize="9" textAnchor="middle">Facing Dasoudi Coastal Grove</text>
+                        <text x="240" y="125" fill="#a7f3d0" fontSize="9" textAnchor="middle">Mesa Geitonia outlook varies by unit</text>
 
                         {/* Living & Dining Area */}
                         <rect x="90" y="150" width="300" height="150" stroke="#38bdf8" strokeWidth="1.5" fill="#0369a1" fillOpacity="0.15" />
@@ -715,7 +686,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                         {/* Back Covered Veranda / Option 3rd Bed */}
                         <rect x="570" y="70" width="140" height="300" stroke="#a855f7" strokeWidth="2" strokeDasharray="5 5" fill="#581c87" fillOpacity="0.25" />
                         <text x="640" y="200" fill="#c084fc" fontSize="11" textAnchor="middle" fontWeight="bold" transform="rotate(-90 640 200)">BACK COVERED VERANDA (15–25 m²)</text>
-                        <text x="660" y="200" fill="#e9d5ff" fontSize="9" textAnchor="middle" transform="rotate(-90 660 200)">*Option for 3rd Bedroom Conversion</text>
+                        <text x="660" y="200" fill="#e9d5ff" fontSize="9" textAnchor="middle" transform="rotate(-90 660 200)">Optional adaptation is not an approved legal 3rd bedroom</text>
                       </>
                     ) : (
                       <>

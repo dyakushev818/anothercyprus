@@ -3,6 +3,7 @@ export type PropertyType = 'All' | 'Villa' | 'Penthouse' | 'Apartment' | 'Townho
 export type LimassolDistrict =
   | 'All'
   | 'Germasogeia'
+  | 'Mesa Geitonia'
   | 'Agios Athanasios'
   | 'Agios Tychonas';
 
@@ -63,11 +64,11 @@ export interface Property {
   coveredAreaM2: number;
   plotAreaM2?: number;
   verandaAreaM2: number;
-  distanceToBeachM: number;
+  distanceToBeachM?: number;
   status: Exclude<PropertyStatus, 'All'>;
   completionDate: string;
   prEligible: boolean;
-  rentalYieldEstimated: number; // in percentage e.g. 7.5
+  rentalYieldEstimated?: number; // only when supported by a stated rental assumption
   projectedAnnualIncomeEUR?: number;
   projectedMonthlyIncomeEUR?: number;
   heroImage: string;

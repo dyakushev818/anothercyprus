@@ -34,7 +34,7 @@ const RU: Record<string, string> = {
   'to panoramic': 'до панорамных',
   'Agios Athanasios sea-view residences': 'резиденций с видом на море в Агиос Атанасиос',
   'Agios Tychonas turnkey private pool villas': 'готовых вилл с бассейнами в Агиос Тихонас',
-  'Dasoudi coastal sky penthouses': 'прибрежных резиденций и пентхаусов у Дасуди',
+  'OLiO two-bedroom residences in Mesa Geitonia': 'двухспальных резиденций OLiO в Меса Гитония',
   and: 'и',
   'Explore Flagship Developments': 'Смотреть ключевые проекты',
   'WhatsApp Direct (+357 96 373089)': 'Написать в WhatsApp (+357 96 373089)',

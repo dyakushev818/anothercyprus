@@ -73,7 +73,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
               Germasogeia Corporate Prime
             </h2>
             <p className="text-[#666666] text-sm sm:text-base mt-2 font-light max-w-2xl">
-              Whole Building Investment: 1,934 m² prime 4-story glass-facade headquarters with rooftop wellness retreat, 18 parking spaces, and 400m walk to the Mediterranean sea.
+              Whole Building Investment: 1,934 m² prime 4-story glass-facade headquarters with a roof garden, 18 parking spaces, and 400m walk to the Mediterranean sea.
             </p>
           </div>
 
@@ -248,7 +248,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
                     <span className="text-[#666666] font-mono">84m² Lobby + 18 Parking + 4 Storages</span>
                   </div>
                   <div className="flex items-center justify-between pt-2">
-                    <span className="text-[#2C2C2C] font-medium">Intermediate Mezzanine</span>
+                    <span className="text-[#2C2C2C] font-medium">Intermediate Floor — official plan on request</span>
                     <span className="text-[#666666] font-mono">213 m² Total (178 m² Cov.)</span>
                   </div>
                   <div className="flex items-center justify-between pt-2">
@@ -256,7 +256,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
                     <span className="text-[#666666] font-mono">323 m² per floor (255 m² cov. + 78 m² ver.)</span>
                   </div>
                   <div className="flex items-center justify-between pt-2">
-                    <span className="text-[#2C2C2C] font-medium">Rooftop Garden & Gym</span>
+                    <span className="text-[#2C2C2C] font-medium">Roof Garden</span>
                     <span className="text-[#1A365D] font-mono font-bold">161 m² with 80 m² open sky deck</span>
                   </div>
                 </div>
