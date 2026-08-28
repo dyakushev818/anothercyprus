@@ -1,5 +1,6 @@
 import React, { useEffect, useId, useState } from 'react';
 import { X, MessageCircle, Building2, ShieldCheck } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface InquiryModalProps {
   isOpen: boolean;
@@ -17,11 +18,14 @@ const getAttribution = () => {
 };
 
 export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, propertyTitle = '', initialTopic = '' }) => {
+  const { language } = useLanguage();
+  const isRussian = language === 'ru';
   const currentTopic = propertyTitle || initialTopic || 'Limassol property portfolio';
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [timeline, setTimeline] = useState('1–3 months');
   const [notes, setNotes] = useState('');
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const nameId = useId();
   const phoneId = useId();
   const timelineId = useId();
@@ -84,6 +88,10 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
           </label>
           <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={notesId}>Question (optional)
             <textarea id={notesId} rows={2} value={notes} onChange={(e) => setNotes(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]" />
+          </label>
+          <label className="flex items-start gap-2 text-[11px] leading-relaxed text-[#666] cursor-pointer">
+            <input type="checkbox" required checked={privacyAccepted} onChange={(event) => setPrivacyAccepted(event.target.checked)} className="mt-0.5 accent-[#1A365D]" />
+            <span>{isRussian ? 'Я согласен на обработку моих данных для ответа по этому объекту согласно ' : 'I agree that my details may be used to answer this property request, as explained in the '}<a className="text-[#1A365D] underline" href={isRussian ? '/ru/privacy/' : '/privacy/'} target="_blank" rel="noopener noreferrer">{isRussian ? 'политике конфиденциальности' : 'privacy policy'}</a>.</span>
           </label>
           <button type="submit" className="w-full py-4 bg-[#0A9F62] hover:bg-[#078653] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer"><MessageCircle className="w-5 h-5" /> Send request in WhatsApp</button>
           <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#666]"><ShieldCheck className="w-4 h-4 text-[#C29B61]" /> Your details are used only to answer this property request.</div>

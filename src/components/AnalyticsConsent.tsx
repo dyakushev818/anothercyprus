@@ -18,7 +18,7 @@ function startAnalytics() {
 
 export const AnalyticsConsent: React.FC = () => {
   const [choice, setChoice] = useState<string | null>(() => localStorage.getItem(STORAGE_KEY));
-  const isRussian = new URLSearchParams(window.location.search).get('lang') === 'ru' || navigator.language.toLowerCase().startsWith('ru');
+  const isRussian = window.location.pathname.startsWith('/ru') || new URLSearchParams(window.location.search).get('lang') === 'ru' || navigator.language.toLowerCase().startsWith('ru');
 
   useEffect(() => { if (choice === 'accepted') startAnalytics(); }, [choice]);
 
