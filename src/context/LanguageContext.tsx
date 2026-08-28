@@ -139,9 +139,16 @@ export const LanguageProvider: React.FC<React.PropsWithChildren> = ({ children }
     new URLSearchParams(window.location.search).get('lang') === 'ru' ? 'ru' : 'en',
   );
   const setLanguage = (next: Language) => {
+    if (next === language) return;
     const target = next === 'ru' ? `/ru/${window.location.hash}` : `/${window.location.hash}`;
-    window.location.assign(target);
+    window.history.pushState(null, '', target);
+    setLanguageState(next);
   };
+  useEffect(() => {
+    const syncLanguageWithUrl = () => setLanguageState(window.location.pathname.startsWith('/ru') ? 'ru' : 'en');
+    window.addEventListener('popstate', syncLanguageWithUrl);
+    return () => window.removeEventListener('popstate', syncLanguageWithUrl);
+  }, []);
   useEffect(() => {
     if (new URLSearchParams(window.location.search).get('lang') === 'ru' && !window.location.pathname.startsWith('/ru')) {
       window.location.replace(`/ru/${window.location.hash}`);
@@ -150,7 +157,7 @@ export const LanguageProvider: React.FC<React.PropsWithChildren> = ({ children }
     document.documentElement.lang = language;
     const isRussian = language === 'ru';
     const title = isRussian ? 'Новостройки Лимассола напрямую от застройщика | Another Cyprus' : 'New Properties in Limassol Direct from Developers | Another Cyprus';
-    const description = isRussian ? 'Коммерческая и жилая недвижимость в Лимассоле напрямую от застройщика. Цены, проекты и запрос актуального наличия.' : 'Explore selected commercial property, apartments and villas in Limassol. View project details and contact the developer directly about pricing and availability.';
+    const description = isRussian ? 'Новостройки, виллы и коммерческая недвижимость в Лимассоле напрямую от застройщика. Актуальные цены, планы и наличие.' : 'New apartments, villas and commercial property in Limassol direct from developers. Request current prices, plans and availability.';
     document.title = title;
     document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', description);
     document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', isRussian ? 'https://anothercyprus.com/ru/' : 'https://anothercyprus.com/');
