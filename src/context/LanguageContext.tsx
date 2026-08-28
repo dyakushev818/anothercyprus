@@ -38,6 +38,23 @@ const RU: Record<string, string> = {
   and: 'и',
   ', and': ', и',
   'Explore Flagship Developments': 'Смотреть ключевые проекты',
+  'View Projects & Request Availability': 'Проекты и актуальное наличие',
+  'Developer Sales Desk on WhatsApp': 'Отдел продаж в WhatsApp',
+  'Request Plans & Availability': 'Запросить планы и наличие',
+  'Direct developer communication': 'Прямая связь с застройщиком',
+  'Current prices & availability': 'Актуальные цены и наличие',
+  'Plans on request': 'Планы по запросу',
+  'English & Russian support': 'Поддержка на английском и русском',
+  'Private viewings by appointment': 'Просмотры по предварительной записи',
+  'New Apartments, Villas &': 'Новые квартиры, виллы и',
+  'Commercial Property': 'коммерческая недвижимость',
+  'Direct from Developers in Limassol.': 'напрямую от застройщиков в Лимассоле.',
+  'Explore developer projects in Limassol and request': 'Изучите проекты застройщиков в Лимассоле и запросите',
+  'current prices, plans and availability': 'актуальные цены, планы и наличие',
+  'directly from the sales desk. Choose from a': 'напрямую у отдела продаж. Выберите',
+  'Class-A headquarters in Potamos Germasogeias': 'офисное здание класса A в Потамос Гермасойя',
+  'sea-view residences in Agios Athanasios': 'резиденции с видом на море в Агиос Атанасиос',
+  'turnkey villas in Agios Tychonas': 'готовые виллы в Агиос Тихонас',
   'WhatsApp Direct (+357 96 373089)': 'Написать в WhatsApp (+357 96 373089)',
   'Direct Email Request': 'Запрос по email',
   'Direct Portfolio Navigator': 'Навигатор по проектам',
@@ -132,7 +149,7 @@ export const LanguageProvider: React.FC<React.PropsWithChildren> = ({ children }
     }
     document.documentElement.lang = language;
     const isRussian = language === 'ru';
-    const title = isRussian ? 'Недвижимость Лимассола напрямую от застройщика | Another Cyprus' : 'Limassol Property Direct from Developer | Another Cyprus';
+    const title = isRussian ? 'Новостройки Лимассола напрямую от застройщика | Another Cyprus' : 'New Properties in Limassol Direct from Developers | Another Cyprus';
     const description = isRussian ? 'Коммерческая и жилая недвижимость в Лимассоле напрямую от застройщика. Цены, проекты и запрос актуального наличия.' : 'Explore selected commercial property, apartments and villas in Limassol. View project details and contact the developer directly about pricing and availability.';
     document.title = title;
     document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', description);

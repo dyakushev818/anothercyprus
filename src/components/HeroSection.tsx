@@ -44,12 +44,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Main Heading for SEO & High Conversion */}
         <div className="max-w-4xl">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif leading-[1.12] tracking-tight text-[#1A365D] mb-6 italic font-bold">
-            Prime Commercial & <br />
-            Luxury Residential <br />
-            <span className="not-italic text-[#2C2C2C]">Developments in Limassol.</span>
+            New Apartments, Villas &amp; <br />
+            Commercial Property <br />
+            <span className="not-italic text-[#2C2C2C]">Direct from Developers in Limassol.</span>
           </h1>
           <p className="text-[#555555] text-base sm:text-lg leading-relaxed max-w-3xl font-light mb-8">
-            An exclusive portfolio of institutional-grade commercial headquarters and luxury residential developments in Limassol. From a landmark <strong className="text-[#1A365D] font-semibold">Class-A Headquarters in Potamos Germasogeias (400m to sea)</strong> to panoramic <strong className="text-[#1A365D] font-semibold">Agios Athanasios sea-view residences</strong>, <strong className="text-[#1A365D] font-semibold">Agios Tychonas turnkey private pool villas</strong>, and <strong className="text-[#1A365D] font-semibold">OLiO two-bedroom residences in Mesa Geitonia</strong>.
+            Explore developer projects in Limassol and request <strong className="text-[#1A365D] font-semibold">current prices, plans and availability</strong> directly from the sales desk. Choose from a <strong className="text-[#1A365D] font-semibold">Class-A headquarters in Potamos Germasogeias</strong>, sea-view residences in Agios Athanasios, turnkey villas in Agios Tychonas and OLiO two-bedroom residences in Mesa Geitonia.
           </p>
 
           <div className="flex flex-wrap gap-4 items-center mb-12">
@@ -58,7 +58,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="bg-[#1A365D] text-white px-8 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#132A4B] transition-all cursor-pointer shadow-md flex items-center gap-2"
             >
               <Building2 className="w-4 h-4 text-[#C29B61]" />
-              <span>Explore Flagship Developments</span>
+              <span>View Projects &amp; Request Availability</span>
             </button>
 
             <a
@@ -68,16 +68,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="border border-[#D4D4C8] bg-white hover:bg-[#F3F3EE] text-[#2C2C2C] hover:text-[#1A365D] px-6 py-4 text-xs uppercase tracking-widest font-bold transition-colors flex items-center gap-2 shadow-xs"
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
-              <span>WhatsApp Direct (+357 96 373089)</span>
+              <span>Developer Sales Desk on WhatsApp</span>
             </a>
 
             <button
-              onClick={() => onOpenInquiry('Investor Dossier & Direct Developer Terms')}
+              onClick={() => onOpenInquiry('Current Plans, Prices & Availability')}
               className="border border-[#D4D4C8] hover:border-[#1A365D] bg-white hover:bg-[#F3F3EE] px-6 py-4 text-xs uppercase tracking-widest font-bold text-[#1A365D] transition-colors flex items-center gap-2 cursor-pointer shadow-xs"
             >
               <Mail className="w-4 h-4 text-[#C29B61]" />
-              <span>Direct Email Request</span>
+              <span>Request Plans &amp; Availability</span>
             </button>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-5 border-y border-[#E5E5DC] bg-white/70 max-w-5xl">
+            {['Direct developer communication', 'Current prices & availability', 'Plans on request', 'English & Russian support', 'Private viewings by appointment'].map((item) => (
+              <div key={item} className="px-4 py-3 text-[10px] uppercase tracking-wide font-bold text-[#1A365D] border-b sm:border-b-0 sm:border-r last:border-r-0 border-[#E5E5DC] flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#C29B61] shrink-0" />
+                {item}
+              </div>
+            ))}
           </div>
         </div>
 
