@@ -103,6 +103,19 @@
     <!-- Cloudflare Web Analytics -->
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"5d5b63d9529d42bfbf25219ef5c9a938"}'></script>
     <!-- End Cloudflare Web Analytics -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-3WVGML1VRS', { anonymize_ip: true });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WVGML1VRS"></script>
   </head>
   <body class="bg-neutral-950 text-neutral-100 font-sans antialiased overflow-x-hidden">
     <div id="root">

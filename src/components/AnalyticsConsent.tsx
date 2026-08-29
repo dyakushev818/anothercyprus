@@ -1,26 +1,29 @@
 import React, { useEffect, useState } from 'react';
 
-const MEASUREMENT_ID = 'G-3WVGML1VRS';
 const STORAGE_KEY = 'anothercyprus_analytics_consent';
 
-function startAnalytics() {
-  if (document.querySelector(`script[data-ga4="${MEASUREMENT_ID}"]`)) return;
-  window.dataLayer = window.dataLayer || [];
-  const gtag = (...args: unknown[]) => window.dataLayer.push(args);
-  gtag('js', new Date());
-  gtag('config', MEASUREMENT_ID, { anonymize_ip: true });
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
-  script.dataset.ga4 = MEASUREMENT_ID;
-  document.head.appendChild(script);
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function updateAnalyticsConsent(accepted: boolean) {
+  window.gtag?.('consent', 'update', {
+    analytics_storage: accepted ? 'granted' : 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+  });
 }
 
 export const AnalyticsConsent: React.FC = () => {
   const [choice, setChoice] = useState<string | null>(() => localStorage.getItem(STORAGE_KEY));
   const isRussian = window.location.pathname.startsWith('/ru') || new URLSearchParams(window.location.search).get('lang') === 'ru' || navigator.language.toLowerCase().startsWith('ru');
 
-  useEffect(() => { if (choice === 'accepted') startAnalytics(); }, [choice]);
+  useEffect(() => {
+    if (choice) updateAnalyticsConsent(choice === 'accepted');
+  }, [choice]);
 
   if (choice) return null;
 
@@ -33,7 +36,7 @@ export const AnalyticsConsent: React.FC = () => {
     <aside className="fixed bottom-0 inset-x-0 z-[70] bg-[#132A4B] text-white border-t border-[#C29B61] shadow-2xl" aria-label="Analytics consent">
       <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-start md:items-center gap-4">
         <p className="text-xs leading-relaxed flex-1 text-white/85">
-          {isRussian ? 'Мы используем Google Analytics только с вашего согласия, чтобы понимать эффективность страниц объектов и рекламных источников.' : 'We use Google Analytics only with your consent to understand property-page performance and advertising sources.'}{' '}
+          {isRussian ? 'До выбора отправляются только анонимные технические сигналы Google без аналитических cookies. Полная аналитика включается только с вашего согласия.' : 'Before you choose, Google receives only anonymous technical signals without analytics cookies. Full analytics starts only with your consent.'}{' '}
           <a className="text-[#C29B61] underline" href={isRussian ? '/ru/privacy/' : '/privacy/'}>{isRussian ? 'Конфиденциальность' : 'Privacy policy'}</a>
         </p>
         <div className="flex gap-2 w-full md:w-auto">
