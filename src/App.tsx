@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { PROPERTIES } from './data/properties';
 import { Property, Currency } from './types';
 import { Navbar } from './components/Navbar';
@@ -14,6 +14,7 @@ import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
 import { InquiryModal } from './components/InquiryModal';
 import { AnalyticsConsent } from './components/AnalyticsConsent';
+import { trackLead } from './utils/analytics';
 import { MessageCircle, Sparkles, Building2, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react';
 
 export default function App() {
@@ -48,6 +49,19 @@ export default function App() {
     const el = document.getElementById('flagship-projects');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const trackContactClick = (event: MouseEvent) => {
+      const link = (event.target as Element).closest('a[href]') as HTMLAnchorElement | null;
+      if (!link) return;
+      const href = link.href;
+      if (href.startsWith('https://wa.me/')) trackLead('whatsapp');
+      if (href.startsWith('mailto:')) trackLead('email');
+      if (href.startsWith('tel:')) trackLead('phone');
+    };
+    document.addEventListener('click', trackContactClick);
+    return () => document.removeEventListener('click', trackContactClick);
+  }, []);
 
   // Filtered Properties Computation
   const filteredProperties = useMemo(() => {

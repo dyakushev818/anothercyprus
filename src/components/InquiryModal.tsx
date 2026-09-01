@@ -1,6 +1,7 @@
 import React, { useEffect, useId, useState } from 'react';
 import { X, MessageCircle, Building2, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { trackLead } from '../utils/analytics';
 
 interface InquiryModalProps {
   isOpen: boolean;
@@ -51,8 +52,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
       `Source: ${getAttribution()}`,
     ].filter(Boolean).join('\n');
 
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'generate_lead', lead_channel: 'whatsapp', property_name: currentTopic });
+    trackLead('whatsapp', currentTopic);
     window.open(`https://wa.me/35796373089?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
     onClose();
   };
@@ -100,7 +100,3 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
     </div>
   );
 };
-
-declare global {
-  interface Window { dataLayer: unknown[]; }
-}
