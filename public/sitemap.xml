@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anothercyprus.com/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://anothercyprus.com/ru/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://anothercyprus.com/ru/</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://anothercyprus.com/properties/germasogeia-corporate-prime/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://anothercyprus.com/properties/athanasios-skyline-suites/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://anothercyprus.com/properties/tychonas-sanctuary-villas/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -22,4 +22,12 @@
   <url><loc>https://anothercyprus.com/guides/sea-view-apartment-agios-athanasios-guide/</loc><lastmod>2026-08-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://anothercyprus.com/guides/turnkey-villa-agios-tychonas-checklist/</loc><lastmod>2026-08-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://anothercyprus.com/guides/buying-apartment-mesa-geitonia-limassol/</loc><lastmod>2026-08-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anothercyprus.com/areas/germasogeia-commercial-property/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/ru/areas/germasogeia-commercial-property/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/areas/agios-athanasios-sea-view-apartments/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/ru/areas/agios-athanasios-sea-view-apartments/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/areas/agios-tychonas-luxury-villas/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/ru/areas/agios-tychonas-luxury-villas/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/areas/mesa-geitonia-new-apartments/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/ru/areas/mesa-geitonia-new-apartments/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
