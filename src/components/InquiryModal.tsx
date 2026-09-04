@@ -94,6 +94,12 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
             <span>{isRussian ? 'Я согласен на обработку моих данных для ответа по этому объекту согласно ' : 'I agree that my details may be used to answer this property request, as explained in the '}<a className="text-[#1A365D] underline" href={isRussian ? '/ru/privacy/' : '/privacy/'} target="_blank" rel="noopener noreferrer">{isRussian ? 'политике конфиденциальности' : 'privacy policy'}</a>.</span>
           </label>
           <button type="submit" className="w-full py-4 bg-[#0A9F62] hover:bg-[#078653] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer"><MessageCircle className="w-5 h-5" /> Send request in WhatsApp</button>
+          <a
+            href={`mailto:info@anothercyprus.com?subject=${encodeURIComponent(`Property enquiry: ${currentTopic}`)}`}
+            className="block w-full py-3 text-center border border-[#D4D4C8] text-[#1A365D] hover:bg-[#F9F9F6] font-bold text-xs uppercase tracking-widest"
+          >
+            Send by email instead
+          </a>
           <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#666]"><ShieldCheck className="w-4 h-4 text-[#C29B61]" /> Your details are used only to answer this property request.</div>
         </form>
       </div>

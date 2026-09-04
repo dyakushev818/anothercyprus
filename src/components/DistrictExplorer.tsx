@@ -118,7 +118,7 @@ export const DistrictExplorer: React.FC<DistrictExplorerProps> = ({ onSelectDist
               <button
                 onClick={() => {
                   onSelectDistrict(currentDistrict.name as LimassolDistrict);
-                  const el = document.getElementById('properties');
+                  const el = document.getElementById('flagship-projects');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="px-6 py-3 bg-[#1A365D] hover:bg-[#132A4B] text-white font-bold text-xs uppercase tracking-widest flex items-center gap-2 transition-all cursor-pointer shadow-xs"

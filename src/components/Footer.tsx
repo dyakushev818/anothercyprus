@@ -40,6 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
               href="https://wa.me/35796373089?text=Hello%2C%20I%20am%20interested%20in%20direct%20developer%20terms%20for%20Limassol%20properties"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="WhatsApp developer sales desk (+357 96 373089)"
               className="px-5 py-4 border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4 text-[#C29B61]" />
@@ -133,22 +134,22 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
             </h4>
             <ul className="space-y-2 text-xs text-[#E5E5DC]/70 font-light">
               <li>
-                <a href="#properties" className="hover:text-[#C29B61] transition-colors">
+                <a href="/properties/germasogeia-corporate-prime/" className="hover:text-[#C29B61] transition-colors">
                   Germasogeia Corporate Prime
                 </a>
               </li>
               <li>
-                <a href="#properties" className="hover:text-[#C29B61] transition-colors">
+                <a href="/properties/athanasios-skyline-suites/" className="hover:text-[#C29B61] transition-colors">
                   Athanasios Skyline Suites
                 </a>
               </li>
               <li>
-                <a href="#properties" className="hover:text-[#C29B61] transition-colors">
+                <a href="/properties/tychonas-sanctuary-villas/" className="hover:text-[#C29B61] transition-colors">
                   The Tychonas Sanctuary Villas
                 </a>
               </li>
               <li>
-                <a href="#properties" className="hover:text-[#C29B61] transition-colors">
+                <a href="/properties/olio-residences-mesa-geitonia/" className="hover:text-[#C29B61] transition-colors">
                   OLiO Residences — Mesa Geitonia
                 </a>
               </li>
@@ -169,11 +170,6 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
               <li>
                 <a href="#residency" className="hover:text-[#C29B61] transition-colors">
                   0% Non-Dom Tax Regime
-                </a>
-              </li>
-              <li>
-                <a href="#calculator" className="hover:text-[#C29B61] transition-colors">
-                  ROI & Cash Flow Calculator
                 </a>
               </li>
               <li>

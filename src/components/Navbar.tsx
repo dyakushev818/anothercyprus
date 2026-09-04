@@ -80,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex items-center gap-8 lg:gap-10 text-[11px] uppercase tracking-[0.22em] text-[#666666] font-semibold">
-            <a href="#properties" className="hover:text-[#1A365D] transition-colors">
+            <a href="#flagship-projects" className="hover:text-[#1A365D] transition-colors">
               Developments
             </a>
             <a href="#districts" className="hover:text-[#1A365D] transition-colors">
@@ -123,7 +123,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="md:hidden bg-[#F9F9F6] border-b border-[#E5E5DC] px-6 pt-4 pb-8 space-y-5 shadow-lg">
           <div className="flex flex-col space-y-3 text-xs uppercase tracking-[0.2em] font-semibold text-[#666666]">
             <a
-              href="#properties"
+              href="#flagship-projects"
               onClick={() => setMobileMenuOpen(false)}
               className="text-[#2C2C2C] hover:text-[#1A365D] py-2.5 border-b border-[#E5E5DC]"
             >
@@ -142,13 +142,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="text-[#2C2C2C] hover:text-[#1A365D] py-2.5 border-b border-[#E5E5DC]"
             >
               Cyprus PR 6.2 & Taxes
-            </a>
-            <a
-              href="#calculator"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-[#2C2C2C] hover:text-[#1A365D] py-2.5 border-b border-[#E5E5DC]"
-            >
-              Rental ROI Calculator
             </a>
             <a
               href="#about"

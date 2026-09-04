@@ -62,12 +62,12 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
 
   useEffect(() => {
     if (images.length < 2) return;
-    const neighbours = [
-      images[(activeImageIndex + 1) % images.length],
-      images[(activeImageIndex - 1 + images.length) % images.length],
-    ];
-    neighbours.forEach((src) => { const image = new Image(); image.src = src; });
-  }, [activeImageIndex, images]);
+    images.forEach((src) => {
+      const image = new Image();
+      image.decoding = 'async';
+      image.src = src;
+    });
+  }, [property.id]);
 
   const nextImage = () => {
     setActiveImageIndex((prev) => (prev + 1) % images.length);
@@ -193,6 +193,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               <div className="relative aspect-[16/9] bg-[#2C2C2C] border border-[#E5E5DC] overflow-hidden group">
                 <img
                   src={images[activeImageIndex]}
+                  fetchPriority="high"
                   alt={property.title}
                   decoding="async"
                   className="w-full h-full object-cover"

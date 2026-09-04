@@ -50,7 +50,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenInquiry }) => 
             </p>
 
             <p className="text-[#666666] text-xs sm:text-sm leading-relaxed font-light">
-              Whether securing a full-building commercial headquarters in Potamos Germasogeias, panoramic sea-view residences in Agios Athanasios, all-inclusive designer pool villas in Agios Tychonas, or coastal sky penthouses, you deal directly with the master building team with personalized legal and residency support.
+              Whether securing a full-building commercial headquarters in Potamos Germasogeias, panoramic sea-view residences in Agios Athanasios, all-inclusive designer pool villas in Agios Tychonas, or OLiO two-bedroom residences in Mesa Geitonia, you deal directly with the master building team with personalized legal and residency support.
             </p>
 
             {/* Quick badges */}

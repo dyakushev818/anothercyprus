@@ -127,6 +127,8 @@ export default function App() {
         onOpenInquiry={handleOpenInquiry}
       />
 
+      <main>
+
       {/* Hero Showcase for 3 Flagship Projects & High SEO Conversion */}
       <HeroSection
         properties={PROPERTIES}
@@ -240,6 +242,8 @@ export default function App() {
       {/* Direct Developer Terms & Standards */}
       <AboutSection onOpenInquiry={() => handleOpenInquiry('Direct Developer Consultation')} />
 
+      </main>
+
       {/* Footer */}
       <Footer
         onSelectDistrict={() => scrollToProjects()}
@@ -254,6 +258,7 @@ export default function App() {
           rel="noopener noreferrer"
           className="group flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-2xl hover:shadow-emerald-600/30 transition-all hover:scale-105"
           title="Direct WhatsApp with Developer"
+          aria-label="WhatsApp developer sales desk (+357 96 373089)"
         >
           <MessageCircle className="w-5 h-5" />
           <span className="hidden sm:inline font-semibold">WhatsApp Developer</span>

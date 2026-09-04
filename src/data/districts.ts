@@ -6,7 +6,7 @@ export const DISTRICTS: DistrictInfo[] = [
     tagline: 'Potamos Germasogeias — Prime coastal commercial & international lifestyle district',
     description:
       'Potamos Germasogeias is Limassol’s most dynamic commercial and coastal enclave, positioned just 400 meters from the Dasoudi sandy beaches and eucalyptus park. Home to corporate regional headquarters, banks, top restaurants, and luxury residential developments, it commands the highest international tenant demand and capital liquidity in Cyprus.',
-    avgYield: '6.8% - 8.2%',
+    avgYield: 'Stated scenario: 6.8% gross',
     lifestyleType: 'Class-A Commercial Hub & 400m Walk-to-Beach Living',
     popularFor: 'Corporate headquarters, international IT firms, institutional yield funds',
     image: '/images/commercial/al4.jpg',
@@ -14,7 +14,7 @@ export const DISTRICTS: DistrictInfo[] = [
       'Prime business & tourist corridor 400m from Mediterranean Sea',
       'Direct highway and beachfront avenue access without traffic bottlenecks',
       'Walking distance to Papas Supermarket, banks, gourmet dining & cafes',
-      'High institutional demand with sustained rental yields up to 8%',
+      'Established corporate and residential demand; independent rental appraisal recommended',
     ],
   },
   {
@@ -38,7 +38,7 @@ export const DISTRICTS: DistrictInfo[] = [
     tagline: 'Prestigious millionaires ridge — 5-star hotel coastline & private luxury villas',
     description:
       'Agios Tychonas is internationally acclaimed as Limassol’s most prestigious villa enclave. Spanning the scenic hills above the ancient city of Amathus and the 5-star hotel coastline (Four Seasons, Amara), it features low-density zoning, absolute privacy, custom private swimming pools, and rapid access to sandy beaches and Michelin-standard dining.',
-    avgYield: '7.2% - 8.0%',
+    avgYield: 'Independent appraisal required',
     lifestyleType: 'Exclusive Hillside Serenity, Private Pools & Luxury Dining',
     popularFor: 'High-net-worth families, private estate owners, permanent residency buyers',
     image: '/images/villas/tychonass-villa-1.jpg',

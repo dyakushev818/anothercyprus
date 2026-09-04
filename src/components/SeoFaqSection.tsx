@@ -12,7 +12,7 @@ const FAQS: FaqItem[] = [
     category: 'Commercial',
     question: 'What is the projected rental yield and return on investment for Germasogeia Corporate Prime?',
     answer:
-      'Germasogeia Corporate Prime is projected to generate €49,000 per month (€588,000 per year), delivering a stable gross rental yield between 6.8% and 8.0%. The sustained demand is driven by multinational technology enterprises, fintech firms, and maritime conglomerates establishing regional European headquarters in Limassol (Potamos Germasogeias, 400m from the coastline).',
+      'The stated rental scenario for Germasogeia Corporate Prime is €49,000 per month (€588,000 per year), which is approximately 6.8% gross on the stated €8,700,000 price before VAT, vacancy, operating costs and tax. This is a scenario, not a guaranteed return; obtain an independent rental appraisal before relying on it.',
   },
   {
     category: 'Commercial',

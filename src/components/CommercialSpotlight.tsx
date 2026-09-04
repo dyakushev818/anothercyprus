@@ -127,7 +127,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
                   Handover: June 2026
                 </span>
                 <span className="px-3 py-1 bg-[#1A365D] text-white text-xs font-mono font-bold border border-[#1A365D] shadow-xs">
-                  6.8%–8.0% Projected ROI
+                  Approx. 6.8% Gross Scenario
                 </span>
                 <span className="px-3 py-1 bg-[#FBF8F2] text-[#AF884E] text-xs font-mono font-bold border border-[#C29B61]/40 shadow-xs">
                   0% Buyer Commission

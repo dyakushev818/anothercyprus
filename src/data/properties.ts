@@ -4,7 +4,7 @@ export const PROPERTIES: Property[] = [
   {
     id: 'germasogeia-corporate-prime',
     title: 'Germasogeia Corporate Prime',
-    tagline: 'Prime 1,934 m² Class-A commercial office headquarters in Potamos Germasogeias — 400m to Mediterranean beach with 6.8%–8% projected yield',
+    tagline: 'Prime 1,934 m² Class-A commercial office headquarters in Potamos Germasogeias — 400m to the beach; stated rental scenario implies approximately 6.8% gross before costs',
     district: 'Germasogeia',
     type: 'Commercial',
     priceEUR: 8700000,
@@ -33,7 +33,7 @@ export const PROPERTIES: Property[] = [
     features: [
       'Whole Building Acquisition: €8,700,000 + VAT (Total Area 1,934 m²)',
       '0% Buyer Commission • Direct Master Developer Terms',
-      'Projected Rental Income: €49,000/month (€588,000/year, 6.8%–8% Net Yield)',
+      'Stated Rental Scenario: €49,000/month (€588,000/year, approximately 6.8% gross before costs)',
       '400 Meters from Limassol Beach in Potamos Germasogeias Business Corridor',
       '18 Dedicated Parking Spaces (16+2) with 4 EV Fast-Charging Stations',
       'Expansive Office Levels (323 m² per floor) + Mezzanine Executive Suites',
@@ -339,9 +339,6 @@ export const PROPERTIES: Property[] = [
     status: 'Under Construction',
     completionDate: 'July 2027',
     prEligible: true,
-    rentalYieldEstimated: 7.9,
-    projectedMonthlyIncomeEUR: 9410,
-    projectedAnnualIncomeEUR: 112970,
     featured: true,
     architecturalStyle: 'Contemporary Monolithic Mediterranean with Private Swimming Pool & Sun Deck',
     energyEfficiency: 'A+',
@@ -371,7 +368,7 @@ export const PROPERTIES: Property[] = [
       'Prime Agios Tychonas location near Four Seasons Hotel and Amathus seafront',
       'All-Inclusive Package: Designer furniture, European appliances, VRV A/C, and underfloor heating included in base price',
       'Private swimming pools (32 m² to 36 m²) with sun pergolas, landscaped gardens and BBQ entertaining zones',
-      'Villas Available: Villa with private Gym & Maid Room at €1.88M, Villa at €1.43M, and Villa at €1.54M',
+      'Three villa price points currently listed: €1.88M, €1.43M and €1.54M; confirm current allocation and inclusions',
       'Target delivery July 2027; title status, contract terms, and the stated 0% buyer commission require transaction-specific verification',
     ],
     specifications: {

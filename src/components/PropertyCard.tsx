@@ -200,6 +200,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               rel="noopener noreferrer"
               className="p-2.5 bg-white hover:bg-[#F3F3EE] text-[#2C2C2C] hover:text-[#1A365D] transition-colors border border-[#D4D4C8] shadow-xs"
               title="Chat on WhatsApp with Developer (+357 96 373089)"
+              aria-label={`Chat on WhatsApp about ${property.title}`}
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
             </a>

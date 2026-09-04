@@ -20,7 +20,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Subtle Warm Minimalist Background Texture & Architectural Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85"
+          src="/images/commercial/al1.jpg"
           alt="Limassol Prime Real Estate & Commercial Developments"
           className="w-full h-full object-cover object-center opacity-10 scale-105 transform duration-1000 mix-blend-multiply"
         />
