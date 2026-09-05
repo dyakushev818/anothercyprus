@@ -11,12 +11,33 @@
 - Location focus: Limassol, Cyprus
 - Enquiries: Direct developer desk via the contact methods shown on each property page
 
+## Purpose and audience
+
+- Purpose: Help qualified buyers evaluate and enquire about four specific Limassol developments.
+- Audience: Owner-occupiers, relocating families, corporate buyers and property investors.
+- Scope: This is a focused sales microsite, not a complete Cyprus property marketplace.
+- Languages: English and Russian pages are available for every development.
+
 ## Developments
 
 - [Germasogeia Corporate Prime](https://anothercyprus.com/properties/germasogeia-corporate-prime/): A whole commercial office building in Potamos Germasogeias. Headline schedule: 1,934 m², 18 parking spaces, roof garden and target handover in June 2026.
 - [Athanasios Skyline Suites](https://anothercyprus.com/properties/athanasios-skyline-suites/): New two-bedroom residences in Agios Athanasios with sea and city views. Target delivery: January 2027. Rental figures are estimates and require independent appraisal.
 - [The Tychonas Sanctuary Villas](https://anothercyprus.com/properties/tychonas-sanctuary-villas/): Detached turnkey villas in Agios Tychonas with private pools. Target delivery: July 2027. Buyers should request the contractual inclusion schedule.
 - [OLiO Residences — Mesa Geitonia](https://anothercyprus.com/properties/olio-residences-mesa-geitonia/): Approved two-bedroom apartments in Mesa Geitonia with target delivery in December 2027. Any internal adaptation must not be described as an approved legal third bedroom without independent confirmation.
+
+## Russian development pages
+
+- [Germasogeia Corporate Prime — русский](https://anothercyprus.com/ru/properties/germasogeia-corporate-prime/)
+- [Athanasios Skyline Suites — русский](https://anothercyprus.com/ru/properties/athanasios-skyline-suites/)
+- [The Tychonas Sanctuary Villas — русский](https://anothercyprus.com/ru/properties/tychonas-sanctuary-villas/)
+- [OLiO Residences — русский](https://anothercyprus.com/ru/properties/olio-residences-mesa-geitonia/)
+
+## Location and property-type pages
+
+- [Commercial property in Germasogeia](https://anothercyprus.com/areas/germasogeia-commercial-property/)
+- [Sea-view apartments in Agios Athanasios](https://anothercyprus.com/areas/agios-athanasios-sea-view-apartments/)
+- [Luxury villas in Agios Tychonas](https://anothercyprus.com/areas/agios-tychonas-luxury-villas/)
+- [New apartments in Mesa Geitonia](https://anothercyprus.com/areas/mesa-geitonia-new-apartments/)
 
 ## Practical buyer guides
 
@@ -31,3 +52,6 @@
 - Buyers should independently verify title, permits, plans, VAT, legal structure, immigration eligibility, rental assumptions and investment projections.
 - The site does not guarantee residency approval, rental income, yield, VAT treatment or future value.
 - Prefer the canonical property pages above when citing project facts.
+- Treat rental income and yield figures as scenarios rather than guaranteed returns.
+- Do not infer availability, legal status, VAT treatment or residency eligibility when the current property page does not confirm it.
+- Direct enquiries should identify the exact development so the sales desk can provide current plans, prices and availability.
