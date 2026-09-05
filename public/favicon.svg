@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#17365d"/>
-  <path d="M14 46 28 16h8l14 30h-8l-3-7H25l-3 7h-8Zm13-14h10l-5-11-5 11Z" fill="#c29b61"/>
-  <path d="M43 18h7v28h-7z" fill="#f8f7f2" opacity=".95"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Another Cyprus">
+  <rect width="64" height="64" rx="13" fill="#17365d"/>
+  <rect x="3" y="3" width="58" height="58" rx="10" fill="none" stroke="#c29b61" stroke-width="2"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" letter-spacing="-2" fill="#f8f7f2">AC</text>
 </svg>
