@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Make the intended public, canonical content available to answer engines as
+# well as conventional search. Private APIs and form handling are not exposed
+# by this static site.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://anothercyprus.com/sitemap.xml
