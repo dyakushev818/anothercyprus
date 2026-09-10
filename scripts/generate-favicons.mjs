@@ -68,7 +68,7 @@ function png(size) {
   return Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', ihdr), chunk('IDAT', deflateSync(raw)), chunk('IEND', Buffer.alloc(0))]);
 }
 
-const files = new Map([[16, 'favicon-16.png'], [32, 'favicon-32.png'], [180, 'apple-touch-icon.png'], [192, 'favicon-192.png'], [512, 'favicon-512.png']]);
+const files = new Map([[16, 'favicon-16.png'], [32, 'favicon-32.png'], [48, 'favicon-48.png'], [180, 'apple-touch-icon.png'], [192, 'favicon-192.png'], [512, 'favicon-512.png']]);
 const data = new Map();
 for (const [size, name] of files) { const image = png(size); data.set(size, image); writeFileSync(join(out, name), image); }
 const icoImages = [16, 32].map((size) => data.get(size));
