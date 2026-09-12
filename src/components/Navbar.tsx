@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <div className="inline-flex border border-[#D4D4C8] bg-white p-0.5" aria-label="Language selector">
               {(['en', 'ru'] as const).map((option) => (
                 <button
@@ -46,20 +46,21 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <button
               onClick={() => onOpenInquiry('Direct Developer Desk')}
-              className="inline-flex items-center gap-1.5 text-[#1A365D] hover:text-[#C29B61] transition-colors uppercase tracking-[0.15em] text-[10px] font-mono cursor-pointer font-semibold"
+              className="hidden 2xl:inline-flex items-center gap-1.5 text-[#1A365D] hover:text-[#C29B61] transition-colors uppercase tracking-[0.15em] text-[10px] font-mono cursor-pointer font-semibold"
             >
               <Mail className="w-3.5 h-3.5 text-[#C29B61]" />
               <span>Direct Developer Desk</span>
             </button>
-            <span className="text-[#D4D4C8]">|</span>
+            <span className="hidden 2xl:inline text-[#D4D4C8]">|</span>
             <a
               href="https://wa.me/35796373089?text=Hello%20Another%20Cyprus%2C%20I%20am%20interested%20in%20direct%20Limassol%20properties%20with%200%25%20commission"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 text-[#2C2C2C] hover:text-[#1A365D] transition-colors uppercase tracking-[0.2em] text-[10px] font-semibold"
+              className="hidden sm:inline-flex items-center gap-1.5 text-[#2C2C2C] hover:text-[#1A365D] transition-colors uppercase tracking-[0.14em] text-[10px] font-semibold"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
-              <span>WhatsApp (+357 96 373089)</span>
+              <span className="hidden xl:inline">WhatsApp (+357 96 373089)</span>
+              <span className="xl:hidden">WhatsApp</span>
             </a>
           </div>
         </div>
@@ -67,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center gap-5 xl:gap-7 h-20">
           {/* Brand Logo */}
           <a href="#" className="flex flex-col group py-2">
             <span className="text-xl sm:text-2xl tracking-[0.28em] font-serif uppercase text-[#1A365D] group-hover:text-[#132A4B] transition-colors font-bold">
@@ -79,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-8 lg:gap-10 text-[11px] uppercase tracking-[0.22em] text-[#666666] font-semibold">
+          <nav className="hidden md:flex min-w-0 flex-1 justify-end items-center gap-4 xl:gap-6 text-[10px] xl:text-[11px] uppercase tracking-[0.16em] xl:tracking-[0.2em] text-[#666666] font-semibold whitespace-nowrap">
             <a href="#flagship-projects" className="hover:text-[#1A365D] transition-colors">
               Developments
             </a>
@@ -95,13 +96,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Desktop Action Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex shrink-0 items-center">
             <button
               onClick={() => onOpenInquiry()}
-              className="bg-[#1A365D] hover:bg-[#132A4B] text-white px-6 py-2.5 text-xs uppercase tracking-widest font-bold transition-all shadow-xs flex items-center gap-2 cursor-pointer"
+              className="bg-[#1A365D] hover:bg-[#132A4B] text-white px-3 xl:px-4 2xl:px-5 py-2.5 text-[10px] xl:text-[11px] uppercase tracking-[0.12em] xl:tracking-widest font-bold transition-all shadow-xs flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               <Building2 className="w-4 h-4 text-[#C29B61]" />
-              <span>Direct Developer Inquiry</span>
+              <span className="hidden min-[1800px]:inline">Direct Developer Inquiry</span>
+              <span className="min-[1800px]:hidden">Send Inquiry</span>
             </button>
           </div>
 
