@@ -1,8 +1,11 @@
-export type LeadChannel = 'whatsapp' | 'phone' | 'email';
+export type ContactChannel = 'whatsapp' | 'phone' | 'email';
 
-export function trackLead(channel: LeadChannel, propertyName = 'Limassol property portfolio') {
-  window.gtag?.('event', 'generate_lead', {
-    lead_channel: channel,
-    property_name: propertyName,
+export function trackContactClick(channel: ContactChannel, projectId = 'portfolio') {
+  if (localStorage.getItem('anothercyprus_analytics_consent') !== 'accepted') return;
+
+  window.gtag?.('event', 'contact_click', {
+    contact_channel: channel,
+    project_id: projectId,
+    page_type: 'portfolio',
   });
 }

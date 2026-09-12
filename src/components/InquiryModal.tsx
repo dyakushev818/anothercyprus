@@ -1,7 +1,7 @@
 import React, { useEffect, useId, useState } from 'react';
 import { X, MessageCircle, Building2, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { trackLead } from '../utils/analytics';
+import { trackContactClick } from '../utils/analytics';
 
 interface InquiryModalProps {
   isOpen: boolean;
@@ -52,7 +52,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
       `Source: ${getAttribution()}`,
     ].filter(Boolean).join('\n');
 
-    trackLead('whatsapp', currentTopic);
+    trackContactClick('whatsapp', currentTopic || 'portfolio');
     window.open(`https://wa.me/35796373089?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
     onClose();
   };

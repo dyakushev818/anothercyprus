@@ -14,7 +14,7 @@ import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
 import { InquiryModal } from './components/InquiryModal';
 import { AnalyticsConsent } from './components/AnalyticsConsent';
-import { trackLead } from './utils/analytics';
+import { trackContactClick } from './utils/analytics';
 import { MessageCircle, Sparkles, Building2, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react';
 
 export default function App() {
@@ -51,16 +51,16 @@ export default function App() {
   };
 
   useEffect(() => {
-    const trackContactClick = (event: MouseEvent) => {
+    const handleContactClick = (event: MouseEvent) => {
       const link = (event.target as Element).closest('a[href]') as HTMLAnchorElement | null;
       if (!link) return;
       const href = link.href;
-      if (href.startsWith('https://wa.me/')) trackLead('whatsapp');
-      if (href.startsWith('mailto:')) trackLead('email');
-      if (href.startsWith('tel:')) trackLead('phone');
+      if (href.startsWith('https://wa.me/')) trackContactClick('whatsapp');
+      if (href.startsWith('mailto:')) trackContactClick('email');
+      if (href.startsWith('tel:')) trackContactClick('phone');
     };
-    document.addEventListener('click', trackContactClick);
-    return () => document.removeEventListener('click', trackContactClick);
+    document.addEventListener('click', handleContactClick);
+    return () => document.removeEventListener('click', handleContactClick);
   }, []);
 
   // Filtered Properties Computation
