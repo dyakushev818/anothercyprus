@@ -9,16 +9,52 @@ declare global {
 }
 
 function updateAnalyticsConsent(accepted: boolean) {
-  window.gtag?.('consent', 'update', {
-    analytics_storage: accepted ? 'granted' : 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-  });
+  try {
+    window.gtag?.('consent', 'update', {
+      analytics_storage: accepted ? 'granted' : 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+    });
+  } catch {
+    // Consent UI must remain usable if analytics is unavailable.
+  }
+}
+
+function readStoredChoice() {
+  try {
+    const choice = localStorage.getItem(STORAGE_KEY);
+    if (choice === 'accepted' || choice === 'declined') return choice;
+  } catch {
+    // Fall through to session storage without granting consent by default.
+  }
+
+  try {
+    const choice = sessionStorage.getItem(STORAGE_KEY);
+    if (choice === 'accepted' || choice === 'declined') return choice;
+  } catch {
+    // The in-memory component state remains a safe fallback for this visit.
+  }
+
+  return null;
+}
+
+function saveChoice(choice: 'accepted' | 'declined') {
+  try {
+    localStorage.setItem(STORAGE_KEY, choice);
+  } catch {
+    // A browser may block persistent storage.
+  }
+
+  try {
+    sessionStorage.setItem(STORAGE_KEY, choice);
+  } catch {
+    // The component state still preserves the choice until it unmounts.
+  }
 }
 
 export const AnalyticsConsent: React.FC = () => {
-  const [choice, setChoice] = useState<string | null>(() => localStorage.getItem(STORAGE_KEY));
+  const [choice, setChoice] = useState<string | null>(readStoredChoice);
   const isRussian = window.location.pathname.startsWith('/ru') || new URLSearchParams(window.location.search).get('lang') === 'ru' || navigator.language.toLowerCase().startsWith('ru');
 
   useEffect(() => {
@@ -28,7 +64,7 @@ export const AnalyticsConsent: React.FC = () => {
   if (choice) return null;
 
   const decide = (value: 'accepted' | 'declined') => {
-    localStorage.setItem(STORAGE_KEY, value);
+    saveChoice(value);
     setChoice(value);
   };
 
