@@ -13,7 +13,7 @@ const russianFallback = `<!-- SEO_HOME_CONTENT_START -->
           <p>Another Cyprus · Коллекция объектов от застройщика</p>
           <h1>Премиальная коммерческая и жилая недвижимость в Лимассоле</h1>
           <p>Отобранные коммерческие объекты, квартиры и виллы в Лимассоле, Кипр. Уточняйте наличие и условия покупки напрямую у застройщика.</p>
-          <p><a href="https://wa.me/35796373089">Написать застройщику в WhatsApp</a> · <a href="mailto:info@anothercyprus.com">Запросить наличие по email</a></p>
+          <p><a href="https://wa.me/35796373089">Написать застройщику в WhatsApp</a> · <a href="mailto:dyakushev@gmail.com">Запросить наличие по email</a></p>
         </header>
         <section aria-labelledby="developments-heading">
           <h2 id="developments-heading">Четыре проекта в Лимассоле</h2>

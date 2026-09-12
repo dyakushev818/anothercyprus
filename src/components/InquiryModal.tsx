@@ -95,7 +95,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
           </label>
           <button type="submit" className="w-full py-4 bg-[#0A9F62] hover:bg-[#078653] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer"><MessageCircle className="w-5 h-5" /> Send request in WhatsApp</button>
           <a
-            href={`mailto:info@anothercyprus.com?subject=${encodeURIComponent(`Property enquiry: ${currentTopic}`)}`}
+            href={`mailto:dyakushev@gmail.com?subject=${encodeURIComponent(`Property enquiry: ${currentTopic}`)}`}
             className="block w-full py-3 text-center border border-[#D4D4C8] text-[#1A365D] hover:bg-[#F9F9F6] font-bold text-xs uppercase tracking-widest"
           >
             Send by email instead
