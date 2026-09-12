@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anothercyprus.com/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://anothercyprus.com/ru/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://anothercyprus.com/ru/</loc><lastmod>2026-09-12</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://anothercyprus.com/properties/germasogeia-corporate-prime/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://anothercyprus.com/properties/athanasios-skyline-suites/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://anothercyprus.com/properties/tychonas-sanctuary-villas/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -39,4 +39,8 @@
   <url><loc>https://anothercyprus.com/ru/areas/agios-tychonas-luxury-villas/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://anothercyprus.com/areas/mesa-geitonia-new-apartments/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://anothercyprus.com/ru/areas/mesa-geitonia-new-apartments/</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anothercyprus.com/markets/european-buyers-limassol/</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anothercyprus.com/ru/markets/limassol-property-russian-speaking-buyers/</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anothercyprus.com/uk/markets/limassol-property-ukrainian-buyers/</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anothercyprus.com/he/markets/limassol-property-israeli-buyers/</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

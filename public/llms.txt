@@ -7,7 +7,7 @@
 - Canonical domain: https://anothercyprus.com/
 - Sitemap: https://anothercyprus.com/sitemap.xml
 - Buyer guides: https://anothercyprus.com/guides/
-- Languages: English and Russian property pages
+- Languages: English and Russian property pages, with dedicated buyer-entry pages in Ukrainian and Hebrew.
 - Location focus: Limassol, Cyprus
 - Enquiries: Direct developer desk via the contact methods shown on each property page
 
@@ -31,6 +31,13 @@
 - [Athanasios Skyline Suites — русский](https://anothercyprus.com/ru/properties/athanasios-skyline-suites/)
 - [The Tychonas Sanctuary Villas — русский](https://anothercyprus.com/ru/properties/tychonas-sanctuary-villas/)
 - [OLiO Residences — русский](https://anothercyprus.com/ru/properties/olio-residences-mesa-geitonia/)
+
+## International buyer entry pages
+
+- [European buyers](https://anothercyprus.com/markets/european-buyers-limassol/)
+- [Russian-speaking buyers](https://anothercyprus.com/ru/markets/limassol-property-russian-speaking-buyers/)
+- [Ukrainian buyers](https://anothercyprus.com/uk/markets/limassol-property-ukrainian-buyers/)
+- [Israeli buyers](https://anothercyprus.com/he/markets/limassol-property-israeli-buyers/)
 
 ## Location and property-type pages
 
