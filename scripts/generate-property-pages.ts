@@ -164,7 +164,9 @@ function render(page: Page, lang: 'en' | 'ru') {
   const propertyType = page.slug.includes('corporate') ? 'CommercialRealEstate' : page.slug.includes('villas') ? 'SingleFamilyResidence' : 'ApartmentComplex';
   const schema = JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': propertyType,
+    // Keep the concrete property type while explicitly describing this page as a
+    // real-estate listing for crawlers that understand the Schema.org type.
+    '@type': ['RealEstateListing', propertyType],
     name: copy.title.split('|')[0].trim(),
     url: canonical,
     image: page.gallery.map((image) => `https://anothercyprus.com${image}`),
