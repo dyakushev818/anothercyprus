@@ -47,13 +47,15 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": ["Organization", "LocalBusiness"],
           "@id": "https://anothercyprus.com/#organization",
           "name": "Another Cyprus",
           "url": "https://anothercyprus.com/",
           "telephone": "+35796373089",
+          "email": "dyakushev@gmail.com",
+          "hasMap": "https://maps.app.goo.gl/kmmbyCqvdiGPGiAA7?g_st=iwb",
           "areaServed": {"@type": "City", "name": "Limassol"},
-          "address": {"@type": "PostalAddress", "addressLocality": "Limassol", "addressCountry": "CY"}
+          "address": {"@type": "PostalAddress", "streetAddress": "22A Amathountos Avenue", "postalCode": "4532", "addressLocality": "Limassol", "addressCountry": "CY"}
         },
         {
           "@type": "WebSite",

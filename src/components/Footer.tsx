@@ -74,10 +74,16 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-[#E5E5DC]/80 font-light">
-              <div className="flex items-center gap-2.5">
+              <a
+                href="https://maps.app.goo.gl/kmmbyCqvdiGPGiAA7?g_st=iwb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 hover:text-white transition-colors"
+                aria-label="Open Another Cyprus address in Google Maps"
+              >
                 <MapPin className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
-                <span>Potamos Germasogeias & Agios Tychonas, Limassol, Cyprus</span>
-              </div>
+                <span>Another Cyprus: 22A Amathountos Avenue, Limassol 4532, Cyprus</span>
+              </a>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
                 <span>Direct Line / WhatsApp: +357 96 373089</span>

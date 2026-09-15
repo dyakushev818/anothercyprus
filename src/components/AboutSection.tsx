@@ -98,6 +98,39 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenInquiry }) => 
             })}
           </div>
         </div>
+
+        <section className="mt-12 border border-[#E5E5DC] bg-white p-5 sm:p-7" aria-labelledby="representation-heading">
+          <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-6 items-center">
+            <div>
+              <div className="flex items-center gap-2 text-[#C29B61]">
+                <MapPin className="w-4 h-4" />
+                <span className="text-[10px] font-bold uppercase tracking-[0.22em]">Another Cyprus · Limassol</span>
+              </div>
+              <h3 id="representation-heading" className="mt-3 font-serif text-2xl text-[#1A365D]">
+                Meet Another Cyprus by appointment in Limassol.
+              </h3>
+              <address className="mt-3 not-italic text-sm leading-relaxed text-[#555555]">
+                22A Amathountos Avenue<br />
+                Limassol 4532, Cyprus
+              </address>
+              <a
+                href="https://maps.app.goo.gl/kmmbyCqvdiGPGiAA7?g_st=iwb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex text-xs font-bold uppercase tracking-wider text-[#1A365D] hover:text-[#C29B61]"
+              >
+                Open directions in Google Maps
+              </a>
+            </div>
+            <iframe
+              title="Another Cyprus location in Limassol"
+              src="https://www.google.com/maps?q=22A%20Amathountos%20Avenue%2C%20Limassol%204532%2C%20Cyprus&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-72 w-full border-0"
+            />
+          </div>
+        </section>
       </div>
     </section>
   );
