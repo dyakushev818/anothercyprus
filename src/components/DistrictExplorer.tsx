@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { DISTRICTS } from '../data/districts';
 import { LimassolDistrict } from '../types';
 import { MapPin, TrendingUp, Compass, ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -8,6 +9,8 @@ interface DistrictExplorerProps {
 }
 
 export const DistrictExplorer: React.FC<DistrictExplorerProps> = ({ onSelectDistrict }) => {
+  const { language } = useLanguage();
+  const areaLinks = [['germasogeia-commercial-property', 'Germasogeia'], ['agios-athanasios-sea-view-apartments', 'Agios Athanasios'], ['agios-tychonas-luxury-villas', 'Agios Tychonas'], ['mesa-geitonia-new-apartments', 'Mesa Geitonia']];
   const [selectedDistrictName, setSelectedDistrictName] = useState<string>(DISTRICTS[0].name);
 
   const currentDistrict = DISTRICTS.find((d) => d.name === selectedDistrictName) || DISTRICTS[0];
@@ -77,7 +80,7 @@ export const DistrictExplorer: React.FC<DistrictExplorerProps> = ({ onSelectDist
               <div className="flex flex-wrap items-center gap-3">
                 <div className="px-3.5 py-1.5 bg-[#FBF8F2] border border-[#C29B61]/40 text-[#1A365D] text-xs font-bold flex items-center gap-1.5 shadow-xs">
                   <TrendingUp className="w-4 h-4 text-[#C29B61]" />
-                  <span>Average Rental Yield: {currentDistrict.avgYield}</span>
+                  <span>Rental guidance: {currentDistrict.avgYield}</span>
                 </div>
                 <div className="px-3.5 py-1.5 bg-[#F9F9F6] border border-[#E5E5DC] text-[#666666] text-xs font-medium">
                   {currentDistrict.lifestyleType}
@@ -130,6 +133,7 @@ export const DistrictExplorer: React.FC<DistrictExplorerProps> = ({ onSelectDist
           </div>
         </div>
       </div>
+      <nav aria-label={language === 'ru' ? 'Гиды по районам' : 'Area guides'} className="mx-auto max-w-7xl px-6 py-5 flex flex-wrap gap-5">{areaLinks.map(([slug, name]) => <a key={slug} href={`${language === 'ru' ? '/ru' : ''}/areas/${slug}/`} className="underline underline-offset-4 text-[#1A365D]">{name}</a>)}</nav>
     </section>
   );
 };

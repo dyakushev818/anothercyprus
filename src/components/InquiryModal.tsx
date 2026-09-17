@@ -1,4 +1,4 @@
-import React, { useEffect, useId, useState } from 'react';
+import React, { useEffect, useId, useRef, useState } from 'react';
 import { X, MessageCircle, Building2, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { trackContactClick } from '../utils/analytics';
@@ -27,15 +27,31 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
   const [timeline, setTimeline] = useState('1–3 months');
   const [notes, setNotes] = useState('');
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const titleId = useId();
   const nameId = useId();
   const phoneId = useId();
   const timelineId = useId();
   const notesId = useId();
 
   useEffect(() => {
-    if (isOpen) document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = ''; };
-  }, [isOpen]);
+    if (!isOpen) return;
+    const previous = document.activeElement as HTMLElement | null;
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const dialog = dialogRef.current;
+    dialog?.querySelector<HTMLElement>('input')?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); onClose(); }
+      if (event.key !== 'Tab') return;
+      const elements: HTMLElement[] = dialog ? Array.from(dialog.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select,textarea')) as HTMLElement[] : [];
+      const first = elements[0], last = elements[elements.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => { document.body.style.overflow = overflow; document.removeEventListener('keydown', onKey); previous?.focus(); };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -59,12 +75,12 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6" onMouseDown={onClose}>
-      <div className="relative bg-white w-full max-w-lg shadow-2xl border border-[#E5E5DC] overflow-hidden" onMouseDown={(e) => e.stopPropagation()}>
+      <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} className="relative bg-white w-full max-w-lg shadow-2xl border border-[#E5E5DC] overflow-hidden" onMouseDown={(e) => e.stopPropagation()}>
         <div className="bg-[#1A365D] text-white px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Building2 className="w-6 h-6 text-[#C29B61]" />
             <div>
-              <h3 className="text-lg font-serif italic font-bold">Get plans & current availability</h3>
+              <h3 id={titleId} className="text-lg font-serif italic font-bold">Get plans & current availability</h3>
               <p className="text-[10px] uppercase tracking-widest text-[#C29B61]">Direct property request</p>
             </div>
           </div>

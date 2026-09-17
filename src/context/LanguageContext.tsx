@@ -10,6 +10,12 @@ interface LanguageContextValue {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 const RU: Record<string, string> = {
+  'Apartments': 'Квартиры',
+  'Illustrative Gross Rent': 'Расчётная аренда до расходов',
+  'Rental guidance:': 'Ориентир по аренде:',
+  'Original target: June 2026 — confirm current status': 'Исходный срок: июнь 2026 — уточните текущую готовность',
+  'June 2026 target — status on request': 'План: июнь 2026 — готовность по запросу',
+  'No developments matched these filters. Try another location or property type.': 'Нет объектов с такими фильтрами. Выберите другой район или тип недвижимости.',
   '0% Buyer Commission • Direct Developer': '0% комиссии покупателя • напрямую от застройщика',
   'Direct Developer Desk': 'Отдел продаж застройщика',
   'Direct Developer Collection': 'Коллекция объектов от застройщика',

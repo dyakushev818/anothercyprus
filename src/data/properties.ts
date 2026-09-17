@@ -14,7 +14,7 @@ export const PROPERTIES: Property[] = [
     verandaAreaM2: 312,
     distanceToBeachM: 400,
     status: 'Under Construction',
-    completionDate: 'June 2026',
+    completionDate: 'June 2026 target — status on request',
     prEligible: true,
     rentalYieldEstimated: 6.8,
     projectedMonthlyIncomeEUR: 49000,
@@ -48,7 +48,7 @@ export const PROPERTIES: Property[] = [
       'Prime coastal business location 400m from Dasoudi beach, walking distance to banks, gourmet restaurants and amenities',
       'Institutional whole-building asset with €588,000 projected annual gross rental revenue',
       'Includes 23 kW solar array, 31mm encapsulated raised flooring, IP surveillance, smart access control and complimentary space planning',
-      'Target delivery June 2026; construction compliance and energy rating should be confirmed in the final project documentation',
+      'Original target June 2026; ask for current completion status; construction compliance and energy rating should be confirmed in the final project documentation',
     ],
     specifications: {
       pool: 'Panoramic 161 m² Roof Garden',

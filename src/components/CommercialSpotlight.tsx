@@ -124,7 +124,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
 
               <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2">
                 <span className="px-3 py-1 bg-white/95 text-[#1A365D] text-xs font-mono font-semibold border border-[#E5E5DC] shadow-xs">
-                  Handover: June 2026
+                  Original target: June 2026 — confirm current status
                 </span>
                 <span className="px-3 py-1 bg-[#1A365D] text-white text-xs font-mono font-bold border border-[#1A365D] shadow-xs">
                   Approx. 6.8% Gross Scenario
@@ -205,7 +205,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
               </div>
 
               <div className="p-3.5 bg-white border border-[#E5E5DC] shadow-xs">
-                <span className="text-[10px] text-[#8A8A8A] uppercase block">Rental Cash Flow</span>
+                <span className="text-[10px] text-[#8A8A8A] uppercase block">Illustrative Gross Rent</span>
                 <span className="text-base text-[#C29B61] font-bold mt-0.5 block">€49,000 / mo</span>
                 <span className="text-[10px] text-[#666666] font-sans">€588,000 / year</span>
               </div>

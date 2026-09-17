@@ -209,7 +209,7 @@ export default function App() {
         ) : (
           <div className="p-12 text-center bg-white border border-[#E5E5DC] flex flex-col items-center justify-center shadow-xs">
             <p className="text-[#666666] text-sm font-light">
-              No developments matched your exact criteria &quot;{searchQuery}&quot;.
+              {searchQuery.trim() ? `No developments matched “${searchQuery}” and the selected filters.` : 'No developments matched these filters. Try another location or property type.'}
             </p>
             <button
               onClick={handleResetFilters}

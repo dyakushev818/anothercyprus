@@ -19,9 +19,10 @@ const russianFallback = `<!-- SEO_HOME_CONTENT_START -->
           <h2 id="developments-heading">Четыре проекта в Лимассоле</h2>
           <article><h3><a href="/ru/properties/germasogeia-corporate-prime/">Germasogeia Corporate Prime</a></h3><p>Офисное здание класса A в Потамос Гермасойя, примерно в 400 метрах от моря.</p></article>
           <article><h3><a href="/ru/properties/athanasios-skyline-suites/">Athanasios Skyline Suites</a></h3><p>Квартиры с видом на море в Агиос Атанасиос, Лимассол.</p></article>
-          <article><h3><a href="/ru/properties/tychonas-sanctuary-villas/">The Tychonas Sanctuary Villas</a></h3><p>Готовые виллы с частными бассейнами в Агиос Тихонас.</p></article>
-          <article><h3><a href="/ru/properties/olio-residences-mesa-geitonia/">OLiO Residences — Mesa Geitonia</a></h3><p>Двухспальные резиденции в Меса Гитония с вариантом неюридической планировки третьей спальни. Сдача — декабрь 2027 года; возможна покупка компании, что потенциально позволяет избежать НДС при независимой проверке.</p></article>
+          <article><h3><a href="/ru/properties/tychonas-sanctuary-villas/">The Tychonas Sanctuary Villas</a></h3><p>Виллы с частными бассейнами в Агиос Тихонас; плановая сдача — июль 2027 года.</p></article>
+          <article><h3><a href="/ru/properties/olio-residences-mesa-geitonia/">OLiO Residences — Mesa Geitonia</a></h3><p>Двухспальные резиденции в Меса Гитония с вариантом неюридической планировки третьей спальни. Плановая сдача — декабрь 2027 года; структура сделки и применимые налоги требуют независимой проверки.</p></article>
         </section>
+        <section><h2>Районы и типы недвижимости</h2><ul><li><a href="/ru/areas/germasogeia-commercial-property/">Germasogeia</a></li><li><a href="/ru/areas/agios-athanasios-sea-view-apartments/">Agios Athanasios</a></li><li><a href="/ru/areas/agios-tychonas-luxury-villas/">Agios Tychonas</a></li><li><a href="/ru/areas/mesa-geitonia-new-apartments/">Mesa Geitonia</a></li></ul><p>Заявленные цены: офисное здание €8 700 000 + НДС; Athanasios от €480 000 + НДС; виллы от €1 430 000 + НДС; OLiO от €475 000 + НДС. Актуальное наличие и условия уточняются у продавца. Исходный срок офисного проекта — июнь 2026; текущая готовность требует подтверждения.</p></section>
         <section aria-labelledby="guides-heading"><h2 id="guides-heading">Гиды покупателя</h2><p><a href="/guides/">Практические материалы о покупке недвижимости в Лимассоле</a>.</p></section>
       </main>
       <!-- SEO_HOME_CONTENT_END -->`;

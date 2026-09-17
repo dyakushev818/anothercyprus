@@ -33,7 +33,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
     { label: 'All Developments', value: 'ALL' },
     { label: 'Commercial Office (€8.7M)', value: 'Commercial' },
     { label: 'Luxury Villas (€1.43M+)', value: 'Villa' },
-    { label: 'Sea-View Apartments (€480k)', value: 'Apartment' },
+    { label: 'Apartments', value: 'Apartment' },
   ];
 
   const districtOptions = [
@@ -48,7 +48,6 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
     { label: 'All Criteria', value: 'ALL', icon: Sparkles },
     { label: '0% Commission (Direct)', value: 'COMMISSION', icon: ShieldCheck },
     { label: 'Fast-Track PR 6.2', value: 'PR', icon: ShieldCheck },
-    { label: 'High Yield (≥7.5%)', value: 'ROI', icon: TrendingUp },
     { label: 'All-Inclusive Turnkey', value: 'TURNKEY', icon: Zap },
   ];
 
@@ -62,6 +61,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
           <Search className="w-4 h-4 text-[#8A8A8A] absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
+            aria-label="Search developments"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Search by keyword (e.g. office, villa, pool, solar PV, PR 6.2, 400m, turnkey, sea view)..."
@@ -70,6 +70,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
           {searchQuery && (
             <button
               onClick={() => onSearchChange('')}
+              aria-label="Clear search"
               className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8A8A8A] hover:text-[#1A365D]"
             >
               <X className="w-4 h-4" />
