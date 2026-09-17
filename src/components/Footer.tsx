@@ -201,6 +201,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
 
           <div className="flex items-center gap-6">
             <a href="/guides/" className="hover:text-white transition-colors">Buyer Guides</a>
+            <a href="/ru/guides/novostroyki-limassola-sravnenie-proektov/" className="hover:text-white transition-colors">Сравнение проектов</a>
             <a href="/privacy/" className="hover:text-white transition-colors">Privacy & Analytics</a>
             <button
               onClick={() => onOpenInquiry()}

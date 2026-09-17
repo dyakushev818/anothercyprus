@@ -124,7 +124,7 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
 
               <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2">
                 <span className="px-3 py-1 bg-white/95 text-[#1A365D] text-xs font-mono font-semibold border border-[#E5E5DC] shadow-xs">
-                  Original target: June 2026 — confirm current status
+                  Completed building · Actual property photos
                 </span>
                 <span className="px-3 py-1 bg-[#1A365D] text-white text-xs font-mono font-bold border border-[#1A365D] shadow-xs">
                   Approx. 6.8% Gross Scenario
@@ -301,11 +301,11 @@ export const CommercialSpotlight: React.FC<CommercialSpotlightProps> = ({
               </a>
 
               <button
-                onClick={() => onOpenInquiry('Germasogeia Corporate Prime Complete Dossier')}
+                onClick={() => onOpenInquiry('Germasogeia Corporate Prime — Private Viewing')}
                 className="flex-1 py-3.5 bg-[#1A365D] hover:bg-[#132A4B] text-white text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2 transition-colors shadow-xs cursor-pointer"
               >
                 <Mail className="w-4 h-4 text-[#C29B61]" />
-                <span>Direct Developer Inquiry</span>
+                <span>Arrange a Private Viewing</span>
               </button>
             </div>
           </div>
