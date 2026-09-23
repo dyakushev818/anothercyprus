@@ -22,9 +22,9 @@ const FAQS: FaqItem[] = [
   },
   {
     category: 'Residency',
-    question: 'How do the developments qualify for Fast-Track Cyprus Permanent Residency (Category 6.2)?',
+    question: 'Can a property purchase support a Cyprus residency application?',
     answer:
-      'Certain qualifying investments may support an application under Cyprus Immigration Regulation 6(2). Eligibility depends on the current rules, the property and source-of-funds documentation, and approval by the competent authorities. Obtain independent immigration and legal advice before relying on a property for residency purposes.',
+      'A qualifying investment may support an application under Cyprus Immigration Regulation 6(2), subject to the current rules, the relevant investment category, source-of-funds documentation and a decision by the competent authorities. Confirm whether a particular property fits your circumstances with independent immigration and legal advisers before committing.',
   },
   {
     category: 'Tax',

@@ -172,7 +172,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         ) : property.prEligible ? (
           <div className="mb-4 flex items-center gap-2 text-[11px] font-semibold text-[#1A365D] bg-[#FBF8F2] border border-[#C29B61]/40 px-3 py-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-[#C29B61] flex-shrink-0" />
-            <span>Cyprus EU Permanent Residency Cat 6.2</span>
+            <span>Residency route: check eligibility</span>
           </div>
         ) : null}
 

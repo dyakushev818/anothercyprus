@@ -59,21 +59,21 @@ export const CYPRUS_BENEFITS = [
     badge: 'Direct Savings',
   },
   {
-    title: 'Permanent Residency (Fast-Track Category 6.2)',
+    title: 'Cyprus Regulation 6(2): eligibility review',
     description:
-      'Certain investments may support an application under Regulation 6.2, subject to current eligibility criteria, supporting documents, and official approval. Processing times vary.',
-    badge: 'EU Residency',
+      'The official route has conditions, including a €300,000 minimum investment threshold in the relevant category. Confirm the current rules, property category and applicant eligibility with independent advisers.',
+    badge: 'Residency review',
   },
   {
-    title: 'Cyprus Non-Dom Tax Regime (0% Dividend Tax)',
+    title: 'Cyprus tax residence: independent advice required',
     description:
-      'Non-domicile treatment may provide relief from certain taxes for qualifying Cyprus tax residents. Eligibility, scope, and current rates require professional advice.',
-    badge: 'Tax Optimization',
+      'Tax residence and non-domicile treatment are personal and may change. Obtain current independent tax advice before relying on any rate, relief or planning outcome.',
+    badge: 'Tax review',
   },
   {
-    title: 'High Rental Yields & Sustained Capital Growth',
+    title: 'Rental scenarios require independent appraisal',
     description:
-      'Limassol has year-round corporate and residential demand, but achievable rent, occupancy and net yield vary materially by property and should be independently appraised.',
-    badge: 'High Yield',
+      'Rental demand, operating costs and resale values vary by unit, timing and market conditions. Use current comparable evidence before making an investment decision.',
+    badge: 'Market review',
   },
 ];

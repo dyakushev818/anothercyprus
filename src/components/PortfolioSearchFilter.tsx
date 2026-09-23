@@ -47,7 +47,8 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
   const tagOptions = [
     { label: 'All Criteria', value: 'ALL', icon: Sparkles },
     { label: '0% Commission (Direct)', value: 'COMMISSION', icon: ShieldCheck },
-    { label: 'Fast-Track PR 6.2', value: 'PR', icon: ShieldCheck },
+    { label: 'Residency review', value: 'PR', icon: ShieldCheck },
+    { label: 'High Yield (≥7.5%)', value: 'ROI', icon: TrendingUp },
     { label: 'All-Inclusive Turnkey', value: 'TURNKEY', icon: Zap },
   ];
 
@@ -64,7 +65,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
             aria-label="Search developments"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search by keyword (e.g. office, villa, pool, solar PV, PR 6.2, 400m, turnkey, sea view)..."
+            placeholder="Search by keyword (e.g. office, villa, pool, solar PV, residency, 400m, turnkey, sea view)..."
             className="w-full pl-10 pr-10 py-2.5 bg-[#F9F9F6] border border-[#D4D4C8] focus:border-[#1A365D] text-[#2C2C2C] text-xs sm:text-sm placeholder-[#8A8A8A] focus:outline-none transition-colors"
           />
           {searchQuery && (

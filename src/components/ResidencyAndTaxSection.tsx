@@ -10,26 +10,26 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
   const steps = [
     {
       num: '01',
-      title: 'Curated Property Selection',
-      desc: 'Identify prime properties matching Category 6.2 PR eligibility criteria (min €300,000 + VAT) and investment goals with our Limassol advisory team.',
+      title: 'Property and eligibility review',
+      desc: 'Review the property materials and current official criteria with independent legal and immigration advisers before making any commitment.',
       icon: KeyRound,
     },
     {
       num: '02',
-      title: 'Legal Due Diligence & Contract',
-      desc: 'Independent Cypriot legal counsel conducts thorough title deed searches and drafts the reservation and sale agreement protecting buyer funds in escrow.',
+      title: 'Independent legal due diligence',
+      desc: 'Appoint an independent Cyprus lawyer to check title, contract terms, deposits and the proposed transaction structure.',
       icon: FileCheck2,
     },
     {
       num: '03',
-      title: 'Land Registry Stamping & Deposit',
-      desc: 'Contract deposited at the Limassol District Lands Office, legally securing your ownership priority against all third-party claims.',
+      title: 'Contract and Lands Office filing',
+      desc: 'Your lawyer can advise on contract stamping, filing and deadlines. Land Registry procedures do not replace legal due diligence.',
       icon: Award,
     },
     {
       num: '04',
-      title: 'PR Application & Biometrics',
-      desc: 'An independent adviser may prepare and submit an application dossier. Biometrics and any permit are handled by the competent authorities, subject to approval.',
+      title: 'Application and official decision',
+      desc: 'Where appropriate, an independent adviser may assist. The competent authorities assess every application and set timing.',
       icon: UserCheck,
     },
   ];
@@ -40,13 +40,13 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[10px] uppercase tracking-[0.35em] text-[#C29B61] font-bold">
-            Cyprus Golden Advantage
+            Residency & Tax Questions
           </span>
           <h2 className="mt-3 text-3xl sm:text-5xl font-serif italic text-[#1A365D] font-bold leading-tight">
-            Permanent EU Residency & Unmatched Tax Regimes
+            Property purchases and residency questions
           </h2>
           <p className="mt-4 text-[#666666] text-sm sm:text-base font-light leading-relaxed">
-            Acquiring real estate in Limassol unlocks one of the European Union’s most attractive lifestyle and wealth preservation frameworks.
+            A property purchase may form part of an application under Cyprus Regulation 6(2). Eligibility, documentation and any decision remain with the competent authorities.
           </p>
         </div>
 
@@ -77,14 +77,22 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-5">
               <div className="flex items-center gap-2 text-[#C29B61] text-[10px] uppercase tracking-[0.25em] font-bold font-mono">
-                <ShieldCheck className="w-4 h-4 text-[#C29B61]" /> Fast-Track Category 6.2 Program
+                <ShieldCheck className="w-4 h-4 text-[#C29B61]" /> Cyprus Regulation 6(2): eligibility review
               </div>
               <h3 className="text-2xl sm:text-3xl font-serif italic text-[#1A365D] font-bold">
-                Cyprus Permanent Residency Requirements
+                Cyprus residency route: what to verify
               </h3>
               <p className="text-[#666666] text-sm sm:text-base font-light leading-relaxed">
-                Certain investments may support an application under Cyprus Regulation 6(2), subject to current eligibility criteria, documentation, and approval by the competent authorities.
+                Official Cyprus guidance describes investment categories and current application conditions. A minimum threshold of €300,000 applies in the relevant route; your property, documents and decision must be independently verified.
               </p>
+              <a
+                href="https://www.gov.cy/mip-md/en/documents/companies-investors-permanent-residence-3/immigration-permits-for-investors/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-[#1A365D] font-mono text-[10px] font-bold uppercase tracking-[0.12em] hover:text-[#C29B61] transition-colors"
+              >
+                Read official Cyprus residency guidance <ArrowRight className="w-3.5 h-3.5" />
+              </a>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
@@ -93,7 +101,7 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
-                  <span>Covers spouse & children up to 25</span>
+                  <span>Family eligibility depends on current legislation and the applicant&apos;s circumstances</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-[#2C2C2C] bg-[#F9F9F6] p-3 border border-[#E5E5DC] font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#C29B61] flex-shrink-0" />
@@ -111,16 +119,16 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
                 <Globe className="w-6 h-6 text-[#C29B61]" />
               </div>
               <h4 className="font-serif text-xl text-[#1A365D] italic font-bold">
-                Request PR Legal Advisory Kit
+                Request buyer checklist
               </h4>
               <p className="text-xs text-[#666666] leading-relaxed font-light">
-                Receive our comprehensive legal dossier covering document checklists, non-dom tax exemptions, and escrow security protocols.
+                We can provide property materials and a buyer checklist. Obtain independent legal and tax advice before signing or applying.
               </p>
               <button
-                onClick={() => onOpenInquiry('Permanent Residency Consultation')}
+                onClick={() => onOpenInquiry('Residency & Tax Questions')}
                 className="w-full py-3.5 bg-[#1A365D] hover:bg-[#132A4B] text-white font-bold text-xs uppercase tracking-widest transition-all cursor-pointer shadow-xs"
               >
-                Schedule Free Legal Consultation
+                Request document checklist
               </button>
             </div>
           </div>
@@ -130,10 +138,10 @@ export const ResidencyAndTaxSection: React.FC<ResidencyAndTaxSectionProps> = ({ 
         <div>
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl font-serif italic text-[#1A365D] font-bold">
-              Seamless 4-Step Acquisition Process
+              Property and application steps
             </h3>
             <p className="text-xs sm:text-sm text-[#8A8A8A] mt-2 font-light">
-              From private viewing to biometric permanent residency card collection
+              From property review to any official decision, each stage needs independent verification.
             </p>
           </div>
 

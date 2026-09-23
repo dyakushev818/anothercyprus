@@ -18,8 +18,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenInquiry }) => 
       icon: Compass,
     },
     {
-      title: 'Fast-Track PR & Tax Optimization',
-      desc: 'Residency and tax planning may be available to qualifying applicants, subject to current rules, official approval, and professional advice.',
+      title: 'Residency & Tax: Independent Advice',
+      desc: 'A property purchase may be relevant to a residency application under current rules. Eligibility, tax treatment and any decision require independent professional advice.',
       icon: ShieldCheck,
     },
     {

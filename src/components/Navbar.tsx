@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               Locations
             </a>
             <a href="#residency" className="hover:text-[#1A365D] transition-colors">
-              PR & Taxes
+              Residency & Taxes
             </a>
             <a href="#about" className="hover:text-[#1A365D] transition-colors">
               Direct Terms
@@ -143,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={() => setMobileMenuOpen(false)}
               className="text-[#2C2C2C] hover:text-[#1A365D] py-2.5 border-b border-[#E5E5DC]"
             >
-              Cyprus PR 6.2 & Taxes
+              Residency & Taxes
             </a>
             <a
               href="#about"
