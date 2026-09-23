@@ -188,6 +188,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
                   Practical Buyer Guides
                 </a>
               </li>
+              <li>
+                <a href="/markets/european-buyers-limassol/" className="hover:text-[#C29B61] transition-colors">
+                  Buying from Europe
+                </a>
+              </li>
             </ul>
           </div>
         </div>
