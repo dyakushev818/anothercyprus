@@ -14,47 +14,113 @@ type Guide = {
   propertyUrl: string;
   propertyCta: string;
   date?: string;
+  propertyIntro?: string;
+  note?: string;
   sections: Section[];
 };
 
 const guides: Guide[] = [
   {
-    slug: 'buy-office-building-limassol-company-headquarters',
-    title: 'Buying an Office Building in Limassol for Your Company Headquarters',
-    description: 'Assess a whole office building for your company: usable space, parking, fit-out, occupation planning and a practical viewing brief for Limassol buyers.',
-    eyebrow: 'Company headquarters · Limassol',
-    intro: 'When a company buys its own office building, the first question is whether the space will work for the business. An impressive exterior is useful, but the decision also depends on the floor plans, staff journeys, fit-out and the time needed to become operational. Here is how to turn a property viewing into a useful headquarters assessment.',
-    image: '/images/commercial/al1.jpg',
-    propertyName: 'Germasogeia Corporate Prime',
-    propertyUrl: '/properties/germasogeia-corporate-prime/',
-    propertyCta: 'Request floor plans and arrange a headquarters viewing',
-    date: '2026-10-11',
-    sections: [
-      { heading: 'Write the business brief before comparing buildings', paragraphs: ['List the teams who will occupy the building, their working patterns and the spaces they share. Reception, meeting rooms, quiet rooms, IT equipment, storage and staff facilities need room as well as desks. Describe both the initial occupation and a realistic expansion scenario.', 'A whole building can offer more control over the workplace, but also more responsibility for its operation. Decide who will manage maintenance and suppliers, and whether any unused floors would remain available for expansion or be considered for letting.'] },
-      { heading: 'Test the floor plans against actual furniture and circulation', paragraphs: ['Ask for dimensioned plans and a floor-by-floor area schedule. Have a workplace designer place desks, meeting rooms and circulation routes on those plans before estimating capacity. Gross area alone does not establish how many people can work comfortably in a building.', 'The advertised gross total for Germasogeia Corporate Prime is 1,934 m². Its listing separately identifies covered space and external areas. Use the current area schedule to establish which spaces suit your proposed occupation; do not treat the gross total as usable office area.'], bullets: ['Identify the area available for workstations and meeting rooms.', 'Check the route between reception, lifts, floors and shared facilities.', 'Discuss accessibility, intended use and occupancy requirements with your technical advisers.', 'Confirm what the existing specification includes and what your fit-out must add.'] },
-      { heading: 'Make parking and arrival part of the viewing', paragraphs: ['The listing states 18 parking spaces and four EV charging points. Compare those figures with your staff, visitors and delivery needs rather than assuming they are sufficient. During a viewing, inspect the spaces, access and the route into the building.', 'Visit the location at the times your team would normally arrive and leave. Test the actual commute and nearby services. The stated distance of approximately 400 metres from the coast describes the location; it does not answer how the workplace will operate on a busy weekday.'] },
-      { heading: 'Separate a completed building from a ready workplace', paragraphs: ['Germasogeia Corporate Prime is marketed as completed, with actual photographs on the property page. That makes a physical inspection possible. It does not establish that your company can move in immediately without further work.', 'Prepare a schedule for the building inspection, document review, interior fit-out, furniture, IT installation and commissioning. Ask for the installed-systems specification and handover records, then establish what your own team and contractors must deliver before occupation.'] },
-      { heading: 'Use a single written brief to request the next step', paragraphs: ['Send your expected team size, required occupation date, parking needs and preferred viewing dates. Request the current floor plans, area schedule, inclusion specification and written purchase terms. The advertised asking price is €8.7 million plus VAT; request current confirmation for the exact transaction.', 'For the separate purchase checks, read our <a href="/guides/office-building-potamos-germasogeias-buyer-checklist/">Potamos Germasogeias buyer checklist</a>. To assess this building as a headquarters, <a href="/properties/germasogeia-corporate-prime/">request its plans and a private viewing</a>. A clear operating brief helps the property team answer your specific questions.'] },
-    ],
+    "propertyName": "Germasogeia Corporate Prime",
+    "propertyUrl": "/properties/germasogeia-corporate-prime/",
+    "date": "2026-10-11",
+    "slug": "buy-office-building-limassol-company-headquarters",
+    "title": "Buying an Office Building in Limassol for Your Company",
+    "description": "What to look for when buying your own office building in Limassol, from desk layouts and parking to fit-out and the first viewing.",
+    "eyebrow": "Your next office in Limassol",
+    "intro": "The photographs look good. The address works. Now picture a normal Tuesday in the building: people arriving, a client waiting downstairs, two meetings running at once and a delivery at the entrance. That is a useful place to start when choosing an office for your own company.",
+    "image": "/images/commercial/al1.jpg",
+    "propertyCta": "See the building and request the plans",
+    "propertyIntro": "Considering Germasogeia for your company? See the photographs, check the building details and ask for the floor plans before arranging a visit.",
+    "note": "Building details and the asking price come from the current property listing. Confirm them in writing and have your advisers review the documents before committing to a purchase.",
+    "sections": [
+      {
+        "heading": "Start with the people who will work there",
+        "paragraphs": [
+          "Write down how much space each team needs. Include meeting rooms, a reception area, storage and somewhere for staff to take a break. If you expect to hire, leave room for that too. An office that fits today can become awkward surprisingly quickly.",
+          "Think about how departments work together. Teams that speak throughout the day may want to share a floor. A group handling confidential calls may need quieter rooms. Ask for scaled plans and try a furniture layout before deciding how many desks will fit."
+        ]
+      },
+      {
+        "heading": "Look beyond the headline square metres",
+        "paragraphs": [
+          "Germasogeia Corporate Prime is advertised with a gross total area of 1,934 m². That figure needs a breakdown: office space, common areas and outdoor areas serve different purposes. A roof garden may be a welcome addition, but you cannot count it as desk space.",
+          "Ask for the area schedule alongside the floor plans. Walk through the building with both in hand. Check room proportions, natural light, the position of the lifts and the routes people will use most often. These details are easier to judge on site than from a brochure."
+        ]
+      },
+      {
+        "heading": "Try the journey your staff will make",
+        "paragraphs": [
+          "The building is in Potamos Germasogeias, around 400 metres from the coast according to the listing. Visit when your team would normally arrive. Drive the approach, look at the entrance and see how easy it is to reach nearby services on foot.",
+          "The advertised specification includes 18 parking spaces and four EV charging points. Count the spaces during the visit and ask how they are allocated. Then compare them with your own needs, including clients and visitors. Eighteen spaces will suit some companies better than others."
+        ]
+      },
+      {
+        "heading": "Work out what happens before moving day",
+        "paragraphs": [
+          "The building is marketed as completed, and the gallery shows actual photographs. You can inspect the space rather than judge it from renders. Bring the person responsible for your office move, or a designer who can help assess the fit-out.",
+          "Ask what is already installed and what you will need to add. Furniture, IT, meeting-room equipment and any changes to the layout take time to organise. Get quotes for that work and agree a realistic schedule before setting a moving date. Also ask who will look after the lifts, cooling and other shared systems once you own the building."
+        ]
+      },
+      {
+        "heading": "Come to the first viewing with a short list",
+        "paragraphs": [
+          "Tell us your team size, preferred moving date and parking requirements. We can then request the plans and arrange a viewing around the questions that matter to you. The published asking price is €8.7 million plus VAT; ask for confirmation of the current terms.",
+          "You can <a href=\"/properties/germasogeia-corporate-prime/\">see Germasogeia Corporate Prime and request the floor plans here</a>. If the space looks right, the <a href=\"/guides/office-building-potamos-germasogeias-buyer-checklist/\">buyer checklist</a> will help you prepare the document review with your advisers."
+        ]
+      }
+    ]
   },
   {
-    slug: 'same-office-building-multiple-agents-limassol',
-    title: 'The Same Limassol Office Building Listed by Several Agents: How to Compare Offers',
-    description: 'Compare multiple listings for one Limassol office building using the same plans, area schedule, asking price, included items and written purchase terms.',
-    eyebrow: 'Commercial property · Comparing offers',
-    intro: 'Seeing the same commercial building on several websites can make a purchase harder to assess. Different photographs, area figures or descriptions may leave you wondering whether the offers are really comparable. The useful next step is to build one consistent fact sheet for the building and compare each proposal against it.',
-    image: '/images/commercial/al2.jpg',
-    propertyName: 'Germasogeia Corporate Prime',
-    propertyUrl: '/properties/germasogeia-corporate-prime/',
-    propertyCta: 'Request the current building fact sheet and purchase details',
-    date: '2026-10-11',
-    sections: [
-      { heading: 'Confirm that every listing describes the same asset', paragraphs: ['Match the location, exterior, floor arrangement and project name. Request a property reference and current plans from the person handling your enquiry. Establish whether the offer covers the whole building, selected floors or a different ownership interest.', 'For Germasogeia Corporate Prime, the Another Cyprus listing presents a whole completed commercial office building in Potamos Germasogeias, Limassol. Use that scope as the starting point when comparing another proposal, then verify it in the written offer and transaction documents.'] },
-      { heading: 'Put area figures on the same measurement basis', paragraphs: ['Two advertisements can display different square-metre figures because they describe different components. Ask each contact to distinguish internal office space, common areas, covered verandas, uncovered areas, parking and roof space. A smaller headline figure does not by itself establish a different building or a better deal.', 'The Another Cyprus listing states 1,934 m² gross total area. Ask for the current breakdown and the measurement basis before calculating or comparing a price per square metre. For a company headquarters, usable workspace also matters; for any proposed letting, establish the space actually available for that use.'], bullets: ['Compare the same floor-by-floor drawings and revision date.', 'Record gross, covered and usable areas separately where supplied.', 'Identify which external and common areas are included in each figure.', 'Resolve material differences in writing before negotiating.'] },
-      { heading: 'Compare written terms rather than headline prices', paragraphs: ['Record the price, whether VAT is included or additional, the proposed purchase scope, included equipment, parking allocation, any buyer fees and the validity date of the offer. Ask who is authorised to confirm those terms. Differences should be explained before you treat one advertisement as cheaper.', 'The published Another Cyprus asking price is €8.7 million plus VAT. This is a marketing reference that requires current written confirmation. Do not infer a particular tax outcome from wording in an advertisement; transaction-specific questions belong with your independent advisers.'] },
-      { heading: 'Check completion and included items using current evidence', paragraphs: ['An older advertisement may describe a construction stage while another page shows a completed building. Request dated photographs and arrange a viewing. Confirm what is installed and what is included in the proposed handover, rather than relying on a mix of renders and actual images.', 'The Another Cyprus page describes Germasogeia Corporate Prime as completed and uses actual building photographs. Its stated parking, EV charging and roof-garden features should still be checked against the current plans, specification and physical inspection.'] },
-      { heading: 'Choose the contact who can organise a clear information trail', paragraphs: ['Keep a record of the plans received, viewing arrangements, outstanding questions and written responses. A useful contact can explain the source and date of the information, arrange access and obtain answers from the relevant parties. The number of websites displaying a building does not establish the quality of that process.', 'You can <a href="/properties/germasogeia-corporate-prime/">request the current plans and purchase details through Another Cyprus</a>. Include any conflicting area or price figures you have seen so they can be addressed directly. Before making a commitment, use the <a href="/guides/office-building-potamos-germasogeias-buyer-checklist/">building buyer checklist</a> to organise your independent review.'] },
-    ],
+    "propertyName": "Germasogeia Corporate Prime",
+    "propertyUrl": "/properties/germasogeia-corporate-prime/",
+    "date": "2026-10-11",
+    "slug": "same-office-building-multiple-agents-limassol",
+    "title": "One Office Building, Several Agents: Which Details Should You Trust?",
+    "description": "Seeing the same Limassol office building on several websites? Here is how to check differences in area, price, photographs and purchase terms.",
+    "eyebrow": "Comparing office buildings in Limassol",
+    "intro": "You save an office building to your shortlist, then find it on another website with a different description. Perhaps the area is smaller, the price is worded differently or the photographs show an earlier stage of construction. Before choosing who to contact, it helps to find out what each advert is actually describing.",
+    "image": "/images/commercial/al2.jpg",
+    "propertyCta": "Ask for the current plans and price",
+    "propertyIntro": "Comparing offers for Germasogeia Corporate Prime? Send us the details you want to clarify and request the current plans and purchase terms.",
+    "note": "Advertisements are a starting point. Confirm the property details, included items and purchase terms in writing before making a commitment.",
+    "sections": [
+      {
+        "heading": "First, check what is for sale",
+        "paragraphs": [
+          "Similar photographs do not tell you whether an offer covers an entire building or only part of it. Ask for the property reference, location and floor plans. Get a clear answer about the floors, parking and other spaces included in the sale.",
+          "Germasogeia Corporate Prime is presented on Another Cyprus as a completed whole office building in Potamos Germasogeias. If you are comparing it with another listing, check that both offers cover the same property and the same purchase scope."
+        ]
+      },
+      {
+        "heading": "Different area figures need an explanation",
+        "paragraphs": [
+          "One advert may show gross total area while another uses covered area. Both figures can appear on a property schedule, but they answer different questions. Ask what is included in each number before comparing prices per square metre.",
+          "Our listing states 1,934 m² gross total area. Request the breakdown by floor and ask which figures include common areas, verandas or roof space. Keep the schedule next to the plans. If two adverts still disagree, ask the contacts to explain the difference in writing."
+        ]
+      },
+      {
+        "heading": "Read the words next to the price",
+        "paragraphs": [
+          "A price quoted plus VAT cannot be compared directly with one that says VAT included. Parking, equipment and buyer fees also need to be clear. Ask for a dated written offer showing the price, included items and any additional charges.",
+          "The asking price published on Another Cyprus is €8.7 million plus VAT. Confirm that it is still current when you enquire. If someone proposes a different purchase structure, let your legal and tax advisers review it before treating it as a saving."
+        ]
+      },
+      {
+        "heading": "Ask for current photographs, then visit",
+        "paragraphs": [
+          "Older adverts can stay online after construction has finished. A render on one website and a photograph on another may describe the same building at different points in time. Ask when the images were taken and whether they show the property as it stands today.",
+          "The Germasogeia Corporate Prime gallery uses actual building photographs, and the property is marketed as completed. During the viewing, inspect the office floors, parking and roof garden. Ask which equipment is installed and which items are included in the handover."
+        ]
+      },
+      {
+        "heading": "A useful contact should make the answers easier to get",
+        "paragraphs": [
+          "Pay attention to what happens after your enquiry. Do you receive the plans you asked for? Are questions about the area and price answered clearly? Can a viewing be arranged? Those answers will tell you more than another polished advert.",
+          "If you have seen conflicting details for this building, <a href=\"/properties/germasogeia-corporate-prime/\">send us your questions and request the current plans</a>. Keep the written answers together so your advisers can check the same information. Our <a href=\"/guides/office-building-potamos-germasogeias-buyer-checklist/\">buyer checklist</a> covers the documents to request once you are ready to look more closely."
+        ]
+      }
+    ]
   },
   {
     slug: 'office-building-potamos-germasogeias-buyer-checklist',
@@ -309,8 +375,8 @@ function renderGuide(guide: Guide) {
   const canonical = `https://anothercyprus.com/guides/${guide.slug}/`;
   const articleDate = guide.date ?? '2026-08-27';
   const schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: guide.title, description: guide.description, image: `https://anothercyprus.com${guide.image}`, datePublished: articleDate, dateModified: articleDate, author: { '@type': 'Organization', name: 'Another Cyprus' }, publisher: { '@type': 'Organization', name: 'Another Cyprus', url: 'https://anothercyprus.com/' }, mainEntityOfPage: canonical });
-  const sections = guide.sections.map((section, index) => `${index === 2 ? `<aside class="property"><strong>${guide.propertyName}</strong><p>For buyers who want to compare this checklist with a live development, the project page includes current headline details, photographs and a direct request for plans.</p><a class="cta" href="${guide.propertyUrl}">${guide.propertyCta}</a></aside>` : ''}<section><h2>${section.heading}</h2>${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}${section.bullets ? `<ul>${section.bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}</section>`).join('');
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guide.title} | Another Cyprus</title><meta name="description" content="${guide.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${guide.title}"><meta property="og:description" content="${guide.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${guide.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}</style><script type="application/ld+json">${schema}</script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><a class="back" href="/guides/">Buyer guides</a></nav><header class="hero"><div class="eyebrow">${guide.eyebrow}</div><h1>${guide.title}</h1><p class="intro">${guide.intro}</p><img src="${guide.image}" alt="${guide.title}" width="1600" height="1000"></header><article class="article">${sections}<p class="note">This guide is general information, not legal, tax, immigration, valuation or investment advice. Property details and market conditions change. Buyers should verify all material facts with independent qualified advisers.</p></article></main><footer><div class="wrap">Another Cyprus · Practical Limassol property guides · Direct property-specific enquiries</div></footer></body></html>`;
+  const sections = guide.sections.map((section, index) => `${index === 2 ? `<aside class="property"><strong>${guide.propertyName}</strong><p>${guide.propertyIntro ?? 'For buyers who want to compare this checklist with a live development, the project page includes current headline details, photographs and a direct request for plans.'}</p><a class="cta" href="${guide.propertyUrl}">${guide.propertyCta}</a></aside>` : ''}<section><h2>${section.heading}</h2>${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}${section.bullets ? `<ul>${section.bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}</section>`).join('');
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guide.title} | Another Cyprus</title><meta name="description" content="${guide.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${guide.title}"><meta property="og:description" content="${guide.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${guide.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}</style><script type="application/ld+json">${schema}</script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><a class="back" href="/guides/">Buyer guides</a></nav><header class="hero"><div class="eyebrow">${guide.eyebrow}</div><h1>${guide.title}</h1><p class="intro">${guide.intro}</p><img src="${guide.image}" alt="${guide.title}" width="1600" height="1000"></header><article class="article">${sections}<p class="note">${guide.note ?? 'This guide is general information, not legal, tax, immigration, valuation or investment advice. Property details and market conditions change. Buyers should verify all material facts with independent qualified advisers.'}</p></article></main><footer><div class="wrap">Another Cyprus · Practical Limassol property guides · Direct property-specific enquiries</div></footer></body></html>`;
 }
 
 const outputRoot = join(process.cwd(), 'public', 'guides');
