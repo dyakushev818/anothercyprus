@@ -6,6 +6,8 @@ const today = new Date().toISOString().slice(0, 10);
 let sitemap = fs.readFileSync(sitemapPath, 'utf8');
 
 const internationalPages = [
+  'https://anothercyprus.com/guides/buy-office-building-limassol-company-headquarters/',
+  'https://anothercyprus.com/guides/same-office-building-multiple-agents-limassol/',
   'https://anothercyprus.com/markets/european-buyers-limassol/',
   'https://anothercyprus.com/ru/markets/limassol-property-russian-speaking-buyers/',
   'https://anothercyprus.com/uk/markets/limassol-property-ukrainian-buyers/',
