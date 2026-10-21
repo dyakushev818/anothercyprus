@@ -2,7 +2,7 @@ import './generate-russian-guide';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-type Section = { heading: string; paragraphs: string[]; bullets?: string[] };
+type Section = { heading: string; paragraphs: string[]; bullets?: string[]; tableHtml?: string };
 type Guide = {
   slug: string;
   title: string;
@@ -14,12 +14,80 @@ type Guide = {
   propertyUrl: string;
   propertyCta: string;
   date?: string;
+  hideProperty?: boolean;
   propertyIntro?: string;
   note?: string;
   sections: Section[];
 };
 
 const guides: Guide[] = [
+{
+  "slug": "cyprus-property-sales-contracts-september-2026",
+  "title": "Cyprus Property Sales Contracts Rise 13.3% in September 2026",
+  "description": "Cyprus recorded 1,681 sales contracts in September 2026. See the district figures and what the data can—and cannot—tell a Limassol property buyer.",
+  "eyebrow": "Cyprus property market · 21 October 2026",
+  "intro": "Official sales-contract figures and a practical checklist for buyers comparing properties in Limassol.",
+  "image": "/images/al1.jpg",
+  "propertyName": "",
+  "propertyUrl": "/",
+  "propertyCta": "",
+  "hideProperty": true,
+  "date": "2026-10-21",
+  "sections": [
+    {
+      "heading": "What changed in September",
+      "paragraphs": [
+        "Cyprus recorded 1,681 deposited property sales contracts in September 2026, compared with 1,484 a year earlier: an increase of 13.3%. Across January–September, the total reached 14,969, up from 13,173, or 13.6%.",
+        "The Department of Lands and Surveys report, dated 5 October 2026, also records the following September district totals. Percentage changes below are calculated from its counts and rounded to one decimal place.",
+        "Source: <a href=\"https://portal.dls.moi.gov.cy/wp-content/uploads/2026/02/Contracts-of-Sale-2025-2026.pdf\">Department of Lands and Surveys, report dated 5 October 2026</a>. Calculations: editorial."
+      ],
+      "tableHtml": "<table><thead><tr><th>District</th><th>September 2025</th><th>September 2026</th><th>Change</th></tr></thead><tbody><tr><th>Nicosia</th><td>351</td><td>374</td><td>+6.6%</td></tr><tr><th>Limassol</th><td>436</td><td>506</td><td>+16.1%</td></tr><tr><th>Larnaca</th><td>305</td><td>393</td><td>+28.9%</td></tr><tr><th>Famagusta</th><td>79</td><td>63</td><td>-20.3%</td></tr><tr><th>Paphos</th><td>313</td><td>345</td><td>+10.2%</td></tr></tbody></table>"
+    },
+    {
+      "heading": "More contracts do not mean prices rose by the same amount",
+      "paragraphs": [
+        "These figures measure deposited sales contracts. They do not establish changes in sale prices, rental yields or completed title transfers. A busier market is useful context for a purchase; it does not show whether a particular asking price is fair.",
+        "For a Limassol buyer, the practical response is to compare the actual property and transaction terms rather than turn a national activity figure into a price forecast. The steps below are our editorial checklist, not additional findings from the report."
+      ]
+    },
+    {
+      "heading": "Compare like with like before comparing prices",
+      "paragraphs": [
+        "Start with three genuinely comparable options: similar location, property type, size and completion stage. An off-plan apartment, a completed apartment and a detached villa answer different needs. Comparing their headline prices without those differences can create a misleading impression of value.",
+        "Record internal covered area separately from covered verandas and other spaces. Ask each seller to explain the area definitions used in the listing. If you calculate a price per square metre, use the same area basis throughout and label the calculation. A consistent comparison is more useful than a precise-looking number built from incompatible measurements."
+      ]
+    },
+    {
+      "heading": "Turn the specification into a written comparison",
+      "paragraphs": [
+        "For each shortlisted property, request a dated specification and an itemised explanation of what the quoted price includes. Compare parking, storage, heating and cooling, appliances and communal facilities. Treat an item as unconfirmed when it appears in promotional material but is absent from the written offer.",
+        "Build a simple comparison sheet with columns for asking price, included items, completion stage, expected handover, recurring costs, unanswered questions and the date each answer was received. Keep seller statements distinct from independently checked information. This makes it easier to update the shortlist when a price or delivery estimate changes."
+      ]
+    },
+    {
+      "heading": "Check the transaction, not just the presentation",
+      "paragraphs": [
+        "Before committing, ask an independent Cyprus-qualified lawyer to review the proposed purchase and identify the documents and checks appropriate to that particular property. Ask for a clear written explanation of ownership, permissions, contractual obligations, payment milestones and any outstanding issues.",
+        "Request a transaction-specific estimate of taxes, fees and other costs from the relevant qualified advisers. Do not infer a tax treatment from a property category or a market report. This article does not calculate taxes or offer legal advice: the aim is to make missing information visible before a decision."
+      ]
+    },
+    {
+      "heading": "If rental income matters, separate evidence from assumptions",
+      "paragraphs": [
+        "Ask how any proposed rental estimate was produced: which comparable properties were used, over what period, and whether the figure is gross or net. Put occupancy, management fees, maintenance and other assumed costs into separate lines. An asking rent is not evidence of an achieved annual income.",
+        "Run a less favourable scenario alongside the advertised one. A longer vacancy or an unexpected expense should remain visible in the calculation. Do not describe the result as guaranteed income, and do not use the increase in sales contracts as proof of future returns."
+      ]
+    },
+    {
+      "heading": "A useful next step for Limassol buyers",
+      "paragraphs": [
+        "Choose your intended use first: a home, occasional stays or a rental investment. Then prepare a shortlist with the same comparison fields for every option. The September figures provide context; the shortlist, documents and verified answers support the individual decision.",
+        "Explore Another Cyprus’s Limassol developments and buyer guides, then request current availability, plans and a dated specification for the properties that fit your brief. Confirm the details before relying on any offer.",
+        "<a href=\"https://anothercyprus.com/\">Explore Limassol developments</a> · <a href=\"https://anothercyprus.com/guides/\">Read the buyer guides</a>"
+      ]
+    }
+  ]
+},
   {
     "propertyName": "Germasogeia Corporate Prime",
     "propertyUrl": "/properties/germasogeia-corporate-prime/",
@@ -369,14 +437,15 @@ const guides: Guide[] = [
   },
 ];
 
+const tableCss = `table{width:100%;border-collapse:collapse;font-size:clamp(12px,2.7vw,16px)}th,td{text-align:left;padding:8px 4px;border-bottom:1px solid #ddd}`;
 const css = `:root{font-family:Georgia,serif;color:#2d3748;background:#f8f7f2}*{box-sizing:border-box}body{margin:0}a{color:#17365d}.wrap{max-width:900px;margin:auto;padding:24px}.nav{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd8ca;padding:16px 0;font-family:Arial,sans-serif}.brand{text-decoration:none;letter-spacing:.22em;font-weight:800}.back{font-size:14px}.hero{padding:64px 0 34px}.eyebrow{font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em;color:#a3773b}h1{font-size:52px;line-height:1.08;color:#17365d;margin:16px 0 22px}.intro{font-size:22px;line-height:1.6;color:#536070}.hero img{width:100%;max-height:500px;object-fit:cover;margin-top:28px}.article{max-width:760px;margin:0 auto}.article h2{font-size:31px;color:#17365d;margin:48px 0 14px}.article p,.article li{font-size:18px;line-height:1.75}.article li{margin:8px 0}.property{border-left:5px solid #c29b61;background:#fff;padding:26px 30px;margin:48px 0;font-family:Arial,sans-serif}.property strong{display:block;color:#17365d;font-size:20px;margin-bottom:10px}.cta{display:inline-block;background:#17365d;color:#fff;text-decoration:none;padding:13px 18px;font-weight:700;margin-top:8px}.note{font:14px/1.6 Arial,sans-serif;color:#68717d;border-top:1px solid #ddd8ca;padding-top:24px;margin:50px 0}footer{font:14px Arial,sans-serif;border-top:1px solid #ddd8ca;padding:28px 0;color:#6e747d}@media(max-width:700px){h1{font-size:38px}.intro{font-size:19px}.article h2{font-size:27px}.article p,.article li{font-size:17px}.hero{padding-top:38px}}`;
 
 function renderGuide(guide: Guide) {
   const canonical = `https://anothercyprus.com/guides/${guide.slug}/`;
   const articleDate = guide.date ?? '2026-08-27';
   const schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: guide.title, description: guide.description, image: `https://anothercyprus.com${guide.image}`, datePublished: articleDate, dateModified: articleDate, author: { '@type': 'Organization', name: 'Another Cyprus' }, publisher: { '@type': 'Organization', name: 'Another Cyprus', url: 'https://anothercyprus.com/' }, mainEntityOfPage: canonical });
-  const sections = guide.sections.map((section, index) => `${index === 2 ? `<aside class="property"><strong>${guide.propertyName}</strong><p>${guide.propertyIntro ?? 'For buyers who want to compare this checklist with a live development, the project page includes current headline details, photographs and a direct request for plans.'}</p><a class="cta" href="${guide.propertyUrl}">${guide.propertyCta}</a></aside>` : ''}<section><h2>${section.heading}</h2>${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}${section.bullets ? `<ul>${section.bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}</section>`).join('');
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guide.title} | Another Cyprus</title><meta name="description" content="${guide.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${guide.title}"><meta property="og:description" content="${guide.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${guide.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}</style><script type="application/ld+json">${schema}</script><script defer src="/content-analytics.js"></script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><a class="back" href="/guides/">Buyer guides</a></nav><header class="hero"><div class="eyebrow">${guide.eyebrow}</div><h1>${guide.title}</h1><p class="intro">${guide.intro}</p><img src="${guide.image}" alt="${guide.title}" width="1600" height="1000"></header><article class="article">${sections}<p class="note">${guide.note ?? 'This guide is general information, not legal, tax, immigration, valuation or investment advice. Property details and market conditions change. Buyers should verify all material facts with independent qualified advisers.'}</p></article></main><footer><div class="wrap">Another Cyprus · Practical Limassol property guides · Direct property-specific enquiries</div></footer></body></html>`;
+  const sections = guide.sections.map((section, index) => `${index === 2 && !guide.hideProperty ? `<aside class="property"><strong>${guide.propertyName}</strong><p>${guide.propertyIntro ?? 'For buyers who want to compare this checklist with a live development, the project page includes current headline details, photographs and a direct request for plans.'}</p><a class="cta" href="${guide.propertyUrl}">${guide.propertyCta}</a></aside>` : ''}<section><h2>${section.heading}</h2>${section.paragraphs.map((paragraph, paragraphIndex) => `<p>${paragraph}</p>${paragraphIndex === 1 ? section.tableHtml ?? '' : ''}`).join('')}${section.bullets ? `<ul>${section.bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}</section>`).join('');
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guide.title} | Another Cyprus</title><meta name="description" content="${guide.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${guide.title}"><meta property="og:description" content="${guide.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${guide.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}${guide.sections.some(section => section.tableHtml) ? tableCss : ''}</style><script type="application/ld+json">${schema}</script><script defer src="/content-analytics.js"></script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><a class="back" href="/guides/">Buyer guides</a></nav><header class="hero"><div class="eyebrow">${guide.eyebrow}</div><h1>${guide.title}</h1><p class="intro">${guide.intro}</p><img src="${guide.image}" alt="${guide.title}" width="1600" height="1000"></header><article class="article">${sections}<p class="note">${guide.note ?? 'This guide is general information, not legal, tax, immigration, valuation or investment advice. Property details and market conditions change. Buyers should verify all material facts with independent qualified advisers.'}</p></article></main><footer><div class="wrap">Another Cyprus · Practical Limassol property guides · Direct property-specific enquiries</div></footer></body></html>`;
 }
 
 const outputRoot = join(process.cwd(), 'public', 'guides');
