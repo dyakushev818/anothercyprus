@@ -80,9 +80,7 @@ export default function App() {
       if (selectedTag === 'PR' && !property.prEligible) {
         return false;
       }
-      if (selectedTag === 'COMMISSION') {
-        return true; // All developments have 0% commission
-      }
+      // All projects have the stated commission terms; continue applying search.
       if (selectedTag === 'ROI' && (!property.rentalYieldEstimated || property.rentalYieldEstimated < 7.5)) {
         return false;
       }

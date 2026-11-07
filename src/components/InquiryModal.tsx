@@ -22,6 +22,9 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
   const { language } = useLanguage();
   const isRussian = language === 'ru';
   const currentTopic = propertyTitle || initialTopic || 'Limassol property portfolio';
+  const displayTopic = isRussian && !propertyTitle
+    ? ({ 'Current Plans, Prices & Availability': 'Актуальные планы, цены и наличие', 'Limassol property portfolio': 'Объекты в Лимассоле' }[currentTopic] || currentTopic)
+    : currentTopic;
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [timeline, setTimeline] = useState('1–3 months');
@@ -88,7 +91,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          <div className="p-3 bg-[#F9F9F6] border border-[#E5E5DC] text-sm">{isRussian ? "Выбранный объект: " : "Selected property: "}<strong className="text-[#1A365D]">{currentTopic}</strong></div>
+          <div className="p-3 bg-[#F9F9F6] border border-[#E5E5DC] text-sm">{isRussian ? "Выбранный объект: " : "Selected property: "}<strong className="text-[#1A365D]">{displayTopic}</strong></div>
           <div className="grid sm:grid-cols-2 gap-4">
             <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={nameId}>{isRussian ? 'Имя *' : 'Name *'}
               <input id={nameId} required autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]" />

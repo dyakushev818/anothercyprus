@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { Property, PropertyType, LimassolDistrict } from '../types';
 import { Search, SlidersHorizontal, X, Sparkles, Building2, Home, CheckCircle2, ShieldCheck, TrendingUp, Zap } from 'lucide-react';
 
@@ -29,6 +30,8 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
   filteredCount,
   onReset,
 }) => {
+  const { language } = useLanguage();
+  const isRussian = language === 'ru';
   const typeOptions = [
     { label: 'All Developments', value: 'ALL' },
     { label: 'Commercial Office (€8.7M)', value: 'Commercial' },
@@ -62,16 +65,16 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
           <Search className="w-4 h-4 text-[#8A8A8A] absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            aria-label="Search developments"
+            aria-label={isRussian ? "Поиск проектов" : "Search developments"}
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search by keyword (e.g. office, villa, pool, solar PV, residency, 400m, turnkey, sea view)..."
+            placeholder={isRussian ? "Поиск по названию проекта или ключевым словам на английском" : "Search by keyword (e.g. office, villa, pool, solar PV, residency, 400m, turnkey, sea view)..."}
             className="w-full pl-10 pr-10 py-2.5 bg-[#F9F9F6] border border-[#D4D4C8] focus:border-[#1A365D] text-[#2C2C2C] text-xs sm:text-sm placeholder-[#8A8A8A] focus:outline-none transition-colors"
           />
           {searchQuery && (
             <button
               onClick={() => onSearchChange('')}
-              aria-label="Clear search"
+              aria-label={isRussian ? "Очистить поиск" : "Clear search"}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8A8A8A] hover:text-[#1A365D]"
             >
               <X className="w-4 h-4" />
@@ -107,6 +110,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
             <button
               key={opt.value}
               onClick={() => onTypeChange(opt.value)}
+              aria-pressed={selectedType === opt.value}
               className={`px-3 py-1.5 text-xs transition-colors cursor-pointer ${
                 selectedType === opt.value
                   ? 'bg-[#1A365D] text-white font-bold shadow-xs'
@@ -130,6 +134,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
             <button
               key={d.value}
               onClick={() => onDistrictChange(d.value)}
+              aria-pressed={selectedDistrict === d.value}
               className={`px-2.5 py-1 text-[11px] transition-colors cursor-pointer ${
                 selectedDistrict === d.value
                   ? 'bg-[#F3F3EE] text-[#1A365D] font-bold border border-[#1A365D]'
@@ -149,6 +154,7 @@ export const PortfolioSearchFilter: React.FC<PortfolioSearchFilterProps> = ({
               <button
                 key={tag.value}
                 onClick={() => onTagChange(tag.value)}
+                aria-pressed={selectedTag === tag.value}
                 className={`px-2.5 py-1 text-[11px] flex items-center gap-1.5 transition-colors cursor-pointer ${
                   selectedTag === tag.value
                     ? 'bg-[#FBF8F2] text-[#1A365D] border border-[#C29B61] font-bold'
