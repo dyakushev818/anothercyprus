@@ -10,7 +10,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenInquiry,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
+  const languageSearch = new URLSearchParams(window.location.search);
+  languageSearch.delete('lang');
+  const languageQuery = languageSearch.size ? `?${languageSearch}` : '';
 
   return (
     <header className="sticky top-0 z-40 bg-[#F9F9F6]/95 backdrop-blur-md border-b border-[#E5E5DC] text-[#2C2C2C] transition-all duration-300">
@@ -31,17 +34,17 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <div className="inline-flex border border-[#D4D4C8] bg-white p-0.5" aria-label="Language selector">
               {(['en', 'ru'] as const).map((option) => (
-                <button
+                <a
                   key={option}
-                  type="button"
-                  onClick={() => setLanguage(option)}
+                  href={`${option === 'ru' ? '/ru/' : '/'}${languageQuery}${window.location.hash}`}
+                  hrefLang={option}
                   className={`px-2 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors ${
                     language === option ? 'bg-[#1A365D] text-white' : 'text-[#1A365D] hover:bg-[#F3F3EE]'
                   }`}
-                  aria-pressed={language === option}
+                  aria-current={language === option ? 'page' : undefined}
                 >
                   {option}
-                </button>
+                </a>
               ))}
             </div>
             <button

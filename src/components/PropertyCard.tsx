@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { Property, Currency } from '../types';
 import { formatPrice } from '../utils/formatters';
 import { Bed, Bath, Maximize2, MapPin, Waves, ShieldCheck, TrendingUp, Sparkles, MessageCircle, ArrowUpRight, Building2, Car, Layers, Zap } from 'lucide-react';
@@ -16,6 +17,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onSelect,
   onInquire,
 }) => {
+  const { language } = useLanguage();
   const isCommercial = property.type === 'Commercial';
   const landingSlug = property.id === 'dasoudi-coastal-penthouses'
     ? 'olio-residences-mesa-geitonia'
@@ -78,7 +80,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Title and Tagline */}
         <div>
           <h3 className="font-serif text-xl font-bold text-[#1A365D] italic group-hover:text-[#132A4B] transition-colors line-clamp-1">
-            <a href={`/properties/${landingSlug}/`} className="hover:underline underline-offset-4">
+            <a href={`${language === 'ru' ? '/ru' : ''}/properties/${landingSlug}/`} className="hover:underline underline-offset-4">
               {property.title}
             </a>
           </h3>

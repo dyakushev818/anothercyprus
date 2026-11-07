@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { LimassolDistrict } from '../types';
 import { MapPin, Phone, Mail, MessageCircle, ShieldCheck, ArrowUp } from 'lucide-react';
 
@@ -8,6 +9,8 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry }) => {
+  const { language } = useLanguage();
+  const localePrefix = language === 'ru' ? '/ru' : '';
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -140,22 +143,22 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
             </h4>
             <ul className="space-y-2 text-xs text-[#E5E5DC]/70 font-light">
               <li>
-                <a href="/properties/germasogeia-corporate-prime/" className="hover:text-[#C29B61] transition-colors">
+                <a href={`${localePrefix}/properties/germasogeia-corporate-prime/`} className="hover:text-[#C29B61] transition-colors">
                   Germasogeia Corporate Prime
                 </a>
               </li>
               <li>
-                <a href="/properties/athanasios-skyline-suites/" className="hover:text-[#C29B61] transition-colors">
+                <a href={`${localePrefix}/properties/athanasios-skyline-suites/`} className="hover:text-[#C29B61] transition-colors">
                   Athanasios Skyline Suites
                 </a>
               </li>
               <li>
-                <a href="/properties/tychonas-sanctuary-villas/" className="hover:text-[#C29B61] transition-colors">
+                <a href={`${localePrefix}/properties/tychonas-sanctuary-villas/`} className="hover:text-[#C29B61] transition-colors">
                   The Tychonas Sanctuary Villas
                 </a>
               </li>
               <li>
-                <a href="/properties/olio-residences-mesa-geitonia/" className="hover:text-[#C29B61] transition-colors">
+                <a href={`${localePrefix}/properties/olio-residences-mesa-geitonia/`} className="hover:text-[#C29B61] transition-colors">
                   OLiO Residences — Mesa Geitonia
                 </a>
               </li>
@@ -175,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
               </li>
               <li>
                 <a href="#residency" className="hover:text-[#C29B61] transition-colors">
-                  0% Non-Dom Tax Regime
+                  Non-Dom Tax Considerations
                 </a>
               </li>
               <li>
@@ -189,8 +192,8 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
                 </a>
               </li>
               <li>
-                <a href="/markets/european-buyers-limassol/" className="hover:text-[#C29B61] transition-colors">
-                  Buying from Europe
+                <a href={language === 'ru' ? '/ru/markets/limassol-property-russian-speaking-buyers/' : '/markets/european-buyers-limassol/'} className="hover:text-[#C29B61] transition-colors">
+                  {language === 'ru' ? 'Покупателям из-за рубежа' : 'Buying from Europe'}
                 </a>
               </li>
             </ul>
@@ -204,10 +207,10 @@ export const Footer: React.FC<FooterProps> = ({ onSelectDistrict, onOpenInquiry 
             <span>© {new Date().getFullYear()} Another Cyprus (anothercyprus.com) • Direct Developer Sales • 0% Buyer Commission</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-3">
             <a href="/guides/" className="hover:text-white transition-colors">Buyer Guides</a>
             <a href="/ru/guides/novostroyki-limassola-sravnenie-proektov/" className="hover:text-white transition-colors">Сравнение проектов</a>
-            <a href="/privacy/" className="hover:text-white transition-colors">Privacy & Analytics</a>
+            <a href={`${localePrefix}/privacy/`} className="hover:text-white transition-colors">Privacy & Analytics</a>
             <button
               onClick={() => onOpenInquiry()}
               className="text-[#C29B61] hover:text-white transition-colors cursor-pointer text-xs flex items-center gap-1.5"
