@@ -22,7 +22,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
   const { language } = useLanguage();
   const isRussian = language === 'ru';
   const currentTopic = propertyTitle || initialTopic || 'Limassol property portfolio';
-  const displayTopic = isRussian && !propertyTitle
+  const displayTopic = isRussian
     ? ({ 'Current Plans, Prices & Availability': 'Актуальные планы, цены и наличие', 'Limassol property portfolio': 'Объекты в Лимассоле' }[currentTopic] || currentTopic)
     : currentTopic;
   const [name, setName] = useState('');
@@ -125,3 +125,4 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
     </div>
   );
 };
+
