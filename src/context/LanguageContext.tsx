@@ -10,6 +10,21 @@ interface LanguageContextValue {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 const RU: Record<string, string> = {
+  'Get plans & current availability': 'Запросить планы и актуальное наличие',
+  'Direct property request': 'Прямой запрос по объекту',
+  'Selected property:': 'Выбранный объект:',
+  'Limassol property portfolio': 'Объекты в Лимассоле',
+  'Name *': 'Имя *',
+  'Phone / WhatsApp *': 'Телефон / WhatsApp *',
+  'Purchase timeframe': 'Планируемый срок покупки',
+  '1–3 months': '1–3 месяца',
+  '3–6 months': '3–6 месяцев',
+  '6–12 months': '6–12 месяцев',
+  'Researching options': 'Изучаю варианты',
+  'Question (optional)': 'Вопрос (необязательно)',
+  'Send request in WhatsApp': 'Отправить запрос в WhatsApp',
+  'Send by email instead': 'Отправить по электронной почте',
+  'Your details are used only to answer this property request.': 'Ваши данные используются только для ответа на запрос по объекту.',
   'Send Inquiry': 'Отправить запрос',
   'Showing': 'Показано',
   'of': 'из',

@@ -99,7 +99,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
           </div>
           <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={timelineId}>Purchase timeframe
             <select id={timelineId} value={timeline} onChange={(e) => setTimeline(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]">
-              <option>1–3 months</option><option>3–6 months</option><option>6–12 months</option><option>Researching options</option>
+              <option value="1–3 months">1–3 months</option><option value="3–6 months">3–6 months</option><option value="6–12 months">6–12 months</option><option value="Researching options">Researching options</option>
             </select>
           </label>
           <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={notesId}>Question (optional)
