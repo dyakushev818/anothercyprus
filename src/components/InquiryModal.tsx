@@ -80,43 +80,43 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose, pro
           <div className="flex items-center gap-3">
             <Building2 className="w-6 h-6 text-[#C29B61]" />
             <div>
-              <h3 id={titleId} className="text-lg font-serif italic font-bold">Get plans & current availability</h3>
-              <p className="text-[10px] uppercase tracking-widest text-[#C29B61]">Direct property request</p>
+              <h3 id={titleId} className="text-lg font-serif italic font-bold">{isRussian ? "Запросить планы и актуальное наличие" : "Get plans & current availability"}</h3>
+              <p className="text-[10px] uppercase tracking-widest text-[#C29B61]">{isRussian ? "Прямой запрос по объекту" : "Direct property request"}</p>
             </div>
           </div>
-          <button onClick={onClose} aria-label="Close" className="p-2 text-white/70 hover:text-white cursor-pointer"><X className="w-5 h-5" /></button>
+          <button onClick={onClose} aria-label={isRussian ? "Закрыть" : "Close"} className="p-2 text-white/70 hover:text-white cursor-pointer"><X className="w-5 h-5" /></button>
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          <div className="p-3 bg-[#F9F9F6] border border-[#E5E5DC] text-sm">Selected property: <strong className="text-[#1A365D]">{currentTopic}</strong></div>
+          <div className="p-3 bg-[#F9F9F6] border border-[#E5E5DC] text-sm">{isRussian ? "Выбранный объект: " : "Selected property: "}<strong className="text-[#1A365D]">{currentTopic}</strong></div>
           <div className="grid sm:grid-cols-2 gap-4">
-            <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={nameId}>Name *
+            <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={nameId}>{isRussian ? 'Имя *' : 'Name *'}
               <input id={nameId} required autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]" />
             </label>
-            <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={phoneId}>Phone / WhatsApp *
+            <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={phoneId}>{isRussian ? 'Телефон / WhatsApp *' : 'Phone / WhatsApp *'}
               <input id={phoneId} required type="tel" autoComplete="tel" placeholder="+357…" value={phone} onChange={(e) => setPhone(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]" />
             </label>
           </div>
-          <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={timelineId}>Purchase timeframe
+          <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={timelineId}>{isRussian ? 'Планируемый срок покупки' : 'Purchase timeframe'}
             <select id={timelineId} value={timeline} onChange={(e) => setTimeline(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]">
-              <option value="1–3 months">1–3 months</option><option value="3–6 months">3–6 months</option><option value="6–12 months">6–12 months</option><option value="Researching options">Researching options</option>
+              <option value="1–3 months">{isRussian ? "1–3 месяца" : "1–3 months"}</option><option value="3–6 months">{isRussian ? "3–6 месяцев" : "3–6 months"}</option><option value="6–12 months">{isRussian ? "6–12 месяцев" : "6–12 months"}</option><option value="Researching options">{isRussian ? "Изучаю варианты" : "Researching options"}</option>
             </select>
           </label>
-          <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={notesId}>Question (optional)
+          <label className="space-y-1.5 text-[10px] uppercase tracking-wider font-bold text-[#555]" htmlFor={notesId}>{isRussian ? 'Вопрос (необязательно)' : 'Question (optional)'}
             <textarea id={notesId} rows={2} value={notes} onChange={(e) => setNotes(e.target.value)} className="block w-full bg-[#F9F9F6] border border-[#D4D4C8] px-3.5 py-3 text-sm normal-case font-normal tracking-normal focus:outline-none focus:border-[#1A365D]" />
           </label>
           <label className="flex items-start gap-2 text-[11px] leading-relaxed text-[#666] cursor-pointer">
             <input type="checkbox" required checked={privacyAccepted} onChange={(event) => setPrivacyAccepted(event.target.checked)} className="mt-0.5 accent-[#1A365D]" />
             <span>{isRussian ? 'Я согласен на обработку моих данных для ответа по этому объекту согласно ' : 'I agree that my details may be used to answer this property request, as explained in the '}<a className="text-[#1A365D] underline" href={isRussian ? '/ru/privacy/' : '/privacy/'} target="_blank" rel="noopener noreferrer">{isRussian ? 'политике конфиденциальности' : 'privacy policy'}</a>.</span>
           </label>
-          <button type="submit" className="w-full py-4 bg-[#0A9F62] hover:bg-[#078653] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer"><MessageCircle className="w-5 h-5" /> Send request in WhatsApp</button>
+          <button type="submit" className="w-full py-4 bg-[#0A9F62] hover:bg-[#078653] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer"><MessageCircle className="w-5 h-5" /> {isRussian ? "Отправить запрос в WhatsApp" : "Send request in WhatsApp"}</button>
           <a
             href={`mailto:dyakushev@gmail.com?subject=${encodeURIComponent(`Property enquiry: ${currentTopic}`)}`}
             className="block w-full py-3 text-center border border-[#D4D4C8] text-[#1A365D] hover:bg-[#F9F9F6] font-bold text-xs uppercase tracking-widest"
           >
-            Send by email instead
+            {isRussian ? "Отправить по электронной почте" : "Send by email instead"}
           </a>
-          <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#666]"><ShieldCheck className="w-4 h-4 text-[#C29B61]" /> Your details are used only to answer this property request.</div>
+          <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#666]"><ShieldCheck className="w-4 h-4 text-[#C29B61]" /> {isRussian ? "Ваши данные используются только для ответа на запрос по объекту." : "Your details are used only to answer this property request."}</div>
         </form>
       </div>
     </div>
