@@ -12,13 +12,13 @@ const FAQS: FaqItem[] = [
     category: 'Commercial',
     question: 'What is the projected rental yield and return on investment for Germasogeia Corporate Prime?',
     answer:
-      'The stated rental scenario for Germasogeia Corporate Prime is €49,000 per month (€588,000 per year), which is approximately 6.8% gross on the stated €8,700,000 price before VAT, vacancy, operating costs and tax. This is a scenario, not a guaranteed return; obtain an independent rental appraisal before relying on it.',
+      'The stated rental scenario for Germasogeia Corporate Prime is €49,000 per month (€588,000 per year), which is approximately 6.8% gross on the stated €8,700,000 price including VAT, before vacancy, operating costs and tax. This is a scenario, not a guaranteed return; obtain an independent rental appraisal before relying on it.',
   },
   {
     category: 'Commercial',
     question: 'What infrastructure is included in the €8,700,000 turnkey commercial building purchase price?',
     answer:
-      'The stated €8,700,000 price covers the 1,934 m² building with four office levels, raised flooring, photovoltaic provision, 18 parking bays with four EV charging points, the lobby and a roof garden. Exact inclusions, areas, technical systems, title and contract terms must be confirmed from the official developer documentation.',
+      'The stated €8,700,000 price includes VAT and covers the 1,934 m² building with four office levels, raised flooring, photovoltaic provision, 18 parking bays with four EV charging points, the lobby and a roof garden. Exact inclusions, areas, technical systems, title and contract terms must be confirmed from the official developer documentation.',
   },
   {
     category: 'Residency',

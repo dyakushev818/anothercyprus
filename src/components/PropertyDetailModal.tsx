@@ -253,7 +253,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                   <span className="text-xl sm:text-2xl font-serif text-[#1A365D] font-bold mt-0.5 block">
                     {formatPrice(activePrice, currency)}
                   </span>
-                  <span className="text-[11px] text-[#666666] block font-light">+ VAT • 0% Commission</span>
+                  <span className="text-[11px] text-[#666666] block font-light">{property.id === 'germasogeia-corporate-prime' ? 'VAT included' : '+ VAT'} • 0% Commission</span>
                 </div>
 
                 <div>

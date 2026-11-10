@@ -31,7 +31,7 @@ export const PROPERTIES: Property[] = [
       '/images/commercial/al5.jpg',
     ],
     features: [
-      'Whole Building Acquisition: €8,700,000 + VAT (Total Area 1,934 m²)',
+      'Whole Building Acquisition: €8,700,000 including VAT (Total Area 1,934 m²)',
       '0% Buyer Commission • Direct Master Developer Terms',
       'Stated Rental Scenario: €49,000/month (€588,000/year, approximately 6.8% gross before costs)',
       '400 Meters from Limassol Beach in Potamos Germasogeias Business Corridor',
