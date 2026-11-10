@@ -16,12 +16,78 @@ type Guide = {
   date?: string;
   modified?: string;
   hideProperty?: boolean;
+  hideImage?: boolean;
   propertyIntro?: string;
   note?: string;
   sections: Section[];
 };
 
 const guides: Guide[] = [
+{
+  "slug": "cyprus-schengen-what-it-means-for-limassol",
+  "title": "Cyprus Is Moving Towards Schengen. Why It Matters for Limassol",
+  "description": "Cyprus has received a positive technical assessment for Schengen. What closer European integration could mean for travel, business and the future of Limassol.",
+  "eyebrow": "Cyprus and Europe · 10 November 2026",
+  "intro": "Cyprus is moving closer to joining the Schengen area. For an island that depends on international connections, this could become an important chapter in its economic development.",
+  "image": "/favicon-512.png",
+  "hideImage": true,
+  "propertyName": "",
+  "propertyUrl": "/",
+  "propertyCta": "",
+  "hideProperty": true,
+  "date": "2026-11-10",
+  "note": "Published 10 November 2026. The accession developments above are sourced; the discussion of business and property effects is our editorial outlook, not a confirmed forecast.",
+  "sections": [
+    {
+      "heading": "A significant step forward",
+      "paragraphs": [
+        "The most important development is concrete. At its briefing on 15 July 2026, the European Commission confirmed that it had adopted a Schengen country report giving a positive assessment of Cyprus’ technical preparedness. The Commission also made clear that the Council decides when and how accession takes place.",
+        "This moves the discussion beyond a distant ambition. Cyprus has made measurable progress towards an institutional change that would bring the island more closely into Europe’s shared travel area. A final entry date still depends on the remaining decision process.",
+        "The Commission’s statement is available in its <a href=\"https://audiovisual.ec.europa.eu/en/media/video/I-292916\">15 July briefing</a>. In September, <a href=\"https://www.en.politis.com.cy/in-depth/eu/1037818/cyprus-schengen-entry-now-rests-with-eu-member-states\">Politis reported that the assessment had been presented to the Council</a>, with the final decision resting with EU member states."
+      ]
+    },
+    {
+      "heading": "Why travel matters to an island economy",
+      "paragraphs": [
+        "For a company with colleagues, clients and partners in several countries, a location is only as useful as the connections around it. Meetings, recruitment visits, conferences and short business trips are ordinary parts of operating internationally. Making those journeys simpler can influence how people experience a place and whether they return.",
+        "Full Schengen participation would bring Cyprus into the common framework for travel within the area. The practical arrangements will depend on the accession decision and implementation. Airlines will still set routes and fares, and Cyprus will remain an island. Even so, closer integration is a meaningful opportunity for a country whose relationships are built across borders.",
+        "The benefit could accumulate through many small decisions: an additional visit, a longer stay, a meeting held locally, or a company taking a closer look at the island as a base. Those are more useful ways to think about the economic potential than expecting a single dramatic change on the first day."
+      ]
+    },
+    {
+      "heading": "Limassol has particular reasons to pay attention",
+      "paragraphs": [
+        "For Limassol, the prospect deserves attention because the city’s future is closely tied to its ability to attract and retain international business. The relevant question is practical: will it become easier for a team based here to stay connected with the people it works with across Europe?",
+        "Our view is that Schengen membership could strengthen that proposition. An executive comparing European locations considers more than an office address. The decision includes access to clients, travel for colleagues, housing, schools and the everyday experience of living in the city. Closer European travel integration would add another positive element to that comparison.",
+        "This is also why the discussion should extend beyond visitors. A city benefits when people build routines around it, work here, bring their families and develop lasting commercial relationships. Limassol has an opportunity to turn greater visibility into deeper connections."
+      ]
+    },
+    {
+      "heading": "What this could mean for property",
+      "paragraphs": [
+        "The connection to real estate runs through people and businesses. If more companies choose to establish or expand a presence in Limassol, they need suitable workplaces. If more employees settle here, they need homes. Visitors who spend longer on the island also contribute to demand for accommodation and local services.",
+        "That is the positive scenario we see: Schengen as one additional reason to consider Cyprus, reinforcing the appeal of places where people already want to work and live. It is a forecast about how demand could develop, rather than a claim that membership alone will produce a particular increase in prices.",
+        "The outcome will depend on what follows. Actual company expansion, household budgets, financing costs, construction and the quality of available property will shape the market. Better connections can support demand; a city still has to offer the right conditions for that demand to become lasting investment."
+      ]
+    },
+    {
+      "heading": "The lesson is to prepare for the opportunity",
+      "paragraphs": [
+        "It is tempting to borrow a property growth figure from another country’s accession and apply it to Cyprus. That would overlook differences in interest rates, housing supply and the wider economy. There is insufficient data to assign a reliable Cyprus price increase to Schengen entry alone.",
+        "A more useful lesson is that institutional integration creates an opening. Businesses can review their travel and operating plans. The city can focus on the services, infrastructure and working environments that international teams need. Property owners and developers can pay attention to practical quality rather than assume that a headline will do the work.",
+        "For Limassol, the strongest result would be a combination of easier connections and a better experience on the ground. That is how an international city earns repeat visits, new residents and long-term business commitments."
+      ]
+    },
+    {
+      "heading": "A positive direction for Cyprus",
+      "paragraphs": [
+        "Cyprus’ progress towards Schengen is a reason to look ahead with confidence. The positive technical assessment is an important milestone, and the next decisive steps belong to the Council and the implementation process.",
+        "For Limassol, the opportunity is clear: a stronger place in Europe’s everyday business and travel networks. If that opportunity is matched by investment in the city itself, the benefits could reach well beyond tourism, supporting companies, residents and the wider local economy.",
+        "The date will matter when it is formally settled. The direction already matters now."
+      ]
+    }
+  ]
+},
 {
   "slug": "cyprus-property-sales-contracts-september-2026",
   "title": "Cyprus Property Sales Contracts Rise 13.3% in September 2026",
@@ -367,55 +433,22 @@ const guides: Guide[] = [
     ],
   },
   {
-  "slug": "limassol-office-demand-and-rental-growth-2026",
-  "modified": "2026-11-10",
-  "title": "Limassol Offices: Demand, Schengen Prospects and a Building for Sale",
-  "description": "A positive outlook for offices in Limassol, the prospects of Schengen accession and a whole building offered at €8,700,000 including VAT.",
-  "eyebrow": "Office market outlook · Limassol",
-  "intro": "We see a positive long-term opportunity for well-located offices in Limassol. International companies need workplaces that suit their teams, clients and plans for growth. Easier business travel could add to that appeal if Cyprus joins Schengen.",
-  "image": "/images/commercial/al1.jpg",
-  "propertyName": "Germasogeia Corporate Prime · LIMASSOL",
-  "propertyUrl": "/properties/germasogeia-corporate-prime/",
-  "propertyCta": "View the building, request plans and discuss your offer",
-  "propertyIntro": "A whole office building in Potamos Germasogeias, Limassol. Asking price: €8,700,000 including VAT. The price, payment arrangements and other transaction terms are open to discussion, subject to agreement.",
-  "sections": [
-    {
-      "heading": "Why our outlook for Limassol is positive",
-      "paragraphs": [
-        "We believe well-located offices can benefit as international companies expand their presence in Limassol. IT businesses and companies with connections to the EU, Israel, Ukraine and Belarus are potential buyers and occupiers. These are audiences we see an opportunity to serve, rather than measured growth figures for each country.",
-        "For a business choosing a headquarters, location, floor plans, parking and room to grow matter. For an investor, those same features shape the building’s appeal to prospective tenants."
-      ]
-    },
-    {
-      "heading": "A positive signal from office rents",
-      "paragraphs": [
-        "The <a href=\"https://www.rics.org/content/dam/ricsglobal/documents/reports/rics-kpmg-index-2026q2.pdf\" rel=\"noopener noreferrer\">RICS Cyprus Property Index for Q2 2026</a> reported a 4.00% annual increase in office rental values across its Cyprus index. This is a Cyprus-wide market signal, not a rental forecast for Limassol or this building.",
-        "Our positive scenario is straightforward: if companies expand and demand grows faster than suitable competing supply, rents and building values could benefit. This is our forecast, not a guaranteed outcome."
-      ]
-    },
-    {
-      "heading": "What Schengen could mean for business",
-      "paragraphs": [
-        "According to the <a href=\"https://www.consilium.europa.eu/policies/schengen-area/\" rel=\"noopener noreferrer\">Council of the European Union</a>, Cyprus is still in the process of joining Schengen. Accession remains a prospect, rather than a completed event.",
-        "We believe easier travel could make meetings, client visits and regional management more convenient, reinforcing Limassol’s appeal as a business base. Any effect on office demand would depend on actual company expansion or relocation. Schengen status itself does not grant a right to work."
-      ]
-    },
-    {
-      "heading": "An office building for sale in LIMASSOL",
-      "paragraphs": [
-        "<a href=\"/properties/germasogeia-corporate-prime/\">Germasogeia Corporate Prime</a> is in Potamos Germasogeias, Limassol. The listing records 1,934 m² gross area, 1,342 m² covered area and 18 parking spaces. Request the plans to check the net usable office space and how the layout would work for your business.",
-        "The asking price is <strong>€8,700,000 including VAT</strong>. The price, payment arrangements and other transaction details are open to discussion. Contact us to request plans, arrange a viewing and discuss your proposal."
-      ]
-    },
-    {
-      "heading": "Let’s discuss your plans",
-      "paragraphs": [
-        "If you are looking for a headquarters, tell us about your team, space requirements and timing. If you are considering a rental investment, ask for the documents needed to assess a realistic letting strategy and running costs.",
-        "<a href=\"/properties/germasogeia-corporate-prime/\">View the building in Limassol and send an enquiry</a>. Independent legal, tax and technical checks should support any purchase decision."
-      ]
-    }
-  ]
-},
+    slug: 'limassol-office-demand-and-rental-growth-2026',
+    title: 'Limassol Office Demand and Rental Growth: Reading the 2026 Signals',
+    description: 'How buyers should interpret recent office rental and market-value data in Limassol: tenant demand, building quality, yields, lease terms and the limits of market-wide statistics.',
+    eyebrow: 'Commercial market context · Limassol',
+    intro: 'Office demand in Limassol is not a single number. A building’s ability to attract an occupier depends on the experience it offers to staff and visitors, its floor efficiency, parking, energy performance and the terms on which it can be leased. Market indices help frame the discussion; they do not replace building-by-building evidence.',
+    image: '/images/commercial/al1.jpg',
+    propertyName: 'Germasogeia Corporate Prime',
+    propertyUrl: '/properties/germasogeia-corporate-prime/',
+    propertyCta: 'View the Germasogeia office building and request its plans',
+    sections: [
+      { heading: 'Rental values have been moving, but quality is selective', paragraphs: ['The <a href="https://www.rics.org/content/dam/ricsglobal/documents/reports/rics-kpmg-index-2026q2.pdf" rel="noopener noreferrer">RICS Cyprus Property Index for Q2 2026</a> recorded a 4.00% year-on-year increase in office rental values across its Cyprus index and described modest office gains in Limassol. This is evidence of a supportive market direction, not a guarantee that every office will achieve the same rent or fill at the same speed.', 'The index tracks market rent for defined, monitored profiles. A buyer should therefore assess the building’s actual specification, condition, parking and divisibility before applying any broad market percentage.'] },
+      { heading: 'Demand is earned through usability', paragraphs: ['For an owner-occupier, demand may mean the ability to recruit and retain staff in a practical location. For an investor, it means whether a potential tenant can work efficiently on the floor plate and whether the building can adapt as the tenant mix changes.', 'Ask how many practical workstations, meeting rooms and visitor spaces the building supports. Review the entrance, lift capacity, service areas, cooling, power resilience and highway access at real commuting times. These are the features that turn an office address into a usable workplace.'] },
+      { heading: 'Read yield with the lease attached', paragraphs: ['The RICS Q2 2026 report showed an average office yield of 5.63% for Cyprus, little changed from a year earlier. It is a market benchmark, not a return offered by this building. A genuine property yield depends on rent collection, lease duration, incentives, voids, fit-out obligations, operating costs and the buyer’s purchase structure.', 'If the building is or will be let, request the leases, tenant information, deposits, break rights and service-charge position. If it is vacant, model a realistic letting period and the costs of tenant fit-out before relying on a headline rental figure.'], bullets: ['Compare net usable and gross areas.', 'Verify legally allocated parking and storage.', 'Review energy and maintenance records.', 'Analyse lease obligations with independent advisers.'] },
+      { heading: 'Use growth as context, not a sales promise', paragraphs: ['Commercial property prices and rents can move in different ways, and local supply can change the picture quickly. The disciplined approach is to buy a building that works for a defined user or tenant strategy today, while treating future rental and capital growth as an uncertain potential benefit.', 'Independent legal, tax and technical advice remains essential before purchase. A market article can help a buyer ask better questions; it cannot answer the transaction-specific ones for them.'] },
+    ],
+  },
   {
     slug: 'limassol-property-market-2026-buyer-guide',
     modified: '2026-11-07',
@@ -481,7 +514,7 @@ function renderGuide(guide: Guide) {
   const articleDate = guide.date ?? '2026-08-27';
   const schema = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: guide.title, description: guide.description, image: `https://anothercyprus.com${guide.image}`, datePublished: articleDate, dateModified: guide.modified || articleDate, author: { '@type': 'Organization', name: 'Another Cyprus' }, publisher: { '@type': 'Organization', name: 'Another Cyprus', url: 'https://anothercyprus.com/' }, mainEntityOfPage: canonical });
   const sections = guide.sections.map((section, index) => `${index === 2 && !guide.hideProperty ? `<aside class="property"><strong>${guide.propertyName}</strong><p>${guide.propertyIntro ?? 'For buyers who want to compare this checklist with a live development, the project page includes current headline details, photographs and a direct request for plans.'}</p><a class="cta" href="${guide.propertyUrl}">${guide.propertyCta}</a></aside>` : ''}<section><h2>${section.heading}</h2>${section.paragraphs.map((paragraph, paragraphIndex) => `<p>${paragraph}</p>${paragraphIndex === 1 ? section.tableHtml ?? '' : ''}`).join('')}${section.bullets ? `<ul>${section.bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}</section>`).join('');
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guide.title} | Another Cyprus</title><meta name="description" content="${guide.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${guide.title}"><meta property="og:description" content="${guide.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${guide.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}${guide.sections.some(section => section.tableHtml) ? tableCss : ''}</style><script type="application/ld+json">${schema}</script><script defer src="/content-analytics.js"></script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><a class="back" href="/guides/">Buyer guides</a></nav><header class="hero"><div class="eyebrow">${guide.eyebrow}</div><h1>${guide.title}</h1><p class="intro">${guide.intro}</p><img src="${guide.image}" alt="${guide.title}" width="1600" height="1000"></header><article class="article">${sections}<p class="note">${guide.note ?? 'This guide is general information, not legal, tax, immigration, valuation or investment advice. Property details and market conditions change. Buyers should verify all material facts with independent qualified advisers.'}</p></article></main><footer><div class="wrap">Another Cyprus · Practical Limassol property guides · Direct property-specific enquiries</div></footer></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guide.title} | Another Cyprus</title><meta name="description" content="${guide.description}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${guide.title}"><meta property="og:description" content="${guide.description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://anothercyprus.com${guide.image}"><meta name="twitter:card" content="summary_large_image"><style>${css}${guide.sections.some(section => section.tableHtml) ? tableCss : ''}</style><script type="application/ld+json">${schema}</script><script defer src="/content-analytics.js"></script></head><body><main class="wrap"><nav class="nav"><a class="brand" href="/">ANOTHER CYPRUS</a><a class="back" href="/guides/">Buyer guides</a></nav><header class="hero"><div class="eyebrow">${guide.eyebrow}</div><h1>${guide.title}</h1><p class="intro">${guide.intro}</p>${guide.hideImage ? '' : `<img src="${guide.image}" alt="${guide.title}" width="1600" height="1000">`}</header><article class="article">${sections}<p class="note">${guide.note ?? 'This guide is general information, not legal, tax, immigration, valuation or investment advice. Property details and market conditions change. Buyers should verify all material facts with independent qualified advisers.'}</p></article></main><footer><div class="wrap">Another Cyprus · Practical Limassol property guides · Direct property-specific enquiries</div></footer></body></html>`;
 }
 
 const outputRoot = join(process.cwd(), 'public', 'guides');
