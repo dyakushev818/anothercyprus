@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { PROPERTIES } from './data/properties';
 import { Property, Currency } from './types';
 import { Navbar } from './components/Navbar';
+import { NewsSection } from './components/NewsSection';
 import { HeroSection } from './components/HeroSection';
 import { CommercialSpotlight } from './components/CommercialSpotlight';
 import { PropertyCard } from './components/PropertyCard';
@@ -135,47 +136,13 @@ export default function App() {
         onOpenInquiry={handleOpenInquiry}
       />
 
-      {/* Flagship Commercial Spotlight: Germasogeia Corporate Prime (Potamos Germasogeias) */}
-      <CommercialSpotlight
-        allegroProperty={commercialPrimeProperty}
-        currency={currency}
-        onSelectProperty={(p) => setActivePropertyModal(p)}
-        onOpenInquiry={handleOpenInquiry}
-      />
-
       {/* Main 3 Flagship Projects Portfolio Showcase */}
-      <section id="flagship-projects" className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-[#E5E5DC]">
-          <div>
-            <div className="flex items-center gap-3">
-              <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#C29B61] font-mono">
-                Direct Master Developments Portfolio
-              </span>
-              <span className="text-[#D4D4C8]">•</span>
-              <span className="text-xs text-[#1A365D] font-mono font-semibold bg-[#1A365D]/8 px-2.5 py-0.5 rounded-sm border border-[#1A365D]/15">
-                0% Buyer Commission • Direct Developer Terms
-              </span>
-            </div>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-serif italic text-[#1A365D]">
-              Curated Limassol Developments
-            </h2>
-            <p className="text-[#666666] text-xs sm:text-sm mt-1 font-light max-w-xl">
-              Direct developer terms in prime Limassol locations. Title, eligibility, and residency matters remain subject to independent legal verification and official approval.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => handleOpenInquiry('Complete Developer Investor Dossier')}
-              className="px-5 py-3 bg-white hover:bg-[#F3F3EE] text-[#1A365D] hover:text-[#132A4B] border border-[#D4D4C8] text-xs uppercase tracking-wider font-semibold transition-colors cursor-pointer shadow-xs"
-            >
-              Request Full Portfolio Dossier
-            </button>
-          </div>
-        </div>
+      <section id="flagship-projects" className="py-6 sm:py-8 scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <h2 className="text-2xl font-serif italic text-[#1A365D]">Curated Limassol Developments</h2>
 
         {/* Real-time Portfolio Search & Filter Bar */}
-        <div className="mt-8">
+        <details className="my-5">
+          <summary className="cursor-pointer text-xs font-semibold text-[#1A365D] py-2">Filter projects</summary>
           <PortfolioSearchFilter
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
@@ -189,7 +156,7 @@ export default function App() {
             filteredCount={filteredProperties.length}
             onReset={handleResetFilters}
           />
-        </div>
+        </details>
 
         {/* Portfolio Grid or Empty Results State */}
         {filteredProperties.length > 0 ? (
@@ -219,6 +186,16 @@ export default function App() {
           </div>
         )}
       </section>
+
+      <NewsSection />
+
+      {/* Flagship Commercial Spotlight: Germasogeia Corporate Prime (Potamos Germasogeias) */}
+      <CommercialSpotlight
+        allegroProperty={commercialPrimeProperty}
+        currency={currency}
+        onSelectProperty={(p) => setActivePropertyModal(p)}
+        onOpenInquiry={handleOpenInquiry}
+      />
 
       {/* Cyprus Permanent Residency (Category 6.2) & Tax Guide */}
       <ResidencyAndTaxSection onOpenInquiry={handleOpenInquiry} />

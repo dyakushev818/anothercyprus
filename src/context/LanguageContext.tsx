@@ -10,6 +10,7 @@ interface LanguageContextValue {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 const RU: Record<string, string> = {
+  'Filter projects': 'Фильтры проектов',
   'Get plans & current availability': 'Запросить планы и актуальное наличие',
   'Direct property request': 'Прямой запрос по объекту',
   'Selected property:': 'Выбранный объект:',

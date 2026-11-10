@@ -187,6 +187,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             <div className="text-xl font-serif text-[#1A365D] font-bold mt-0.5">
               {formatPrice(property.priceEUR, currency)}
             </div>
+            {isCommercial && <span className="text-xs font-semibold text-[#1A365D]">{language === 'ru' ? 'Включая НДС' : 'VAT included'}</span>}
           </div>
 
           <div className="flex items-center gap-2">

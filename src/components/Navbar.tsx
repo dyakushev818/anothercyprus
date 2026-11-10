@@ -83,10 +83,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex min-w-0 flex-1 justify-end items-center gap-4 xl:gap-6 text-[10px] xl:text-[11px] uppercase tracking-[0.16em] xl:tracking-[0.2em] text-[#666666] font-semibold whitespace-nowrap">
+          <nav className="hidden lg:flex min-w-0 flex-1 justify-end items-center gap-4 xl:gap-6 text-[10px] xl:text-[11px] uppercase tracking-[0.16em] xl:tracking-[0.2em] text-[#666666] font-semibold whitespace-nowrap">
             <a href="#flagship-projects" className="hover:text-[#1A365D] transition-colors">
               Developments
             </a>
+            <a href="#insights" className="hover:text-[#1A365D] transition-colors">{language === 'ru' ? 'Статьи' : 'Insights'}</a>
             <a href="#districts" className="hover:text-[#1A365D] transition-colors">
               Locations
             </a>
@@ -111,7 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-2 ml-auto">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-md text-[#2C2C2C] hover:text-[#1A365D] hover:bg-[#F3F3EE] focus:outline-none cursor-pointer"
@@ -125,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#F9F9F6] border-b border-[#E5E5DC] px-6 pt-4 pb-8 space-y-5 shadow-lg">
+        <div className="lg:hidden bg-[#F9F9F6] border-b border-[#E5E5DC] px-6 pt-4 pb-8 space-y-5 shadow-lg">
           <div className="flex flex-col space-y-3 text-xs uppercase tracking-[0.2em] font-semibold text-[#666666]">
             <a
               href="#flagship-projects"
@@ -134,6 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               Flagship Developments
             </a>
+            <a href="#insights" onClick={() => setMobileMenuOpen(false)} className="text-[#2C2C2C] hover:text-[#1A365D] py-2.5 border-b border-[#E5E5DC]">{language === 'ru' ? 'Статьи' : 'Insights'}</a>
             <a
               href="#districts"
               onClick={() => setMobileMenuOpen(false)}
