@@ -2,6 +2,8 @@
 
 A responsive property showcase for selected commercial and residential developments in Limassol, Cyprus.
 
+The owner's approved layout and content decisions, verification requirements, and recovery checkpoint are recorded in [AGENTS.md](AGENTS.md). Preserve this baseline during subsequent maintenance.
+
 ## Development
 
 Requirements: Node.js 20 or newer.
