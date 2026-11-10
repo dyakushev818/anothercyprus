@@ -367,22 +367,55 @@ const guides: Guide[] = [
     ],
   },
   {
-    slug: 'limassol-office-demand-and-rental-growth-2026',
-    title: 'Limassol Office Demand and Rental Growth: Reading the 2026 Signals',
-    description: 'How buyers should interpret recent office rental and market-value data in Limassol: tenant demand, building quality, yields, lease terms and the limits of market-wide statistics.',
-    eyebrow: 'Commercial market context · Limassol',
-    intro: 'Office demand in Limassol is not a single number. A building’s ability to attract an occupier depends on the experience it offers to staff and visitors, its floor efficiency, parking, energy performance and the terms on which it can be leased. Market indices help frame the discussion; they do not replace building-by-building evidence.',
-    image: '/images/commercial/al1.jpg',
-    propertyName: 'Germasogeia Corporate Prime',
-    propertyUrl: '/properties/germasogeia-corporate-prime/',
-    propertyCta: 'View the Germasogeia office building and request its plans',
-    sections: [
-      { heading: 'Rental values have been moving, but quality is selective', paragraphs: ['The <a href="https://www.rics.org/content/dam/ricsglobal/documents/reports/rics-kpmg-index-2026q2.pdf" rel="noopener noreferrer">RICS Cyprus Property Index for Q2 2026</a> recorded a 4.00% year-on-year increase in office rental values across its Cyprus index and described modest office gains in Limassol. This is evidence of a supportive market direction, not a guarantee that every office will achieve the same rent or fill at the same speed.', 'The index tracks market rent for defined, monitored profiles. A buyer should therefore assess the building’s actual specification, condition, parking and divisibility before applying any broad market percentage.'] },
-      { heading: 'Demand is earned through usability', paragraphs: ['For an owner-occupier, demand may mean the ability to recruit and retain staff in a practical location. For an investor, it means whether a potential tenant can work efficiently on the floor plate and whether the building can adapt as the tenant mix changes.', 'Ask how many practical workstations, meeting rooms and visitor spaces the building supports. Review the entrance, lift capacity, service areas, cooling, power resilience and highway access at real commuting times. These are the features that turn an office address into a usable workplace.'] },
-      { heading: 'Read yield with the lease attached', paragraphs: ['The RICS Q2 2026 report showed an average office yield of 5.63% for Cyprus, little changed from a year earlier. It is a market benchmark, not a return offered by this building. A genuine property yield depends on rent collection, lease duration, incentives, voids, fit-out obligations, operating costs and the buyer’s purchase structure.', 'If the building is or will be let, request the leases, tenant information, deposits, break rights and service-charge position. If it is vacant, model a realistic letting period and the costs of tenant fit-out before relying on a headline rental figure.'], bullets: ['Compare net usable and gross areas.', 'Verify legally allocated parking and storage.', 'Review energy and maintenance records.', 'Analyse lease obligations with independent advisers.'] },
-      { heading: 'Use growth as context, not a sales promise', paragraphs: ['Commercial property prices and rents can move in different ways, and local supply can change the picture quickly. The disciplined approach is to buy a building that works for a defined user or tenant strategy today, while treating future rental and capital growth as an uncertain potential benefit.', 'Independent legal, tax and technical advice remains essential before purchase. A market article can help a buyer ask better questions; it cannot answer the transaction-specific ones for them.'] },
-    ],
-  },
+  "slug": "limassol-office-demand-and-rental-growth-2026",
+  "modified": "2026-11-10",
+  "title": "Limassol Offices: Demand, Schengen Prospects and a Building for Sale",
+  "description": "A positive outlook for offices in Limassol, the prospects of Schengen accession and a whole building offered at €8,700,000 including VAT.",
+  "eyebrow": "Office market outlook · Limassol",
+  "intro": "We see a positive long-term opportunity for well-located offices in Limassol. International companies need workplaces that suit their teams, clients and plans for growth. Easier business travel could add to that appeal if Cyprus joins Schengen.",
+  "image": "/images/commercial/al1.jpg",
+  "propertyName": "Germasogeia Corporate Prime · LIMASSOL",
+  "propertyUrl": "/properties/germasogeia-corporate-prime/",
+  "propertyCta": "View the building, request plans and discuss your offer",
+  "propertyIntro": "A whole office building in Potamos Germasogeias, Limassol. Asking price: €8,700,000 including VAT. The price, payment arrangements and other transaction terms are open to discussion, subject to agreement.",
+  "sections": [
+    {
+      "heading": "Why our outlook for Limassol is positive",
+      "paragraphs": [
+        "We believe well-located offices can benefit as international companies expand their presence in Limassol. IT businesses and companies with connections to the EU, Israel, Ukraine and Belarus are potential buyers and occupiers. These are audiences we see an opportunity to serve, rather than measured growth figures for each country.",
+        "For a business choosing a headquarters, location, floor plans, parking and room to grow matter. For an investor, those same features shape the building’s appeal to prospective tenants."
+      ]
+    },
+    {
+      "heading": "A positive signal from office rents",
+      "paragraphs": [
+        "The <a href=\"https://www.rics.org/content/dam/ricsglobal/documents/reports/rics-kpmg-index-2026q2.pdf\" rel=\"noopener noreferrer\">RICS Cyprus Property Index for Q2 2026</a> reported a 4.00% annual increase in office rental values across its Cyprus index. This is a Cyprus-wide market signal, not a rental forecast for Limassol or this building.",
+        "Our positive scenario is straightforward: if companies expand and demand grows faster than suitable competing supply, rents and building values could benefit. This is our forecast, not a guaranteed outcome."
+      ]
+    },
+    {
+      "heading": "What Schengen could mean for business",
+      "paragraphs": [
+        "According to the <a href=\"https://www.consilium.europa.eu/policies/schengen-area/\" rel=\"noopener noreferrer\">Council of the European Union</a>, Cyprus is still in the process of joining Schengen. Accession remains a prospect, rather than a completed event.",
+        "We believe easier travel could make meetings, client visits and regional management more convenient, reinforcing Limassol’s appeal as a business base. Any effect on office demand would depend on actual company expansion or relocation. Schengen status itself does not grant a right to work."
+      ]
+    },
+    {
+      "heading": "An office building for sale in LIMASSOL",
+      "paragraphs": [
+        "<a href=\"/properties/germasogeia-corporate-prime/\">Germasogeia Corporate Prime</a> is in Potamos Germasogeias, Limassol. The listing records 1,934 m² gross area, 1,342 m² covered area and 18 parking spaces. Request the plans to check the net usable office space and how the layout would work for your business.",
+        "The asking price is <strong>€8,700,000 including VAT</strong>. The price, payment arrangements and other transaction details are open to discussion. Contact us to request plans, arrange a viewing and discuss your proposal."
+      ]
+    },
+    {
+      "heading": "Let’s discuss your plans",
+      "paragraphs": [
+        "If you are looking for a headquarters, tell us about your team, space requirements and timing. If you are considering a rental investment, ask for the documents needed to assess a realistic letting strategy and running costs.",
+        "<a href=\"/properties/germasogeia-corporate-prime/\">View the building in Limassol and send an enquiry</a>. Independent legal, tax and technical checks should support any purchase decision."
+      ]
+    }
+  ]
+},
   {
     slug: 'limassol-property-market-2026-buyer-guide',
     modified: '2026-11-07',
