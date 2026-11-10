@@ -6,6 +6,7 @@ const today = new Date().toISOString().slice(0, 10);
 let sitemap = fs.readFileSync(sitemapPath, 'utf8');
 
 const internationalPages = [
+  'https://anothercyprus.com/ru/guides/cyprus-schengen-what-it-means-for-limassol/',
   'https://anothercyprus.com/guides/cyprus-schengen-what-it-means-for-limassol/',
   'https://anothercyprus.com/guides/cyprus-property-sales-contracts-september-2026/',
   'https://anothercyprus.com/guides/buy-office-building-limassol-company-headquarters/',
